@@ -11,9 +11,9 @@ Impariamo a programmare in Python
    :maxdepth: line.
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
-  capitoli/pagina_di_prova.rst
+  capitoli/Quarto_Passo_Dati.rst
 
 
 .. Sources can also be included from subfolders of this directory.
