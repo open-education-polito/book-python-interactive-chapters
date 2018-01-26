@@ -14,6 +14,7 @@ Impariamo a programmare in Python
   :maxdepth: 2
 
   capitoli/pagina_di_prova.rst
+  capitoli/Secondo_Passo_Scatole.rst
 
 
 .. Sources can also be included from subfolders of this directory.
