@@ -13,6 +13,8 @@ Impariamo a programmare in Python
 .. toctree::
   :maxdepth: 1
 
+  capitoli/pagina_di_prova.rst
+  capitoli/Secondo_Passo_Scatole.rst
   capitoli/Quarto_Passo_Dati.rst
 
 
