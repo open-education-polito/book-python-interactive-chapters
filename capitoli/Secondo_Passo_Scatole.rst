@@ -1,5 +1,5 @@
 ===========================
-Secondo passo:   Le Scatole
+Secondo passo: le Scatole
 ===========================
 
 .. role:: red
