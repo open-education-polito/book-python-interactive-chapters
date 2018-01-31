@@ -13,6 +13,10 @@ Impariamo a programmare in Python
 .. toctree::
   :maxdepth: 1
 
+  capitoli/Decimo_Passo_Grafica.rst
+  capitoli/Settimo_Passo_Funzioni.rst
+  capitoli/Primo_Passo_Calcolatrice.rst
+  capitoli/Terzo_Passo_Variabili.rst
   capitoli/Secondo_Passo_Scatole.rst
   capitoli/Quarto_Passo_Dati.rst
   capitoli/Ottavo_Passo_Cicli.rst
