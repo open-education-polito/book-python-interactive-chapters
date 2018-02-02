@@ -34,7 +34,7 @@ Al termine di queste operazioni le due scatole PIPPO e PLUTO contengono lo stess
 
 .. image:: images/pipponuovo.png
    :align: center
-   :width: 150pt
+   :width: 250pt
 
 :blue:`Osserva`: il contenuto di Pluto (la scatola che si trova a destra del segno =) viene trasferito in Pippo e non viceversa e che Pluto non perde il suo contenuto. Perché?
 :blue:`PERCHE’ E’ UNA COPIATURA` e non un trasferimento.
@@ -52,11 +52,11 @@ Le due scatole conterranno il numero 5.
 
 Vediamo come scrivere i programmi corrispondenti a queste due istruzioni: 
 
-**Programma1 PIPPO=PLUTO**
+**Programma 1 PIPPO = PLUTO**
 ::
 
-	PIPPO=5
-	PLUTO=15
+	PIPPO = 5
+	PLUTO = 15
 	print ("PIPPO = ", PIPPO)
 	print ("PLUTO = ", PLUTO)
 	PIPPO = PLUTO
@@ -76,10 +76,11 @@ Vediamo come scrivere i programmi corrispondenti a queste due istruzioni:
    :coach:
    :caption: Come copiare
    
-   PIPPO=5
-   PLUTO=15
+   PIPPO = 5
+   PLUTO = 15
    print ("PIPPO = ", PIPPO)
    print ("PLUTO = ", PLUTO)
+   PLUTO = PIPPO
    print ("PLUTO = ", PIPPO) 
    print ("PIPPO = ", PIPPO)
 
@@ -121,20 +122,20 @@ nella quale riponiamo il contenuto di una delle due scatole. Cosa fa il computer
     3. Legge il contenuto di MICKEY e lo mette in MINNIE. 
     4. Legge il contenuto di PARK (che era quello di MINNIE) e lo mette in MICKEY. 
 
++-------------------------------------------------------------+
+| :blue:`MINNIE = 10;    MICKEY = 12`                         |
 +-------------------------------+-----------------------------+
-| :blue:`MINNIE= 10; MICKEY= 12`|                             |
-+-------------------------------+-----------------------------+
-| :blue:`PARK= MINNIE`          | :boltblue:`PARK=.......`    |
+| :blue:`PARK = MINNIE`         | :boltblue:`PARK = .......`  |
 |                               |                             |
-|                               | :boltblue:`MINNIE =......`  |
+|                               | :boltblue:`MINNIE = ......` |
 +-------------------------------+-----------------------------+
-| :blue:`MINNIE= MICKEY`        | :boltblue:`MINNIE=.......`  |
+| :blue:`MINNIE = MICKEY`       | :boltblue:`MINNIE = .......`|
 |                               |                             |
-|                               | :boltblue:`MICKEY =......`  |
+|                               | :boltblue:`MICKEY = ......` |
 +-------------------------------+-----------------------------+
-| :blue:`MICKEY= PARK`          | :boltblue:`PARK=.......`    |
+| :blue:`MICKEY = PARK`         | :boltblue:`PARK = .......`  |
 |                               |                             |
-|                               | :boltblue:`MINNIE =......`  |
+|                               | :boltblue:`MINNIE = ......` |
 +-------------------------------+-----------------------------+
 
 :blue:`Prima di proseguire...esercitiamoci un po’`
@@ -339,11 +340,11 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
        # Es. 2  	
 	Input di numeri e stringhe
 
-	Primonumero= int(input (“Scrivi il primo numero:  “))
-	Secondonumero= int(input (“Scrivi il secondo numero: “))
-	Nome = input (“Scrivi il tuo nome:  “)
-	Cognome = input (“Scrivi il tuo cognome:  “)
-	Print nome , cognome, “primonumero”, “per”, secondonumero, “uguale”, 
+	Primonumero = int(input ("Scrivi il primo numero:  "))
+	Secondonumero = int(input ("Scrivi il secondo numero: "))
+	Nome = input ("Scrivi il tuo nome:  ")
+	Cognome = input ("Scrivi il tuo cognome:  ")
+	Print nome , cognome, "primonumero", "per", secondonumero, "uguale", 
 	primonumero*secondonumeeo
 	
 
