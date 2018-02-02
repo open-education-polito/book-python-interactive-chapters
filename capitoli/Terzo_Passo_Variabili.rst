@@ -46,7 +46,7 @@ il simbolo :boltred:`=` significa:
 *RISPOSTA* 
  
 
-Uso del print
+Uso di print
 :::::::::::::
 
 **Con l’ istruzione di stampa** :boltred:`print` **possiamo ordinare al calcolatore** **di comunicare** **il contenuto di una** 
