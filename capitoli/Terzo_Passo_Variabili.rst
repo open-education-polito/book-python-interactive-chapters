@@ -130,4 +130,7 @@ In base a quanto hai imparato sin qui, crea semplici programmi secondo le istruz
 
 - (**difficilissimo, se riesci a farlo sei un mago!**) Nella classe 3D della scuola ci sono 8 maschi e 10 femmine. Se Mario è alto m. 1.55, Fabio,  Matteo e Luca sono alti m. 1.60, Andrea, Aldo, Giovanni e Giacomo m. 1.50, qual è l’altezza media dei maschi della classe? Se Marta, Giovanna, Elisabetta e Francesca sono alte come Mario, mentre Stefania, Chiara e Simonetta sono alte m. 1.50, Daria e Domitilla sono 5 cm più piccole di Arianna che è alta m. 1,68, qual è l’altezza media delle femmine della classe?
 
+.. activecode:: esercizi_es2
+   :nocanvas:
+   :language: python
 

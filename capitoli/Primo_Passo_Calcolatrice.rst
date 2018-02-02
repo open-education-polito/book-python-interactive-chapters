@@ -225,3 +225,8 @@ procede da sinistra verso destra*
 
 **Calcola l’area della tua aula.**
 
+.. activecode:: esercizi_es1
+   :nocanvas:
+   :language: python
+
+
