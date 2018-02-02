@@ -111,7 +111,8 @@ Non e' possibile invece “battezzare” la  nostra scatola  con nomi come 1A, 3
 |If          |lambda	  |print       |while       |
 +------------+------------+------------+------------+
 
-*Vediamo se hai capito:*
+Vediamo se hai capito:
+::::::::::::::::::::::
 
 .. mchoice:: question1
    :answer_a: Si
