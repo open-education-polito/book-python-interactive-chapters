@@ -1,6 +1,6 @@
-=================================
-**Quinto passo: primi programmi**
-=================================
+=============================
+Quinto passo: primi programmi
+=============================
 
 .. role:: boltred
 
@@ -14,8 +14,8 @@
 
 **Iniziamo a vedere come fare a passare da una scatola all’altra.**
 
-:boltblue:`ISTRUZIONE DI COPIA`
-===============================
+Istruzione di copia
+===================
 
 Cosa succede quando diamo al computer un'istruzione come: 
 PIPPO = PLUTO
@@ -83,8 +83,8 @@ Vediamo come scrivere i programmi corrispondenti a queste due istruzioni:
    print ("PLUTO = ", PIPPO) 
    print ("PIPPO = ", PIPPO)
 
-:boltblue:`INCREMENTO` 
-======================
+Incremento
+==========
 
 Prova a immaginare cosa fa il computer per eseguire la seguente istruzione:
 
@@ -106,8 +106,8 @@ che conterrà il risultato.
    :align: center
    :width: 200pt
  
-:boltblue:`LO SCAMBIO`
-======================
+Lo scambio
+==========
  
 Un po’ più complicata è l’operazione di scambio del contenuto di due scatole. 
 Ad esempio se MINNI = 10 e MICKEY = 12 come posso scambiare il contenuto di MINNI e MICKEY, cioè inserire 12 in MINNI e 10 in MICKEY?
@@ -169,8 +169,8 @@ nella quale riponiamo il contenuto di una delle due scatole. Cosa fa il computer
 |       Scrivi il programma che calcola il cubo del contenuto e lo mette nella scatola BLAM3. 
 |
 
-:boltblue:`INPUT` 
-=================
+Input
+=====
 
 Finora abbiamo visto come inserire un numero o una stringa in una scatola, cioè un dato in una variabile utilizzando le istruzioni di assegnazione
 del tipo:

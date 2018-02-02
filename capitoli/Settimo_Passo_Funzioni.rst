@@ -72,9 +72,9 @@ In pratica dobbiamo scrivere un breve programma che esegua le operazioni che abb
 
 **Tutto questo andrà scritto su una sola riga, che sarà la prima linea della funzione.**
 
------------------------------------
-:boltblue:`Definizione di funzione`
------------------------------------
+-----------------------
+Definizione di funzione
+-----------------------
 
 :boltred:`def INTERROGAZIONE (domanda, risposta_esatta):`
 Questa linea indica all'interprete che vogliamo definire un blocco di istruzioni che potrà essere eseguito a richiesta in un qualunque altro punto del programma semplicemente scrivendo il suo nome (interrogazione), dopo aver indicato la domanda e la risposta corretta.
@@ -263,9 +263,9 @@ Questa operazione, che si chiama "importazione", può essere ottenuta scrivendo:
    numero = float(input("Scrivi un numero "))
    print ("La radice quadrata di", numero,'e`', math.sqrt(numero))
 
---------------------------------------------------------------------------
-:boltblue:`Ancora funzioni...ma un po’ più difficili: l’istruzione return`
---------------------------------------------------------------------------
+--------------------------------------------------------------
+Ancora funzioni...ma un po’ più difficili: l’istruzione return
+--------------------------------------------------------------
 
 In tutti gli esempi precedenti, la funzione chiamata eseguiva completamente una certa attività. A differenza dei casi precedenti, qualche volta la funzione chiamata esegue dei calcoli il cui risultato serve al programma chiamante.
 Vediamo un esempio:

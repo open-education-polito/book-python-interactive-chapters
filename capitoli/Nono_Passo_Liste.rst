@@ -450,9 +450,9 @@ Vediamo un esempio semplice: un programma che stampa tutti i numeri positivi fin
 
 Ricordati che se il ciclo avesse un else questo non verrebbe mai eseguito.
 
----------------
-:red:`Esercizi`
----------------
+--------
+Esercizi
+--------
 
 1. Scrivi un programma che analizzi le seguenti stringhe e per ognuna stampi le lettere una ad una: banana, cipolla, bambino, finestra, girotondo.
 

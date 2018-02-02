@@ -1,8 +1,6 @@
-
-
-=================================================
-**Primo passo:   usare Python come calcolatrice**
-=================================================
+=============================================
+Primo passo:   usare Python come calcolatrice
+=============================================
 
 .. role:: red
 
@@ -198,8 +196,8 @@ procede da sinistra verso destra*
 
 
 
-:boltblue:`Esercitiamoci un po’.`
-:::::::::::::::::::::::::::::::::                             
+Esercitiamoci un po'
+::::::::::::::::::::
 
 **Esegui il calcolo dell’ espressione:** 
  
