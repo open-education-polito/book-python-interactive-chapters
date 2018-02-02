@@ -242,7 +242,7 @@ isoscele.
 
 ::
 
-	if lato1 == lato2 or lato1 == lato3 or lato2 ==lato3:
+	if lato1 == lato2 or lato1 == lato3 or lato2 == lato3:
 		print "triangolo isoscele"
 
 NOTA BENE: con l’operatore **or** non è necessario che siano 
@@ -323,11 +323,10 @@ Se voto e' >= 6 stampo “promosso”, se voto e' < 6 stampo “bocciato”
 	nome = input ("Come ti chiami? ")
 	femmina = input ("Sei femmina? ")
 	if femmina == "si":
-		print ("Cara ", nome,)
-		print (", sei bravissima!")
+		print ("Cara ", nome , " sei bravissima!")
 	else:
-		print ("Caro ", nome)
-		print (", sei bravissimo!")
+		print ("Caro ", nome , " sei bravissimo!")
+		
 
 
 Area del rettangolo:
@@ -408,14 +407,14 @@ Vediamo subito qualche esempio:
 
 	numero = 78
 	indovina = 0
-	print ("indovina il numero")
+		print ("indovina il numero")
 	indovina = int (input ("inserisci il numero:"))
 	if indovina > numero:	
-		 print ("troppo alto")
+		print ("troppo alto")
 	elif indovina < numero:	
-         print ("troppo basso")
+		print ("troppo basso")
 	else:
-		 print ("GIUSTO!")
+		print ("GIUSTO!")
 
 
 Qualche volta non è necessario l’else finale, come in questo esempio:

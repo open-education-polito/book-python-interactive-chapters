@@ -176,20 +176,20 @@ Facciamo ancora due esempi :
 
 ::
 
-	print  ("3+5=  ", 3+5)
+	print  ("3+5 =", 3+5)
 
 Avrà come risultato: :boltred:`3+5=  8`
 
 ::
 
-	print  ("4*4= ",  4*4)
+	print  ("4*4 =",  4*4)
 
 Avrà come risultato:  :boltblue:`4*4=  16`
 
 +-----------------------------------------+-------------------------------------+
 |Sono stringhe                            |Sono numeri                          |
 +=========================================+=====================================+
-| :boltred:`"3+5="`, :boltblue:`"4*4="`   | :boltred:`3+5=`, :boltblue:`4*4=`   |
+| :boltred:`"3+5="`, :boltblue:`"4*4="`   | :boltred:`3+5`, :boltblue:`4*4`     |
 +-----------------------------------------+-------------------------------------+
 
 Il primo è gia scritto, prova a scrivere il secondo:
@@ -221,7 +221,7 @@ Facciamo due  esempi simili utilizzando le variabili:
 	scatola2 = 14+8
 	print ("14+8 = ", scatola2)
 
-Il risultato sarà: :boltred:`14+8=  22`
+Il risultato sarà: :boltred:`14+8 = 22`
 
 ::
 
@@ -277,8 +277,7 @@ Nel tuo caso hai detto a Python: visualizzami la stringa "5*3= " così com'è e 
 
 ------------
 
-Dati e tipi di dati (operazioni sulle stringhe)
-:::::::::::::::::::::::::::::::::::::::::::::::
+:boltblue:`Dati e tipi di dati (operazioni sulle stringhe)`
 
 Numeri interi e decimali possono essere utilizzati per operazioni matematiche, le stringhe no, anche se il loro contenuto sembra un numero.
 
@@ -355,12 +354,11 @@ print ("ciao " + (" ciao " * 3))
 ad esempio:
 
 | print ("ciao " * 4)
-| print ("ciao "+" ciao "+" ciao"+" ciao ")
+| print ("ciao "+" ciao "+" ciao  "+" ciao ")
 
 ------------
 
-Esercitiamoci un po’
-::::::::::::::::::::
+:blue:`Esercitiamoci un po’`
 
 1. Scrivi le istruzioni necessarie per far comparire sul video la scritta:
 
