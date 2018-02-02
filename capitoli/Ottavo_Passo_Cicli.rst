@@ -1,4 +1,4 @@
-Ottavo passo: I CICLI
+Ottavo passo: i Cicli
 =====================
 
 .. role:: red
