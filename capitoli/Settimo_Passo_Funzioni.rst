@@ -77,6 +77,7 @@ Definizione di funzione
 -----------------------
 
 :boltred:`def INTERROGAZIONE (domanda, risposta_esatta):`
+
 Questa linea indica all'interprete che vogliamo definire un blocco di istruzioni che potrà essere eseguito a richiesta in un qualunque altro punto del programma semplicemente scrivendo il suo nome (interrogazione), dopo aver indicato la domanda e la risposta corretta.
 
 Quindi la prima linea della funzione dovrà contenere:
@@ -219,12 +220,12 @@ Vediamo ora il nostro programma scritto con e senza l'uso della funzione
 	risposta_esatta2 = "Dante"
 	interrogazione (domanda2, risposta_esatta2)
 
-Nota bene: i nomi delle scatole usati nella istruzione di chiamata della funzione sono diversi dai nomi delle scatole usati nella definizione.
+Nota bene: i nomi delle scatole usati nell'istruzione di chiamata della funzione sono diversi dai nomi delle scatole usati nella definizione.
 
 **DEFINIZIONE**
 ::
 
-	def interrogazione (domanda,risposta_esatta):
+	def interrogazione (domanda, risposta_esatta):
 
 ----
 
@@ -245,7 +246,7 @@ I programmi attuali sono diventati cosi complicati che nessun programmatore, per
 
 Ora che sai cosa sono le funzioni, devi sapere anche che Python è provvisto di numerose e importanti “librerie” di funzioni già scritte, che ricoprono le esigenze dei ricercatori di tutte le aree della scienza.
 
-AD esempio, una libreria chiamata “**math**” consente di fare calcoli matematici anche molto complicati.
+Ad esempio, una libreria chiamata “**math**” consente di fare calcoli matematici anche molto complicati.
 Prima di poter usare le funzioni fornite da math, devi dire a Python di caricare quelle funzioni che ti servono in memoria.
 Questa operazione, che si chiama "importazione", può essere ottenuta scrivendo:
 ::
@@ -294,7 +295,7 @@ scriverà un’istruzione del tipo: pippo = 7 + doppio(5)
 
 	numero = float(input("Inserisci un numero "))
 	pippo = 7 + doppio(numero)
-	print ("Se al numero 7 aggiungo il doppio di ",numero)
+	print ("Se al numero 7 aggiungo il doppio di ", numero)
 	print ("Il risultato sarà: ", pippo)
 
 In sostanza tutto avviene come se il contenuto della scatola della funzione
@@ -324,7 +325,7 @@ ad esempio, se a n attribuiamo il valore **7**:
 		if n == 1:
 			return 1
 		else:
-			return n* fatt(n-1)
+			return n * fatt(n-1)
 
 ----
 
@@ -336,7 +337,7 @@ ad esempio, se a n attribuiamo il valore **7**:
 		if n == 1:
 			return 1
 		else:
-			return n * fatt(n-1)
+			return n * fatt(n - 1)
 	n = int(input ("Scrivi un numero "))
 	print ("Il fattoriale di ", n, " è ", fatt(n))
 
@@ -380,7 +381,7 @@ Utilizziamo ora le due funzioni che abbiamo scritto per calcolare l’area della
 		if esponente == 1:
 			return numero
 		else:
-			return potenza(numero,esponente-1) * numero
+			return potenza(numero, esponente-1) * numero
 	numero = float(input("Inserisci un numero "))
 	esponente = int(input("Inserisci l'esponente "))
 	print (potenza(numero, esponente))
