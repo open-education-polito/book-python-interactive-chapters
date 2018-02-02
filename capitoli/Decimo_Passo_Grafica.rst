@@ -29,7 +29,7 @@ Ingrandendo l'immagine i quadratini si vedranno  molto bene.
 --------
 
 Il pixel
-========
+--------
 
 Nella TV i puntini sono circa 500 su ogni riga e ci sono circa 300 righe sullo schermo, quindi in tutto ci sono 150.000 puntini. I puntini sono di materiale fosforescente. Questi puntini si chiamano "pixel" (picture element), o “elemento di un'immagine”, e sia sul PC che sulla TV possono essere in bianco e nero o colorati. Adesso comincia ad analizzare i puntini in bianco e nero perché quelli colorati sono un poco più complicati. Inoltre, supporrai quasi sempre che un puntino sia bianco oppure nero. Nella grafica più raffinata un puntino può essere non soltanto bianco e nero ma anche grigio più o meno scuro.
 Prendi ora l'immagine di una casetta e pensa di rappresentarla sul monitor del calcolatore. Sovrapponi poi al disegno una griglia di quadratini ognuno dei quali rappresenta un "pixel". Scrivi  0 se nel quadratino c'è più bianco che nero, oppure 1 se c'è più nero (o colore).
@@ -88,7 +88,7 @@ L’operazione di trasformazione di un’immagine in una sequenza di bit si chia
 +------------------------------------+---------------------------------------------------------------------------------------+
 
 Le librerie
-===========
+-----------
 
 In conclusione, potresti produrre un disegno sul video scrivendo un programma fatto da molte istruzioni che precisino i punti dello schermo che vuoi illuminare uno alla volta. Ma occorrerebbero troppe istruzioni e molto tempo per produrre disegni anche molto semplici.
 
