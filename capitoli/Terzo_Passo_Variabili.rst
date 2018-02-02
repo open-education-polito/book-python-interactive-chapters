@@ -43,8 +43,11 @@ il simbolo :boltred:`=` significa:
 **DOMANDA**
 
 *Come fa il calcolatore a riempire una scatola con un numero e a farci vedere il suo contenuto?*
-*RISPOSTA*  
+*RISPOSTA* 
+ 
 
+Uso del print
+:::::::::::::
 
 **Con l’ istruzione di stampa** :boltred:`print` **possiamo ordinare al calcolatore** **di comunicare** **il contenuto di una** 
 **scatola**.                                                                                                                                                                                 
@@ -114,7 +117,8 @@ Nel mondo dell’informatica queste cose succedono...ne riparleremo.
 Per adesso grazie a Guido e a tutti coloro che hanno continuato, e continuano, la sua opera.
 Per noi, un motivo in più per impegnarci a fondo ad imparare la programmazione.
 
-:boltred:`ESERCIZI CON VALUTAZIONE`
+Esercizi con valutazione
+::::::::::::::::::::::::
 
 In base a quanto hai imparato sin qui, crea semplici programmi secondo le istruzioni che seguono:
 

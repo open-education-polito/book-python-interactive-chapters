@@ -277,7 +277,8 @@ Nel tuo caso hai detto a Python: visualizzami la stringa "5*3= " così com'è e 
 
 ------------
 
-:boltblue:`Dati e tipi di dati (operazioni sulle stringhe)`
+Dati e tipi di dati (operazioni sulle stringhe)
+:::::::::::::::::::::::::::::::::::::::::::::::
 
 Numeri interi e decimali possono essere utilizzati per operazioni matematiche, le stringhe no, anche se il loro contenuto sembra un numero.
 
@@ -358,7 +359,8 @@ ad esempio:
 
 ------------
 
-:blue:`Esercitiamoci un po’`
+Esercitiamoci un po’
+::::::::::::::::::::
 
 1. Scrivi le istruzioni necessarie per far comparire sul video la scritta:
 

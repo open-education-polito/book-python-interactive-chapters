@@ -164,7 +164,8 @@ Se la condizione è falsa al primo controllo, le istruzioni del corpo non sarann
 
 Il corpo del ciclo dovrebbe cambiare il valore di una o più variabili così che la condizione possa prima o poi diventare falsa e far così terminare il ciclo. In caso contrario il ciclo si ripeterebbe all'infinito e il calcolatore non si fermerebbe mai.
 
-:boltblue:`ESERCITIAMOCI UN PO’`
+Esercitiamoci un po’
+::::::::::::::::::::
 
 :boltblue:`Prova ad eseguire  questi due programmi:`
 
@@ -316,7 +317,8 @@ Visualizza tutti i numeri dispari compresi fra 1 e 100.
     		else:
 			corretto = "no"
 
-:boltred:`SECONDA PARTE: I CICLI ANNIDATI`
+Seconda parte: i cicli annidati
+:::::::::::::::::::::::::::::::
 
 | Precedentemente abbiamo risolto il programma che visualizza il conteggio alla rovescia che però è troppo veloce.
 | Troppo.
@@ -489,7 +491,9 @@ Prova ad esempio a stampare una stringa unica che produca questo risultato:
 
 	print ("vengo \n \t subito \n \t \t a casa")
 
-:boltred:`...ancora sulle STRINGHE`
+
+...ancora sulle stringhe
+::::::::::::::::::::::::
 
 Sinora abbiamo visto che una stringa è una serie di caratteri, cifre, lettere o altri simboli che si trovano sulla tastiera, cioè un messaggio qualunque. Inoltre, sappiamo che una stringa per essere considerata tale deve essere racchiusa tra virgolette (semplici o doppie) e che si possono fare alcune operazioni con le stringhe.
 Possiamo scrivere:
