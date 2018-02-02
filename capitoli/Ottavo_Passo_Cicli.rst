@@ -9,7 +9,7 @@ Ottavo passo: i Cicli
 
 .. role:: boltblue
 
-Impariamo insieme a :
+Impariamo insieme a:
 
  • ad usare i cicli "loop"
  • a creare cicli annidati
@@ -30,7 +30,7 @@ Ad esempio:
 
 Il risultato di questo programma è  3  9, perché la prima volta che Num è stampato il suo valore è 3, la seconda 9.
 
-Nota bene: La keyword (“parola chiave”) end = " " evita il ritorno a capo dopo una stampa; in questo modo entrambi i valori appaiono sulla stessa riga.
+Nota bene: la keyword (“parola chiave”) end = " " evita il ritorno a capo dopo una stampa; in questo modo entrambi i valori appaiono sulla stessa riga.
 
 Prova a eseguire il seguente programma e analizza cosa succede.
 
@@ -38,7 +38,7 @@ Prova a eseguire il seguente programma e analizza cosa succede.
    :nocanvas:
    :language: python
 
-   a =1 
+   a = 1 
    while a < 4 :
    	print (a)
    	a = a + 1
@@ -289,7 +289,7 @@ Visualizza tutti i numeri dispari compresi fra 1 e 100.
    :nocanvas:
    :language: python
 
-   *Esercitati qua*
+   # Esercitati qua
 
 ``***`` Prova a trovare i divisori di un numero usando il ciclo while.(Se non riesci, la soluzione è illustrata nelle pagine seguenti)
 
@@ -310,7 +310,7 @@ Visualizza tutti i numeri dispari compresi fra 1 e 100.
 	corretto = "no"
 	while corretto == "no":
 		risposta = float(input ("quanto vale 15 x 17? "))
-		if risposta == 15*17:
+		if risposta == 15 * 17:
 	        	corretto = "si"
         		print ("Bravo!")
     		else:
@@ -422,7 +422,7 @@ Scrivi un programma che chiede una sequenza di numeri da aggiungere ad una somma
 	print ('Inserisci i numeri da aggiungere alla somma ')
 	print ('Quando hai finito inserisci 0')
 	while a != 0 :
-	        print ('La somma è:',somma)
+	        print ('La somma è:', somma)
 	        a = float(input('Numero? '))
 	        somma = somma + a
 	print ('Totale =',somma)
@@ -493,11 +493,11 @@ Prova ad esempio a stampare una stringa unica che produca questo risultato:
 
 Sinora abbiamo visto che una stringa è una serie di caratteri, cifre, lettere o altri simboli che si trovano sulla tastiera, cioè un messaggio qualunque. Inoltre, sappiamo che una stringa per essere considerata tale deve essere racchiusa tra virgolette (semplici o doppie) e che si possono fare alcune operazioni con le stringhe.
 Possiamo scrivere:
-"ciao" * 3 **oppure** "ciao" + "ciao" + "ciao" oppure "ciao" * 2 + "ciao"
+"ciao" * 3 **oppure** "ciao" + "ciao" + "ciao" **oppure** "ciao" * 2 + "ciao"
 
 invece
 
-"ciao"/4 **oppure** "ciao" + 5	oppure 	"18" + 8
+"ciao"/4 **oppure** "ciao" + 5 **oppure** "18" + 8
 
 | sono sbagliate e generano un syntax error.
 | Vi ricordate come si chiamano le operazioni sulle stringhe?
