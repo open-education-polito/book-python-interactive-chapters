@@ -81,7 +81,7 @@ Vediamo come scrivere i programmi corrispondenti a queste due istruzioni:
    print ("PIPPO = ", PIPPO)
    print ("PLUTO = ", PLUTO)
    PLUTO = PIPPO
-   print ("PLUTO = ", PIPPO) 
+   print ("PLUTO = ", PLUTO) 
    print ("PIPPO = ", PIPPO)
 
 Incremento
