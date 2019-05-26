@@ -8,6 +8,7 @@ jobs:
     docker:
       - image: circleci/python:3.6
     steps:
+      - add_ssh_keys
       - run: sudo pip install runestone 
       - run: mkdir python_online
       - run: 
@@ -21,8 +22,6 @@ jobs:
       - run: mkdir -p ~/.ssh
       - run: ssh-keyscan -p $PORT $SERVER -H >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
-      - add_ssh_keys
-      - run: ls -lah python_online/n
       - run: 
           name: Push on server
           command: |
