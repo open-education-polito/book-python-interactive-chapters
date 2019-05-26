@@ -14,16 +14,16 @@ jobs:
       - run: 
           name: Build runestone
           command: |
-          cd python_online
-          printf '%s\n' Y libro \n \n false circleci libro false \n \n | runestone init
-          rm -rf _sources
-          git clone https://github.com/open-education-polito/python-interactive-book.git _sources
-          runestone build
+            cd python_online
+            printf '%s\n' Y libro \n \n false circleci libro false \n \n | runestone init
+            rm -rf _sources
+            git clone https://github.com/open-education-polito/python-interactive-book.git _sources
+            runestone build
       - run: mkdir -p ~/.ssh
       - run: ssh-keyscan -p $PORT $SERVER -H >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
       - run: 
           name: Push on server
           command: |
-          cd python_online/n
-          rsync --delete -avP -e "ssh -p $PORT" libro $USER@$SERVER:/var/www/
+            cd python_online/n
+            rsync --delete -avP -e "ssh -p $PORT" libro $USER@$SERVER:/var/www/
