@@ -23,6 +23,6 @@ jobs:
       - run: which rsync || sudo apt-get install rsync
       - add_ssh_keys
       - run: ls -lah python_online/n
-      - run: 
+      - run: |
           cd python_online/n
-          rsync --delete -avP -e "ssh -p $PORT" build/ $USER@$SERVER:/home/circleci/prova
+          rsync --delete -avP -e "ssh -p $PORT" libro $USER@$SERVER:/home/circleci/prova
