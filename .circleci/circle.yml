@@ -1,0 +1,22 @@
+
+version: 2
+jobs:
+  # Deploy to production site
+  # Note that we need a custom SSH config to let rsync know
+  # how to reach the production site.
+  build:
+    docker:
+      - image: python:3 
+    steps:
+      - run: pip install runestone 
+      - run: mkdir python_online
+      - run: |
+          cd python_online &&
+          runestone init &&
+          ls -lah . &&
+          checkout
+          cp -r ./ ./_sources
+      - run: mkdir -p ~/.ssh
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
+      - run: which rsync || sudo apt-get install rsync
+      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" user@server:/var/www/libro/ ./build
