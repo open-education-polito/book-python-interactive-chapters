@@ -10,22 +10,21 @@ jobs:
     steps:
       - run: sudo pip install runestone 
       - run: mkdir python_online
-      - run: |
+      - run: 
+          name: Build runestone
+          command: |
           cd python_online
           printf '%s\n' Y libro \n \n false circleci libro false \n \n | runestone init
-          ls -lah
           rm -rf _sources
           git clone https://github.com/open-education-polito/python-interactive-book.git _sources
-          ls -lah 
           runestone build
-          ls -lah
       - run: mkdir -p ~/.ssh
-      - run: 
-          name: Key Scan
-          command: ssh-keyscan -p $PORT $SERVER -H >> ~/.ssh/known_hosts
+      - run: ssh-keyscan -p $PORT $SERVER -H >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
       - add_ssh_keys
       - run: ls -lah python_online/n
-      - run: |
+      - run: 
+          name: Push on server
+          command: |
           cd python_online/n
           rsync --delete -avP -e "ssh -p $PORT" libro $USER@$SERVER:/var/www/
