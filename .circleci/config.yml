@@ -1,0 +1,28 @@
+
+version: 2
+jobs:
+  # Deploy to production site
+  # Note that we need a custom SSH config to let rsync know
+  # how to reach the production site.
+  build:
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - run: sudo pip install runestone 
+      - run: mkdir python_online
+      - run: |
+          cd python_online
+          printf '%s\n' Y libro \n \n false circleci libro false \n \n | runestone init
+          ls -lah .
+          git clone https://github.com/open-education-polito/python-interactive-book.git ./_source 
+          runestone build
+      - run: mkdir -p ~/.ssh
+      - run: 
+          name: Key Scan
+          command: ssh-keyscan -p $PORT $SERVER -H >> ~/.ssh/known_hosts
+      - run: which rsync || sudo apt-get install rsync
+      - add_ssh_keys
+      - run: ls -lah python_online/n
+      - run: 
+          cd python_online/n
+          rsync --delete -avP -e "ssh -p $PORT" build/ $USER@$SERVER:/home/circleci/prova
