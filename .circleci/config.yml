@@ -13,9 +13,11 @@ jobs:
       - run: |
           cd python_online
           printf '%s\n' Y libro \n \n false circleci libro false \n \n | runestone init
-          ls -lah .
-          git clone https://github.com/open-education-polito/python-interactive-book.git ./_source 
+          ls -lah
+          git clone https://github.com/open-education-polito/python-interactive-book.git _source 
+          ls -lah 
           runestone build
+          ls -lah
       - run: mkdir -p ~/.ssh
       - run: 
           name: Key Scan
