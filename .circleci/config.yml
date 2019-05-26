@@ -25,4 +25,4 @@ jobs:
       - run: ls -lah python_online/n
       - run: |
           cd python_online/n
-          rsync --delete -avP -e "ssh -p $PORT" libro $USER@$SERVER:/home/circleci/prova
+          rsync --delete -avP -e "ssh -p $PORT" libro $USER@$SERVER:/var/www/
