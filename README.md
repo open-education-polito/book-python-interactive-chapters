@@ -59,6 +59,7 @@ runestone build
 runestone serve
 ```
 And to see it, browser `http://localhost:8000`. 
+
 8. Rememeber that now you have a full working git repo inside the `_sources`
    folder so if you want to work using the git flow you should do it inside
    that folder. The build process will not touch such a folder since it is
