@@ -54,8 +54,11 @@ git clone git@github.com:open-education-polito/python-interactive-book.git _sour
 ```bash
 runestone build
 ```
-7. To see the result, open the `build/<project_name>/index.html` file. That is
-   the main entrypoint of the build.
+7. To see the result, open the `runestone server` like this:
+```bash
+runestone serve
+```
+And to see it, browser `http://localhost:8000`. 
 8. Rememeber that now you have a full working git repo inside the `_sources`
    folder so if you want to work using the git flow you should do it inside
    that folder. The build process will not touch such a folder since it is
