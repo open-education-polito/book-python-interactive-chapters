@@ -57,7 +57,7 @@ nei seguenti esempi:
 **PRIMO ESEMPIO**
 
 
-.. activecode:: primo esmpio
+.. activecode:: primo esempio
    :coach:
    :caption: ossia 2*2*2,tre volte
   

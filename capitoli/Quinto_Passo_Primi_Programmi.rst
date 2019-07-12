@@ -305,7 +305,7 @@ Ci sono più soluzioni possibili per ognuno degli esercizi proposti; sta a te t
 9. Scrivi un programma che chiede tre numeri, ne calcola la somma, la somma dei quadrati e il quadrato della somma. Infine, visualizza i
    risultati. 
 
-.. activecode:: Esercizi
+.. activecode:: Esercizi_5_1
    :coach:
    :caption: Esercizi
 
