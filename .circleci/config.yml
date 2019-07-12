@@ -15,7 +15,7 @@ jobs:
           name: Build runestone
           command: |
             cd python_online
-            printf '%s\n' Y libro \n \n false circleci libro false \n \n | runestone init
+            printf '%s\n' Y \n \n circleci libro false \n libro \n \n false | runestone init
             rm -rf _sources
             git clone https://github.com/open-education-polito/python-interactive-book.git _sources
             runestone build
