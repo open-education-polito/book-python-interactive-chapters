@@ -32,7 +32,7 @@ Questo e' il codice del programma che descrive l'esempio appena fatto :
    :align: center
 
 
-.. activecode:: esempio
+.. activecode:: esempio_6_1
 
    nome = input ("Scrivi il tuo nome ")
    utente = input ("Sei femmina? ")
@@ -87,14 +87,14 @@ quando  occorre indicare una condizione di confronto e precisamente:
 Adesso che abbiamo imparato i nuovi segni, vediamo due esempi di 
 programmi:
 
-.. activecode:: esempio2
+.. activecode:: esempio_6_2
 
 	voto = input ("che voto hai preso?")
 	if voto >= 6 : 
 		print ("promosso!")
    
 
-.. activecode:: esempio3
+.. activecode:: esempio_6_3
 
 	tuoi_soldi = input ("quanti soldi hai?")
 	if tuoi_soldi < "3": 
@@ -146,7 +146,7 @@ un'istruzione if ma deve sempre essercene almeno una.
 
 Prova a scrivere questo programma:
 
-.. activecode:: esempio4
+.. activecode:: esempio_6_4
     
 	if 5 > 10:
 		print ("sun")
@@ -170,7 +170,7 @@ Hai più di sette anni?
 Sei bravo a giocare a calcio?
 Se sì puoi iscriverti alla scuola calcio del Milan.
 
-.. activecode:: esempio5
+.. activecode:: esempio_6_5
 
 	ragazzo = input ("Hai piu' di sette anni? ")
 	campione = input ("Sei bravo a giocare a calcio?")
@@ -272,7 +272,7 @@ if…else.
 
 Vediamo alcuni semplici esempi:
 
-.. activecode:: esempio6
+.. activecode:: esempio_6_6
 
    x = input ("digita un valore da assegnare a x")
    if x < "3":
@@ -280,7 +280,7 @@ Vediamo alcuni semplici esempi:
    else:   
 	print ("x non e' minore di 3")  
 
-.. activecode:: esempio7
+.. activecode:: esempio_6_7
 
    ring = input ("Suonano alla porta? ")
    if ring == "si":
@@ -292,7 +292,7 @@ Vediamo alcuni semplici esempi:
 
 Se voto e' >= 6 stampo “promosso”, se voto e' < 6 stampo “bocciato”
 
-.. activecode:: esempio8
+.. activecode:: esempio_6_8
 
 	voto = int(input("che voto hai preso? "))
 	if voto >= 6 :
@@ -300,7 +300,7 @@ Se voto e' >= 6 stampo “promosso”, se voto e' < 6 stampo “bocciato”
 	else:
 		print ("bocciato!")
 
-.. activecode:: esempio8.1
+.. activecode:: esempio_6_8.1
 
 	fatto_compiti = input ( "hai fatto i compiti  ") 
 	if not fatto_compiti == "si" :
@@ -308,7 +308,7 @@ Se voto e' >= 6 stampo “promosso”, se voto e' < 6 stampo “bocciato”
 	else:
 		print ( "Bravo! Vai a giocare ")
 
-.. activecode:: esempio8.2
+.. activecode:: esempio_6_8.2
 
 	voto = int(input( "che voto hai preso?  "))
 	if voto >= 6 :
@@ -318,7 +318,7 @@ Se voto e' >= 6 stampo “promosso”, se voto e' < 6 stampo “bocciato”
 		print ("bocciato")
 		print ("devi studiare di piu'!")
 
-.. activecode:: esempio8.3
+.. activecode:: esempio_6_8.3
 
 	nome = input ("Come ti chiami? ")
 	femmina = input ("Sei femmina? ")
@@ -331,7 +331,7 @@ Se voto e' >= 6 stampo “promosso”, se voto e' < 6 stampo “bocciato”
 
 Area del rettangolo:
 
-.. activecode:: esempio9
+.. activecode:: esempio_6_9
 
 	risposta = input("Vuoi sapere come calcolare l'area del rettangolo? (S/N) ")
 	if risposta == "S":
@@ -341,7 +341,7 @@ Area del rettangolo:
 
 Scrittori:
 
-.. activecode:: esempio10
+.. activecode:: esempio_6_10
    
    risposta1 = input ("chi e' l'autore dei Promessi Sposi? ")
    if risposta1 == "Manzoni":
@@ -376,7 +376,7 @@ In modo formale questa istruzione viene definita: condizioni in serie.
 
 Vediamo subito qualche esempio:
 
-.. activecode:: esempio11
+.. activecode:: esempio_6_11
 
 	x = int(input("indica il numero x "))
 	y = int(input("indica il numero y "))
@@ -387,7 +387,7 @@ Vediamo subito qualche esempio:
 	else:
 		print(x,"e",y,"sono uguali")
 
-.. activecode:: esempio12
+.. activecode:: esempio_6_12
 
 	nome = input("qual e' il tuo nome? ")
 	if nome == "Carlo":
@@ -403,7 +403,7 @@ Vediamo subito qualche esempio:
 	else:
 		print ("non so quando e' il tuo onomastico ma ti auguro che ogni giorno sia la tua festa!! ")
 
-.. activecode:: esempio13
+.. activecode:: esempio_6_13
 
 	numero = 78
 	indovina = 0
@@ -419,7 +419,7 @@ Vediamo subito qualche esempio:
 
 Qualche volta non è necessario l’else finale, come in questo esempio:
 
-.. activecode:: esempio14
+.. activecode:: esempio_6_14
 
 	print ("Stampa se un numero e' pari o dispari")
 	numero = int (input ("scrivi un numero: "))
