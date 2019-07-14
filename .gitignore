@@ -1,1 +1,5 @@
 *.swp
+build/
+_build/
+_sources
+_templates
