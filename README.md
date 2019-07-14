@@ -80,3 +80,5 @@ intended to be just the sources one.
 8. The code will be merged
 
 
+## Authors and Copyright
+See the `AUTHORS.md` file in the root of this repo. 
