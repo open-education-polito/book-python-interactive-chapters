@@ -4,7 +4,63 @@
 issues](https://img.shields.io/github/issues/open-education-polito/python-interactive-book-chapters.svg)
 
 # Python Interactive Book
-OEP Python interactive book - Repo for the RST sources
+OEP Python interactive book.
+This repo contains the RST sources of the book. Such sources will have to be
+compiled inside a proper runestone instance. 
+
+# Flow
+This repo, as cited before, is just a part of the whole infrastructure.
+In order to be up and running, it is necessary to follow the following flow:
+1. Install runestone (from the original project, no forks involved here)
+2. Clone the templating repo from this organization.
+3. Clone this repo in the proper folder.
+4. Build
+
+What follows is a dedicated guide to get up&running easily. 
+
+# How to test locally
+In order to locally test this on your dev machine you have to install runestone
+and then build the rst files. 
+To do so, one possibility is the following:
+0. Create a working folder. Let's call it `libro`.
+1. Create a virtual environment. To do so, enter in the working folder and launch
+   the following:
+```bash
+virtualenv -p python3 .venv
+```
+2. Now it is necessary to activate such virtual environment. 
+```bash
+source .venv/bin/activate
+```
+3. Install the runestone software and its dependencies.
+```bash
+pip3 install runestone
+```
+4. Now it's necessary to get the right template from the repo:
+```bash
+git clone https://github.com/open-education-polito/python-interactive-book-template.git
+cp -r python-interactive-book-template/* .
+rm -rf python-interactive-book-template
+```
+5. This step requires to pull this repo inside the working folder. To do so,
+   just typo
+```bash
+git clone https//github.com/open-education-polito/python-interactive-book-chapters.git _sources
+```
+6. Eventually, run the build
+```bash
+runestone build
+```
+7. To see the result, open the `runestone server` like this:
+```bash
+runestone serve
+```
+And to see it, browser `http://localhost:8000`. 
+
+Rememeber that now you have a full working git repo inside the `_sources`
+folder so if you want to work using the git flow you should do it inside
+that folder. The build process will not touch such a folder since it is
+intended to be just the sources one. 
 
 # How-To Contribute
 1. Fork this repo
@@ -23,49 +79,4 @@ OEP Python interactive book - Repo for the RST sources
    * When done, push with `git push origin +master`  
 8. The code will be merged
 
-# How to test locally
-In order to locally test this on your dev machine you have to install runestone
-and then build the rst files. 
-To do so, one possibility is the following:
-1. Create a virtual environment. To do so, enter in a working folder and launch
-   the following:
-```bash
-virtualenv .venv
-```
-2. Now it is necessary to activate such virtual environment. 
-```bash
-source .venv/bin/activate
-```
-3. Install the runestone software and its dependencies.
-```bash
-pip install runestone
-```
-4. It is now necessary to initialize the runestone project. To do so, run
-```bash
-runestone init
-```
-Inser the info requested also in a fictional way (this will be used exclusively
-as a test so they will not be published anywhere).
-5. Now it's necessary to remove the `_sources` folder. To do so run: 
-```bash
-rm -rf _sources
-```
-5. This step requires to pull this repo inside the working folder. To do so,
-   just typo
-```bash
-git clone git@github.com:open-education-polito/python-interactive-book.git _sources
-```
-6. Eventually, run the build
-```bash
-runestone build
-```
-7. To see the result, open the `runestone server` like this:
-```bash
-runestone serve
-```
-And to see it, browser `http://localhost:8000`. 
 
-8. Rememeber that now you have a full working git repo inside the `_sources`
-   folder so if you want to work using the git flow you should do it inside
-   that folder. The build process will not touch such a folder since it is
-   intended to be just the sources one. 
