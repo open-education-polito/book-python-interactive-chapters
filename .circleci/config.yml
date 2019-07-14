@@ -15,7 +15,7 @@ jobs:
           name: Setup runestone
           command: |
             git clone https://github.com/open-education-polito/python-interactive-book-template.git python_online 
-            git clone https://github.com/open-education-polito/python-interactive-book-chapter.git python_online/_sources
+            git clone https://github.com/open-education-polito/python-interactive-book-chapters.git python_online/_sources
       - run: 
           name: Build runestone
           command: |
