@@ -27,5 +27,6 @@ jobs:
       - run: 
           name: Push on server
           command: |
-            cd python_online/build/python-interattivo
-            rsync --delete -avP -e "ssh -p $PORT" libro $USER@$SERVER:/var/www/
+            cd python_online/
+            ls -lah
+            #rsync --delete -avP -e "ssh -p $PORT" libro $USER@$SERVER:/var/www/
