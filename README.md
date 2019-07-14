@@ -1,5 +1,10 @@
-# oep-python-interactive-book
-Our Python interactive book - Repo for the RST sources
+![CircleCI](https://img.shields.io/circleci/build/github/open-education-polito/python-interactive-book-chapters.svg)
+![GitHub](https://img.shields.io/github/license/open-education-polito/python-interactive-book-chapters.svg)
+![GitHub
+issues](https://img.shields.io/github/issues/open-education-polito/python-interactive-book-chapters.svg)
+
+# Python Interactive Book
+OEP Python interactive book - Repo for the RST sources
 
 # How-To Contribute
 1. Fork this repo
