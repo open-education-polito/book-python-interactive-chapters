@@ -273,7 +273,7 @@ Se
 	allievi_4E = ["Gabriele","Alessandro","Anna","Michela","Antonio"]
 	print (allievi_4E [1:3])
 
-	# Risultato Atteso: "Alessandro,Anna"
+	# Risultato Atteso: "Alessandro", "Anna"
 
 **Ricordati: il primo indice incluso, il secondo indice escluso. Con questo operatore possiamo eliminare uno o più elementi di una lista assegnando alla corrispondente sezione una stringa vuota.**
 
