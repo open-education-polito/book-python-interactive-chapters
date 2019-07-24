@@ -25,7 +25,7 @@ Questa stesura fa riferimento alla versione 3.X. del linguaggio
 
 Vi consigliamo di collegarvi direttamente al sito per effettuare i test:
 
- `fare.polito.it/python <http://fare.polito.it>`_
+ `fare.polito.it/python <https://fare.polito.it/python>`_
 
 
 Gli Autori
