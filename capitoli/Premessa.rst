@@ -9,7 +9,7 @@ Abbiamo realizzato questa versione interattiva del nostro manuale sperando che p
 
 Abbiamo ideato una serie di schede che, passo dopo passo, consentiranno di avviare un percorso di conoscenza e di esperienza per acquisire le capacità necessarie a padroneggiare in maniera consapevole il mezzo informatico.
 
-Sul portale FARE (fare.polito.it) sono  inoltre disponibili e liberamente scaricabili altri materiali utili ad approfondire i temi qui trattati.
+Sul portale FARE (`fare.polito.it <https://fare.polito.it>`) sono  inoltre disponibili e liberamente scaricabili altri materiali utili ad approfondire i temi qui trattati.
 
 La scelta del linguaggio di programmazione Python risponde a molti requisiti da noi ritenuti fondamentali. Tra questi, il linguaggio è:
     • libero 
