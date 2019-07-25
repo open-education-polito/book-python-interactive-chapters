@@ -134,13 +134,15 @@ Vediamo se hai capito:
 
    Quale di questi nomi è sbagliato?
 
-.. shortanswer:: uniqueid
-   :optional:
 
-   Scrivi di seguito altri esempi inventati da te e controlla se il programma ti da’ errore o no:
+.. activecode:: esempi_scatole 
+   :coach:
+   :caption: inventa degli esercizi 
 
-.. Esercizio da definire
-   
+   Scrivi altri esempi inventati da te e controlla se il programma da’ errore o no: 
+
+
+
 **Le nostre scatole sono state create per avere dei contenuti.**
 Dobbiamo fare attenzione a non confondere il nome della scatola con quello che mettiamo dentro alla scatola, il suo contenuto.
 

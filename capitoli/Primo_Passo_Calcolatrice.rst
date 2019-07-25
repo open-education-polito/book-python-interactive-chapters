@@ -171,15 +171,15 @@ ha 2 cani e 3gatti. Devo scrivere:
    
    print(2+3)*4
 
-Una coppia di parentesi può stare dentro una frase 
-delimitata da altre parentesi, come quando devo fare un 
+Una coppia di parentesi può contenere delle operazioni 
+delimitate da altre parentesi, come quando devo fare un 
 calcolo più complicato. Esempio:
 
 .. activecode:: parentesi2                          
    :coach:                                            
    :caption: operazioni con più parentesi         
        
-   print(20*(4+1))/(3+1)                             
+   print(20*(4+1)/(3+1))                             
 
    print((20*(4+1))/(3+1))                                  
 
@@ -199,29 +199,29 @@ procede da sinistra verso destra*
 Esercitiamoci un po'
 ::::::::::::::::::::
 
-**Esegui il calcolo dell’ espressione:** 
+**- Esegui il calcolo dell’ espressione:** 
  
 
   4+4.5-(6*4/2)  
                                          
 
-**Scrivi l’espressione per calcolare “quanti mesi hai”.** 
+**- Scrivi l’espressione per calcolare “quanti mesi hai”.** 
 
-**Inventa un’espressione che dia come risultato 48**
+**- Inventa un’espressione che dia come risultato 48**
 **ed una che dia come risultato 11.**
 
-**a) Per andare da casa di Sandrone a casa di Giulia ci sono 3 km** 
+**- Per andare da casa di Sandrone a casa di Giulia ci sono 3 km. Per andare da casa di Giulia a casa di Clotilde ci sono 4 km.**
 
-**b) per andare da casa di Giulia a casa di Clotilde ci sono 4 km.**
 **Scrivi un’espressione che calcoli quanti km deve fare Sandrone per**
 **andare a trovare Giulia e Clotilde  e tornare a casa ripassando da casa**
 **di Giulia.**
-**Ora calcola quanti km ci vogliono per andare a trovare i tuoi 4 migliori**
+
+**- Ora calcola quanti km ci vogliono per andare a trovare i tuoi 4 migliori**
 **amici e poi tornare a casa.**
 
-**Misura il banco di scuola. Trova l’area del ripiano del banco.**
+**- Misura il banco di scuola. Trova l’area del ripiano del banco.**
 
-**Calcola l’area della tua aula.**
+**- Calcola l’area della tua aula.**
 
 .. activecode:: esercizi_es1
    :nocanvas:

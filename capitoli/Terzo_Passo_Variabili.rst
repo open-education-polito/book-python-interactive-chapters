@@ -85,13 +85,17 @@ Le parentesi che delimitano il nome della scatola sono obbligatorie.
   dammi la scatola GAIA3 e mettici dentro il numero 10
 
 - Visualizza sul calcolatore il risultato di:
+
   SCATOLA2 = 10-3
+
   print (SCATOLA2)
 
 - SCATOLA3 = 7*4
+
   print (SCATOLA3)
 
 - SCATOLA4 = 20/2*5
+
   print(SCATOLA4)
 
 ------------------------------------

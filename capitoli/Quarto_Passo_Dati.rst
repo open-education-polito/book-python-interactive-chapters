@@ -136,7 +136,7 @@ In questo caso ci sono le virgolette e il calcolatore riceve l’istruzione di v
    :nocanvas:
    :language: python
    
-   print ("MATEMATICA")
+   print ("8+4")
 
 Scrivendo invece:
 
@@ -359,11 +359,14 @@ ad esempio:
 ------------
 
 :blue:`Esercitiamoci un po’`
+::::::::::::::::::::::::::::
 
 1. Scrivi le istruzioni necessarie per far comparire sul video la scritta:
 
-	Cinque per tre e' uguale a 15.
-	(Puoi ottenere questo risultato con o senza scatole, ossia le variabili. Trova le varie soluzioni).
+ Cinque per tre e' uguale a 15.
+ (Puoi ottenere questo risultato con o senza scatole, ossia le variabili. Trova le varie soluzioni).
+
+|
 
 2. Scrivi tutte le sequenze di istruzioni possibili per visualizzare il messaggio “Buon Compleanno” cinque volte.
        
