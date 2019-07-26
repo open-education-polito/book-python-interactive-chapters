@@ -12,7 +12,7 @@ Quinto passo: primi programmi
 
 .. role:: green
 
-**Iniziamo a vedere come fare a passare da una scatola all’altra.**
+**Vediamo come fare a passare da una scatola all’altra.**
 
 Istruzione di copia
 ===================
@@ -139,13 +139,13 @@ nella quale riponiamo il contenuto di una delle due scatole. Cosa fa il computer
 +-------------------------------+-----------------------------+
 
 :blue:`Prima di proseguire...esercitiamoci un po’`
+==================================================
 
 |
 | **Esercizio n. 1** 
 |
-|	Se CLICK1 = 24 e SLAM1 = 32 come faccio per copiare il contenuto di CLICK1 in SLAM1? E quando l’ho copiato come faccio per rimettere
-|       nelle due scatole il contenuto originale? Prova a illustrare i vari passaggi attraverso i quali il calcolatore copia il contenuto di una
-|       scatola a un'altra. 
+|	Se CLICK1 = 24 e SLAM1 = 32 come faccio per copiare il contenuto di CLICK1 in SLAM1? E quando l’ho copiato come faccio per rimettere elle due scatole il contenuto originale?
+|       Prova a illustrare i vari passaggi attraverso i quali il calcolatore copia il contenuto di una scatola in un'altra. 
 |
 
 |
@@ -280,7 +280,8 @@ Esercitati con gli esempi seguenti:
 	print ("num * 2 = ", num * 2)
 
         
-**Esercitiamoci un po’** 
+Esercitiamoci un po’ 
+====================
 
 Ci sono più soluzioni possibili per ognuno degli esercizi proposti; sta a te trovarle e, soprattutto, provarle. 
 
@@ -309,6 +310,7 @@ Ci sono più soluzioni possibili per ognuno degli esercizi proposti; sta a te t
    :coach:
    :caption: Esercizi
 
+   #Prova i tuoi esercizi
 
 **ESERCIZI CON VALUTAZIONE**
 
@@ -328,7 +330,8 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
 ::
 
          #Es. 1: 
-	 stampa il nome del tuo cantante preferito.
+         #stampa il nome del tuo cantante preferito.
+         
          cantante = input ("Scrivi il nome del cantante preferito: ")
          print ("Il mio cantante preferito e' ", cantant)
 
@@ -338,14 +341,13 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
 ::
 
        # Es. 2  	
-	Input di numeri e stringhe
+       #Input di numeri e stringhe
 
-	Primonumero = int(input ("Scrivi il primo numero:  "))
-	Secondonumero = int(input ("Scrivi il secondo numero: "))
-	Nome = input ("Scrivi il tuo nome:  ")
-	Cognome = input ("Scrivi il tuo cognome:  ")
-	Print nome , cognome, "primonumero", "per", secondonumero, "uguale", 
-	primonumero*secondonumeeo
+       Primonumero = int(input ("Scrivi il primo numero:  "))
+       Secondonumero = int(input ("Scrivi il secondo numero: "))
+       Nome = input ("Scrivi il tuo nome:  ")
+       Cognome = input ("Scrivi il tuo cognome:  ")
+       Print (nome, cognome, primonumero, "per", secondonumero, "uguale", primonumero*secondonumero)
 	
 
 ------------------------------
@@ -370,4 +372,8 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
 	print (primo, "diviso", secondo,"si ottiene", primo/secondo)
 	print "il resto della divisione e' ", primo % secondo
 	
+.. activecode:: Esercizi_5_2
+   :coach:
+   :caption: Esercizi
 
+   #Caccia all'errore: correggi gli esempi 
