@@ -21,7 +21,8 @@ fare? Usiamo l’istruzione:
 
 
 
-:boltred:`if`
+|   `if`
+
 
 L'istruzione che ci permette di scegliere cosa fare si chiama if, che in inglese 
 significa SE. 
@@ -39,10 +40,9 @@ Questo e' il codice del programma che descrive l'esempio appena fatto :
    if utente == "si":
        print("Cara ", nome, ", sei bravissima!")
    if utente == "no":
-   	   print("Caro ", nome, ", sei bravissimo!")
+       print("Caro ", nome, ", sei bravissimo!")
 
-(NOTA BENE: i rettangolini colorati evidenziano gli spazi 
-che devi lasciare. Questo metodo di scrittura si chiama INDENTAZIONE).
+(NOTA BENE: bisogna lasciare degli spazi prima di print. Questo metodo di scrittura si chiama INDENTAZIONE).
 
 Osserva nell’esempio precedente che occorre scrivere 
 prima la parola if, poi la condizione poi i : (due punti), e 
@@ -101,7 +101,7 @@ programmi:
 		print ("Non puoi comprare la pizza!")
 
 
-:boltred:`La frase che segue la if si chiama: condizione`
+:boltred:`La frase che segue la if si chiama condizione.`
 
 Quando la condizione e' soddisfatta, si esegue l'istruzione che segue i due 
 punti (:), altrimenti non si fa nulla.	
@@ -117,7 +117,7 @@ L'istruzione if viene scritta abitualmente nel modo seguente:
 +-----------------------------+----------------------------+
 |if <condizione>:             |:blue:`if voto >=6:`        |
 +-----------------------------+----------------------------+
-|   <istruzione>              | :blue:`|print("promosso")` |
+|   <istruzione>              |       print("promosso")    |
 +-----------------------------+----------------------------+
 
 **L’istruzione deve stare più all’interno della prima riga** (hai presente i 
@@ -141,7 +141,7 @@ Non c'è un limite al numero di istruzioni che possono comparire nel corpo di
 un'istruzione if ma deve sempre essercene almeno una.	
 
 **La prima riga di istruzioni che non sta più all'interno (che non e' più** 
-**“indentata”) segnala al computer la fine del blocco di istruzioni e non**
+**“indentata”) segnala al computer la fine del blocco di istruzioni che non**
 **ne fa parte.** 
 
 Prova a scrivere questo programma:
@@ -212,7 +212,7 @@ SE  hai fatto i compiti E c'è il sole puoi andare in bicicletta.
 
 ::
 
-	if compiti == "si" and sole == "si"
+	if compiti == "si" and sole == "si"i:
 		print ("puoi andare in bicicletta")
 
 SE i tre lati di un triangolo sono uguali,  il triangolo è equilatero
@@ -381,9 +381,9 @@ Vediamo subito qualche esempio:
 	x = int(input("indica il numero x "))
 	y = int(input("indica il numero y "))
 	if x < y: 
-		print(x,"e'minore di",y)
+		print(x,"e' minore di",y)
 	elif x > y:
-		print(x,"e'maggiore di",y)
+		print(x,"e' maggiore di",y)
 	else:
 		print(x,"e",y,"sono uguali")
 
@@ -407,7 +407,7 @@ Vediamo subito qualche esempio:
 
 	numero = 78
 	indovina = 0
-		print ("indovina il numero")
+	print ("indovina il numero")
 	indovina = int (input ("inserisci il numero:"))
 	if indovina > numero:	
 		print ("troppo alto")
@@ -431,10 +431,11 @@ Qualche volta non è necessario l’else finale, come in questo esempio:
 
 
 :boltblue:`Esercitiamoci un po’`
+::::::::::::::::::::::::::::::::
 
-------------
 
-Esercizio n. 1
+| 
+| Esercizio n. 1
 
 Che cosa significano le due parole if e else?
 
@@ -450,9 +451,7 @@ conseguenza di una condizione?
 
 Esercizio n. 3
 
-Che cosa fa il computer quando non e' soddisfatta la condizione introdotta da 
-
-if?
+Che cosa fa il computer quando non e' soddisfatta la condizione introdotta da if?
 
 ------------
 
@@ -532,7 +531,7 @@ stampa “risposta errata”, se e' corretto stampa “risposta esatta” e pros
 
 chiedere un altro autore per un altro libro (puoi ripeterlo quante volte vuoi)
 
-Per esercitarti un po' di piu' puoi scrivere lo stesso programma per i seguenti 
+Per esercitarti un po' di piu', puoi scrivere lo stesso programma per i seguenti 
 
 argomenti:
 
@@ -540,11 +539,11 @@ a) calciatori e squadre di calcio
 
 b) nazioni e capitali
 
-c) città e nome degli abitanti.
+c) città e nome degli abitanti
 
 
 .. activecode:: esercizio
    :nocanvas:
    :language: python
 
-
+   # Ed ora esercitati!
