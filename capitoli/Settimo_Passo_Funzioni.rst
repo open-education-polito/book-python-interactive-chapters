@@ -17,6 +17,9 @@ Impariamo insieme:
 - come si scrive una funzione
 - come si fa a chiamare una funzione
 
+
+Vediamo un esempio:
+
 ::
 
 	risposta1 = input ("Chi e' l'autore dei Promessi Sposi? ")
@@ -36,7 +39,7 @@ Impariamo insieme:
 		print ("La risposta esatta e': Dante")
 		print ("Ripassa la lezione")
 
-Hai osservato come il programmatore nel trattare la seconda risposta ripete molte cose che aveva già scritto per la prima ? Questo non è né comodo né veloce.
+Hai osservato come il programmatore nel trattare la seconda risposta ripete molte cose che aveva già scritto per la prima? Questo non è né comodo né veloce.
 Fortunatamente esiste in Python, come in molti altri linguaggi di programmazione, un meccanismo semplice per specificare una sola volta le operazioni ricorrenti e per richiamare quelle operazioni ogni volta che ci servono.
 
 Questo meccanismo è la :boltred:`“funzione”`.
@@ -244,9 +247,9 @@ In questo modo la semplice funzione che abbiamo scritto potrà essere utilizzata
 
 I programmi attuali sono diventati cosi complicati che nessun programmatore, per quanto bravo, riuscirebbe a scriverli da solo. Qualunque programma è sempre composto per una piccola parte da nuove istruzioni e per la maggior parte da funzioni già scritte in precedenza.
 
-Ora che sai cosa sono le funzioni, devi sapere anche che Python è provvisto di numerose e importanti “librerie” di funzioni già scritte, che ricoprono le esigenze dei ricercatori di tutte le aree della scienza.
+Ora che sai cosa sono le funzioni, devi sapere anche che Python è provvisto di numerosi e importanti “moduli” di funzioni già scritti, che ricoprono le esigenze dei ricercatori di tutte le aree della scienza.
 
-Ad esempio, una libreria chiamata “**math**” consente di fare calcoli matematici anche molto complicati.
+Ad esempio, il modulo chiamato “**math**” consente di fare calcoli matematici anche molto complicati.
 Prima di poter usare le funzioni fornite da math, devi dire a Python di caricare quelle funzioni che ti servono in memoria.
 Questa operazione, che si chiama "importazione", può essere ottenuta scrivendo:
 ::
@@ -364,7 +367,7 @@ Scriviamo una funzione che calcoli l’area di un cerchio di raggio r:
 
 Utilizziamo ora le due funzioni che abbiamo scritto per calcolare l’area della figura azzurra:
 
-#programma che calcola l'area della figura azzurra
+programma che calcola l'area della figura azzurra
 ::
 
 	def area_rettangolo (base, altezza):
@@ -386,12 +389,11 @@ Utilizziamo ora le due funzioni che abbiamo scritto per calcolare l’area della
 	esponente = int(input("Inserisci l'esponente "))
 	print (potenza(numero, esponente))
 
-|
-| :boltred:`ESERCIZI`
-|
+--------------------
+Esercitiamoci un po'
+--------------------
 
-
-1. Scrivi un programma utilizzando la funzione che chiede due numeri e poi li sommi tra loro.
+1. Scrivi un programma utilizzando la funzione che chieda due numeri e poi li sommi tra loro.
 
 .. activecode:: es1
 
@@ -447,6 +449,10 @@ Utilizziamo ora le due funzioni che abbiamo scritto per calcolare l’area della
 .. activecode:: es8
 
 ----
+
+------------------
+Il software libero
+------------------
 
 :boltred:`Per smaltire la fatica degli esercizi, facciamo una pausa.`
 
