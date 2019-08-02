@@ -32,11 +32,13 @@ Il risultato di questo programma è  3  9, perché la prima volta che Num è sta
 
 Nota bene: la keyword (“parola chiave”) end = " " evita il ritorno a capo dopo una stampa; in questo modo entrambi i valori appaiono sulla stessa riga.
 
+Il ciclo while
+:::::::::::::::
+
 Prova a eseguire il seguente programma e analizza cosa succede.
 
 .. activecode:: esempio_ciclo1
    :nocanvas:
-   :language: python
 
    a = 1 
    while a < 4 :
@@ -212,8 +214,6 @@ Esercitiamoci un po’
 
 *Prova a rispondere a questa domanda: fa perdere più tempo il programma 1 oppure il programma 2?*
 
-:blue:`ALTRI ESERCIZI`
-
 Visualizza tutti i numeri compresi fra 3 e 9.
 
 ::
@@ -292,7 +292,7 @@ Visualizza tutti i numeri dispari compresi fra 1 e 100.
 
    # Esercitati qua
 
-``***`` Prova a trovare i divisori di un numero usando il ciclo while.(Se non riesci, la soluzione è illustrata nelle pagine seguenti)
+``***`` Prova a trovare i divisori di un numero usando il ciclo while. (Se non riesci, la soluzione è illustrata nelle pagine seguenti)
 
 ::
 
@@ -397,9 +397,8 @@ Nel secondo la if annidata è più complessa:
 
 Fai attenzione  all'indentazione con cui sono scritte le istruzioni perché è fondamentale per avere un'esecuzione corretta del programma!
 
-Vediamo qualche altro esempio:
-
---------
+Esercitiamoci ancora
+::::::::::::::::::::
 
 Scrivi un programma per stampare il quadrato e il cubo dei numeri da 1 a 10.
 
