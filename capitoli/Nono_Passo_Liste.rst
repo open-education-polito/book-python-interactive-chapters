@@ -79,7 +79,7 @@ Prova a visualizzare sul video il contenuto delle liste precedenti.
 
 ----
 
-:blue:`Le liste sono un tipo di variabile. Variabili "composte".`
+:blue:`Le liste sono un tipo di variabile: variabili "composte".`
 
 Le variabili ordinarie immagazzinano un singolo valore.
 Le liste sono variabili che possono contenere più di un valore. Possiamo pensarle come armadi composti da una serie di cassetti scatole.
@@ -139,10 +139,10 @@ Esercitati a selezionare gli elementi di tutte le liste che abbiamo usato come e
 :blue:`3. Ora scriviamo il ciclo per attraversare la lista:`
 ::
 
-	i= 0
+	i = 0
 	while i < 5: 
 		print (tabellina [i])
-		i=i+ 1
+		i = i + 1
 
 .. activecode:: Ciclo
 
@@ -220,7 +220,7 @@ La funzione *len* applicata ad una lista produce il numero di elementi di una li
 	allievi=["Luigi","Marco","Filippo","Paola","Gabriella","Silvia"]
 	i= 0
 	while i < len(allievi): 
-		print (allievi[i]
+		print (allievi[i])
 		i= i + 1
 	
 	# Risultato Atteso: Luigi Marco Filippo Paola Gabriella
@@ -271,7 +271,8 @@ Se
 ::
 
 	allievi_4E = ["Gabriele","Alessandro","Anna","Michela","Antonio"]
-	print (allievi_4E [1:3])
+	
+        print (allievi_4E [1:3])
 
 	# Risultato Atteso: "Alessandro", "Anna"
 
@@ -299,7 +300,6 @@ Analogamente possiamo inserire uno o più elementi in una lista inserendoli in 
 
 	allievi_4E = ["Gabriele","Alessandro","Anna","Michela","Antonio"]
 	print (allievi_4E [2:2])
-	[]
 	allievi_4E [2:2] = ["Sandra", "Andrea"]
 	print (allievi_4E)
 	
@@ -337,7 +337,7 @@ Nell'esempio seguente la lista allievi_4E è diventata una lista di liste:
 	
 	# Risultato Atteso: Rossi Anna
 
-:blue:`Cosa ottengo se scrivo print allievi_4E[2][0]?`
+:blue:`Cosa ottengo se scrivo print (allievi_4E[2][0])?`
 
 Ottengo il risultato *[Rossi]*.
 
@@ -396,7 +396,7 @@ Stesso risultato, ma il programma è più breve. In termini generali devo scri
 2. esegue i comandi che seguono i due punti
 3. ritorna all’istruzione for
 
-e prosegue fin quando trova un elemnto nella lista.
+e prosegue fin quando trova un elemento nella lista.
 
 Negli esempi che seguono cerchiamo di capire a cosa può servire il ciclo :blue:`for`.
 
@@ -450,15 +450,15 @@ Vediamo un esempio semplice: un programma che stampa tutti i numeri positivi fin
 
 Ricordati che se il ciclo avesse un else questo non verrebbe mai eseguito.
 
---------
-Esercizi
---------
+--------------------
+Esercitiamoci un po'
+--------------------
 
 1. Scrivi un programma che analizzi le seguenti stringhe e per ognuna stampi le lettere una ad una: banana, cipolla, bambino, finestra, girotondo.
 
 2. Scrivi un programma che sommi tutti gli elementi di una lista data di numeri.
 
-3. Scrivi un programma che stampi la “successione di Fibonacci”. Cioè, la somma di due elementi definisce l'elemento successivo (1,2,3,5,8,13...)
+3. Scrivi un programma che stampi la “successione di Fibonacci”. La somma di due elementi definisce l'elemento successivo (1,2,3,5,8,13...).
 
 4. Scrivi un programma per trovare i numeri primi in una lista di numeri che va da 2 a 20.
 
