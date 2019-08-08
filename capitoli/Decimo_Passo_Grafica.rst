@@ -87,12 +87,12 @@ L’operazione di trasformazione di un’immagine in una sequenza di bit si chia
 |                                    | dire anche "numerizzare" o "digitalizzare".`                                          |
 +------------------------------------+---------------------------------------------------------------------------------------+
 
-Le librerie
------------
+I moduli
+--------
 
 In conclusione, potresti produrre un disegno sul video scrivendo un programma fatto da molte istruzioni che precisino i punti dello schermo che vuoi illuminare uno alla volta. Ma occorrerebbero troppe istruzioni e molto tempo per produrre disegni anche molto semplici.
 
 Fortunatamente altri programmatori prima di te hanno scritto delle funzioni che ti consentono di disegnare parti di un disegno con uno sforzo molto piccolo.
 
-Queste funzioni sono state raccolte in una "libreria", che è appunto un insieme di funzioni che il programma principale potrà richiamare quando ne ha bisogno.
+Queste funzioni sono state raccolte in un "modulo", che è appunto un insieme di funzioni che il programma principale potrà richiamare quando ne ha bisogno.
 

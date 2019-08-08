@@ -17,7 +17,7 @@ La scelta del linguaggio di programmazione Python risponde a molti requisiti da 
     • attuale 
     • possibile l'utilizzo e l'approfondimento nel tempo
     • diffuso nella pratica informatica
-    • significativo per dimensione e importanza delle librerie associate
+    • significativo per dimensione e importanza dei moduli associati
 
 Il linguaggio di programmazione Python è nato alla fine degli anni ottanta, il suo creatore è il programmatore olandese Guido van Rossum.
 
