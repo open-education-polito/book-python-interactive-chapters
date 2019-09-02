@@ -263,10 +263,10 @@ Prova ora ad inserire dei caratteri che non rappresentino un numero e osserva qu
       	s = input ("Come ti chiami? ")
         print ("Ciao PAOLA", s)                       
 	 
-	#soluzione
- 	#Ciao Paola
-	#Ciao Alda
-	#Ciao Marco 
+	# soluzione
+ 	# Ciao Paola
+	# Ciao Alda
+	# Ciao Marco 
 
 Esercitati con gli esempi seguenti:
 
@@ -310,7 +310,7 @@ Ci sono più soluzioni possibili per ognuno degli esercizi proposti; sta a te t
    :coach:
    :caption: Esercizi
 
-   #Prova i tuoi esercizi
+   # Prova i tuoi esercizi
 
 **ESERCIZI CON VALUTAZIONE**
 
@@ -329,8 +329,8 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
 
 ::
 
-         #Es. 1: 
-         #stampa il nome del tuo cantante preferito.
+         # Es. 1: 
+         # stampa il nome del tuo cantante preferito.
          
          cantante = input ("Scrivi il nome del cantante preferito: ")
          print ("Il mio cantante preferito e' ", cantant)
@@ -341,7 +341,7 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
 ::
 
        # Es. 2  	
-       #Input di numeri e stringhe
+       # Input di numeri e stringhe
 
        Primonumero = int(input ("Scrivi il primo numero:  "))
        Secondonumero = int(input ("Scrivi il secondo numero: "))
@@ -354,7 +354,7 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
 
 ::
 
-        #Es. 3: domanda di filosofia
+        # Es. 3: domanda di filosofia
 
 	printt (" Sai in quale anno e' nato Socrate")
 	sino = input ("si o no")
@@ -365,7 +365,7 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
 
 ::
 
-        #Es. 4: divisione con resto
+        # Es. 4: divisione con resto
 
 	primo = float (input ("Inserisci il primo numero"))
 	secondo = float (input ("Inserisci il secondo numero"))
@@ -376,4 +376,4 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
    :coach:
    :caption: Esercizi
 
-   #Caccia all'errore: correggi gli esempi 
+   # Caccia all'errore: correggi gli esempi 
