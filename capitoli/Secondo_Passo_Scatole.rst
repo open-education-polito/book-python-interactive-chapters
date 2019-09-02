@@ -137,7 +137,7 @@ Vediamo se hai capito:
 
 .. activecode:: esempi_scatole 
    :coach:
-   :caption: inventa degli esercizi 
+   :caption: Inventa degli esercizi 
 
    Scrivi altri esempi inventati da te e controlla se il programma da’ errore o no: 
 
