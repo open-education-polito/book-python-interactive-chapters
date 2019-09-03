@@ -27,7 +27,7 @@ fare? Usiamo l’istruzione:
 L'istruzione che ci permette di scegliere cosa fare si chiama if, che in inglese 
 significa SE. 
 
-Questo e' il codice del programma che descrive l'esempio appena fatto :
+Questo e' il codice del programma che descrive l'esempio appena fatto:
 
 .. image:: images/identazione.png
    :align: center
@@ -63,7 +63,7 @@ un nuovo carattere? :red:`E' il segno di uguaglianza ==`
 (doppio uguale) che utilizziamo per indicare “:red:`uguale a`".
 Questo perché in Python il simbolo di uguale ( = ) ha il 
 significato: “metti nella scatola”. Serve ad assegnare un 
-valore a una variabile, come ad esempio: Scatola1 = 7.
+valore a una variabile, come ad esempio: scatola1 = 7.
 
 Oltre al segno di uguaglianza esistono i segni di :blue:`disuguaglianza`. Li utilizziamo 
 quando  occorre indicare una condizione di confronto e precisamente:
@@ -81,7 +81,7 @@ quando  occorre indicare una condizione di confronto e precisamente:
 +---------------+--------------------+-----------------+
 |    <=         |   minore o uguale a|      y<=x       |
 +---------------+--------------------+-----------------+
-|   <>          |     diverso da     |       5<>1      |
+|   <>          |     diverso da     |      5<>1       |
 +---------------+--------------------+-----------------+
 
 Adesso che abbiamo imparato i nuovi segni, vediamo due esempi di 
@@ -96,8 +96,8 @@ programmi:
 
 .. activecode:: esempio_6_3
 
-	tuoi_soldi = input ("quanti soldi hai?")
-	if tuoi_soldi < "3": 
+	tuoiSoldi = input ("quanti soldi hai?")
+	if tuoiSoldi < "3": 
 		print ("Non puoi comprare la pizza!")
 
 
@@ -130,7 +130,7 @@ precedenti, possono essere scritte due o più istruzioni:
 +--------------------------+-------------------------+
 |struttura                 |:blue:`esempio`          |
 +--------------------------+-------------------------+
-| if<condizione>:          | if voto>=6:             |
+| if <condizione>:         | if voto>=6:             |
 +--------------------------+-------------------------+
 |  <istruzione1>           |  print("promosso")      |
 +--------------------------+-------------------------+
@@ -140,7 +140,7 @@ precedenti, possono essere scritte due o più istruzioni:
 Non c'è un limite al numero di istruzioni che possono comparire nel corpo di 
 un'istruzione if ma deve sempre essercene almeno una.	
 
-**La prima riga di istruzioni che non sta più all'interno (che non e' più** 
+**La prima riga di istruzioni che non e' all'interno (che non e' più** 
 **“indentata”) segnala al computer la fine del blocco di istruzioni che non**
 **ne fa parte.** 
 
@@ -212,7 +212,7 @@ SE  hai fatto i compiti E c'è il sole puoi andare in bicicletta.
 
 ::
 
-	if compiti == "si" and sole == "si"i:
+	if compiti == "si" and sole == "si" :
 		print ("puoi andare in bicicletta")
 
 SE i tre lati di un triangolo sono uguali,  il triangolo è equilatero
@@ -302,8 +302,8 @@ Se voto e' >= 6 stampo “promosso”, se voto e' < 6 stampo “bocciato”
 
 .. activecode:: esempio_6_8.1
 
-	fatto_compiti = input ( "hai fatto i compiti  ") 
-	if not fatto_compiti == "si" :
+	fattoCompiti = input ( "hai fatto i compiti  ") 
+	if not fattoCompiti == "si" :
 		print ( "Non puoi andare a giocare ")
 	else:
 		print ( "Bravo! Vai a giocare ")

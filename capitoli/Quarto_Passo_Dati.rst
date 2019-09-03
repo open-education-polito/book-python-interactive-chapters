@@ -94,8 +94,8 @@ Ad esempio:
 
 ::
 
-	SCATOLA1 = "scuola elementare"
-	print (SCATOLA1)
+	scatola1 = "scuola elementare"
+	print (scatola1)
 
 Il risultato sarà: :boltred:`scuola elementare`
 
@@ -103,8 +103,8 @@ Il risultato sarà: :boltred:`scuola elementare`
    :nocanvas:
    :language: python
    
-   SCATOLA1= "scuola elementare"
-   print (SCATOLA1)
+   scatola1= "scuola elementare"
+   print (scatola1)
 
 Prova ad eseguire i seguenti comandi facendo copia e incolla:
 
@@ -328,9 +328,9 @@ Ad esempio:
 
 ::
 
-	SCATOLA1 = "casa "
-	SCATOLA2= "dolce casa"
-	print (SCATOLA1 + SCATOLA2)
+	scatola1 = "casa "
+	scatola2= "dolce casa"
+	print (scatola1 + scatola2)
 
 :blue:`*casa dolce casa*`
 
@@ -338,9 +338,9 @@ Ad esempio:
    :nocanvas:
    :language: python
    
-   SCATOLA1 = "casa "
-   SCATOLA2= "dolce casa"
-   print (SCATOLA1 + SCATOLA2)
+   scatola1 = "casa "
+   scatola2= "dolce casa"
+   print (scatola1 + scatola2)
 
 Le operazioni possono anche essere combinate tra loro nella stessa istruzione.
 
@@ -438,4 +438,4 @@ e poi scrivine uno tu, inventando un nuovo disegno.
 
 .. activecode:: esercizi2
    :nocanvas:
-   :language: python
+   :language: python    

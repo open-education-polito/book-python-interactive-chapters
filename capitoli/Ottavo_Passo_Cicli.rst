@@ -23,12 +23,12 @@ Ad esempio:
 
 ::
 
-	Num = 3 	
-	print (Num) 	
-	Num = 9
-	print (Num)
+	num = 3 	
+	print (num) 	
+	num = 9
+	print (num)
 
-Il risultato di questo programma è  3  9, perché la prima volta che Num è stampato il suo valore è 3, la seconda 9.
+Il risultato di questo programma è  3  9, perché la prima volta che num è stampato il suo valore è 3, la seconda 9.
 
 Nota bene: la keyword (“parola chiave”) end = " " evita il ritorno a capo dopo una stampa; in questo modo entrambi i valori appaiono sulla stessa riga.
 
@@ -69,7 +69,7 @@ Riprendiamo ora il semplice programmino di prima:
 
 ::
 
-	a =1 
+	a = 1 
 	while a < 4 :
 		print (a)
 		a = a + 1	
@@ -454,7 +454,7 @@ Indovina un numero! Scrivi un programma per indovinare un  numero
 
 	numero = 27
 	indovina = 0
-	while indovina!= numero : 
+	while indovina != numero : 
 		indovina = float(input ("Indovina un numero: "))
 		if indovina > numero:
 		        print ("Troppo grande")

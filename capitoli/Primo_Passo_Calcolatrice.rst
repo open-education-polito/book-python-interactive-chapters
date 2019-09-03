@@ -163,7 +163,7 @@ Per chiedere al calcolatore di eseguire le operazioni in un ordine ben preciso
 posso usare le parentesi tonde ( ).
 Supponiamo, ad esempio, di voler calcolare il numero delle zampe degli animali
 che vivono nella casa di Mario, sapendo che
-ha 2 cani e 3gatti. Devo scrivere:
+ha 2 cani e 3 gatti. Devo scrivere:
 
 .. activecode:: parentesi
    :coach:
