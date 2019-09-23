@@ -17,6 +17,9 @@ Impariamo insieme:
 - come si scrive una funzione
 - come si fa a chiamare una funzione
 
+
+Vediamo un esempio:
+
 ::
 
 	risposta1 = input ("Chi e' l'autore dei Promessi Sposi? ")
@@ -36,7 +39,7 @@ Impariamo insieme:
 		print ("La risposta esatta e': Dante")
 		print ("Ripassa la lezione")
 
-Hai osservato come il programmatore nel trattare la seconda risposta ripete molte cose che aveva già scritto per la prima ? Questo non è né comodo né veloce.
+Hai osservato come il programmatore nel trattare la seconda risposta ripete molte cose che aveva già scritto per la prima? Questo non è né comodo né veloce.
 Fortunatamente esiste in Python, come in molti altri linguaggi di programmazione, un meccanismo semplice per specificare una sola volta le operazioni ricorrenti e per richiamare quelle operazioni ogni volta che ci servono.
 
 Questo meccanismo è la :boltred:`“funzione”`.
@@ -98,14 +101,14 @@ Dopo la definizione, occorre scrivere la funzione, cioè il programma che lavore
 
 ::
 
-	def interrogazione(domanda, risposta_esatta):
-	risposta_allievo = input (domanda)
-	if risposta_esatta == risposta_allievo:
+	def interrogazione(domanda, rispostaEsatta):
+	rispostaAllievo = input (domanda)
+	if rispostaEsatta == rispostaAllievo:
 		print ("La risposta e' esatta")
 		print ("Bravissimo")
 	else:
 		print ("Risposta errata")
-		print ("La risposta esatta e' ", risposta_esatta)
+		print ("La risposta esatta e' ", rispostaEsatta)
 		print ("studia di piu'!")
 
 Confrontiamolo ora con il pezzo di programma da cui siamo partiti e che non volevamo ripetere tante volte.
@@ -130,17 +133,17 @@ La seguente tabella mostra come è nata la funzione a partire dal programma base
 **Funzione**
 ::
 
-	def interrogazione (domanda,risposta_esatta):
-		risposta_allievo = input (domanda)
-		if risposta_esatta == risposta_allievo:
+	def interrogazione (domanda,rispostaEsatta):
+		rispostaAllievo = input (domanda)
+		if rispostaEsatta == rispostaAllievo:
 			print ("La risposta è esatta")
 			print ("Bravissimo")
 		else:
 			print ("Risposta errata")
-			print (" La risposta esatta è ",risposta_esatta)
+			print (" La risposta esatta è ",rispostaEsatta)
 			print ("studia di più!")
 
-Nota bene: puoi usare qualsiasi nome per una funzione, tranne l e parole riservate di Python. Le definizioni di funzione sono delle istruzioni come le altre.Tuttavia saranno eseguite soltanto quando saranno chiamate.
+Nota bene: puoi usare qualsiasi nome per una funzione, tranne le parole riservate di Python. Le definizioni di funzione sono delle istruzioni come le altre. Tuttavia saranno eseguite soltanto quando saranno chiamate.
 
 |
 | :boltblue:`CHIAMATA DI FUNZIONE`
@@ -157,16 +160,16 @@ Ora dobbiamo imparare a chiamare la funzione, ossia ordinare alla funzione stess
    :width: 300pt
 
 | **domanda1 = "chi e' l'autore dei Promessi Sposi? "**
-| **risposta_esatta1 = "Manzoni"**
-| **interrogazione (domanda1, risposta_esatta1)**
+| **rispostaEsatta1 = "Manzoni"**
+| **interrogazione (domanda1, rispostaEsatta1)**
 
 .. image:: images/vignetta_seconda_chiamata.png
    :align: center
    :width: 300pt
 
 | **domanda2 = "chi e' l'autore della Divina Commedia? "**
-| **risposta_esatta2 = "Dante"**
-| **interrogazione (domanda2, risposta_esatta2)**
+| **rispostaEsatta2 = "Dante"**
+| **interrogazione (domanda2, rispostaEsatta2)**
 
 Fermiamoci a riflettere e a riassumere ciò che abbiamo detto finora a proposito di programmi e del flusso di esecuzione deiprogrammi.
 
@@ -204,35 +207,35 @@ Vediamo ora il nostro programma scritto con e senza l'uso della funzione
 **con**
 ::
 
-	def interrogazione (domanda,risposta_esatta):
-		risposta_allievo = input (domanda)
-		if risposta_esatta == risposta_allievo:
+	def interrogazione (domanda,rispostaEsatta):
+		rispostaAllievo = input (domanda)
+		if rispostaEsatta == rispostaAllievo:
 			print ("La risposta e' esatta")
 			print ("Bravissimo")
 		else:
 			print ("Risposta errata")
-			print ("La risposta esatta e' ", risposta_esatta)
+			print ("La risposta esatta e' ", rispostaEsatta)
 			print ("Studia di piu'!")
 	domanda1 = "chi e' l'autore dei Promessi Sposi? "
-	risposta_esatta1 = "Manzoni"
-	interrogazione (domanda1, risposta_esatta1)
+	rispostaEsatta1 = "Manzoni"
+	interrogazione (domanda1, rispostaEsatta1)
 	domanda2 = "chi e' l'autore della Divina Commedia? "
-	risposta_esatta2 = "Dante"
-	interrogazione (domanda2, risposta_esatta2)
+	rispostaEsatta2 = "Dante"
+	interrogazione (domanda2, rispostaEsatta2)
 
 Nota bene: i nomi delle scatole usati nell'istruzione di chiamata della funzione sono diversi dai nomi delle scatole usati nella definizione.
 
 **DEFINIZIONE**
 ::
 
-	def interrogazione (domanda, risposta_esatta):
+	def interrogazione (domanda, rispostaEsatta):
 
 ----
 
 **CHIAMATA**
 ::
 
-	interrogazione (domanda1, risposta_esatta1)
+	interrogazione (domanda1, rispostaEsatta1)
 
 La prima cosa che fa la funzione quando viene chiamata è prendere le scatole usate nella istruzione con cui è stata chiamata, scoperchiarle e mettere il loro contenuto nelle corrispondenti scatole usate all'interno della funzione.
 
@@ -244,9 +247,9 @@ In questo modo la semplice funzione che abbiamo scritto potrà essere utilizzata
 
 I programmi attuali sono diventati cosi complicati che nessun programmatore, per quanto bravo, riuscirebbe a scriverli da solo. Qualunque programma è sempre composto per una piccola parte da nuove istruzioni e per la maggior parte da funzioni già scritte in precedenza.
 
-Ora che sai cosa sono le funzioni, devi sapere anche che Python è provvisto di numerose e importanti “librerie” di funzioni già scritte, che ricoprono le esigenze dei ricercatori di tutte le aree della scienza.
+Ora che sai cosa sono le funzioni, devi sapere anche che Python è provvisto di numerosi e importanti “moduli” di funzioni già scritti, che ricoprono le esigenze dei ricercatori di tutte le aree della scienza.
 
-Ad esempio, una libreria chiamata “**math**” consente di fare calcoli matematici anche molto complicati.
+Ad esempio, il modulo chiamato “**math**” consente di fare calcoli matematici anche molto complicati.
 Prima di poter usare le funzioni fornite da math, devi dire a Python di caricare quelle funzioni che ti servono in memoria.
 Questa operazione, che si chiama "importazione", può essere ottenuta scrivendo:
 ::
@@ -273,10 +276,10 @@ Vediamo un esempio:
 ::
 
 	def doppio(numero):
-		numero_per_due = numero * 2
-		return numero_per_due
+		numeroPerDue = numero * 2
+		return numeroPerDue
 
-L’istruzione :blue:`return numero_per_due` ordina alla funzione doppio di trasmettere al programma chiamante il valore di :blue:`numero_per_due`.
+L’istruzione :blue:`return numeroPerDue` ordina alla funzione doppio di trasmettere al programma chiamante il valore di :blue:`numeroPerDue`.
 
 Nel programma chiamante non si dovrà scrivere numero_per_due perché questa è una varbile della funzione e le variabili delle funzioni sono invisibili all’esterno, ma si
 scriverà un’istruzione del tipo: pippo = 7 + doppio(5)
@@ -285,8 +288,8 @@ scriverà un’istruzione del tipo: pippo = 7 + doppio(5)
 ::
 
 	def doppio(numero):
-		numero_per_due = numero * 2
-		return numero_per_due
+		numeroPerDue = numero * 2
+		return numeroPerDue
 
 ----
 
@@ -299,7 +302,7 @@ scriverà un’istruzione del tipo: pippo = 7 + doppio(5)
 	print ("Il risultato sarà: ", pippo)
 
 In sostanza tutto avviene come se il contenuto della scatola della funzione
-:blue:`numero_per_due` fosse trasferito nella scatola del programma principale :blue:`doppio`.
+:blue:`numeroPerDue` fosse trasferito nella scatola del programma principale :blue:`doppio`.
 
 |
 | :boltblue:`Funzioni che chiamano funzioni`
@@ -352,27 +355,27 @@ ad esempio, se a n attribuiamo il valore **7**:
 Scriviamo una funzione che consenta di calcolare l’area di un rettangolo:
 ::
 
-	def area_rettangolo (base, altezza):
+	def areaRettangolo (base, altezza):
 		return base * altezza
 
 Scriviamo una funzione che calcoli l’area di un cerchio di raggio r:
 
 ::
 
-	def area_cerchio (raggio):
+	def areaCerchio (raggio):
 		return 3.14 * raggio**2
 
 Utilizziamo ora le due funzioni che abbiamo scritto per calcolare l’area della figura azzurra:
 
-#programma che calcola l'area della figura azzurra
+programma che calcola l'area della figura azzurra
 ::
 
-	def area_rettangolo (base, altezza):
+	def areaRettangolo (base, altezza):
 		return base * altezza
-	def area_cerchio (raggio):
+	def areaCerchio (raggio):
 		return 3.14 * raggio**2
-	area_figura = area_rettangolo (3,2) + area_rettangolo(5,3) + 2 * area_cerchio(1)/2
-	print ("L'area della figura azzurra è ", area_figura)
+	areaFigura = areaRettangolo (3,2) + areaRettangolo(5,3) + 2 * areaCerchio(1)/2
+	print ("L'area della figura azzurra è ", areaFigura)
 
 **Quest’ultimo esempio mostra come calcolare la potenza di un numero elevato a un numero intero, usando una funzione definita da noi.**
 ::
@@ -386,12 +389,11 @@ Utilizziamo ora le due funzioni che abbiamo scritto per calcolare l’area della
 	esponente = int(input("Inserisci l'esponente "))
 	print (potenza(numero, esponente))
 
-|
-| :boltred:`ESERCIZI`
-|
+--------------------
+Esercitiamoci un po'
+--------------------
 
-
-1. Scrivi un programma utilizzando la funzione che chiede due numeri e poi li sommi tra loro.
+1. Scrivi un programma utilizzando la funzione che chieda due numeri e poi li sommi tra loro.
 
 .. activecode:: es1
 
@@ -447,6 +449,10 @@ Utilizziamo ora le due funzioni che abbiamo scritto per calcolare l’area della
 .. activecode:: es8
 
 ----
+
+------------------
+Il software libero
+------------------
 
 :boltred:`Per smaltire la fatica degli esercizi, facciamo una pausa.`
 

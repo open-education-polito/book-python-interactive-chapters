@@ -9,9 +9,9 @@ Terzo passo: Le Variabili
 Il modo più semplice per farsi consegnare una scatola dal calcolatore, darle un nome e riempirla con un numero                       
 e’ quello di scrivere una frase come la seguente, che è chiamata :boltred:`“ISTRUZIONE DI ASSEGNAZIONE”`: 
 
-:boltred:`SCATOLA1=7`
-Se la scatola di nome SCATOLA1 non è mai stata usata, Python crea una scatola nuova, la chiama SCATOLA1 e pone il numero 7 in quella scatola. 
-Se  invece la scatola di nome SCATOLA1 è già stata usata, Python toglie il suo vecchio contenuto e mette il numero 7 come suo nuovo contenuto.
+:boltred:`scatola1=7`
+Se la scatola di nome scatola1 non è mai stata usata, Python crea una scatola nuova, la chiama scatola1 e pone il numero 7 in quella scatola. 
+Se  invece la scatola di nome scatola1 è già stata usata, Python toglie il suo vecchio contenuto e mette il numero 7 come suo nuovo contenuto.
 
 La scatola rappresenta quella che i matematici chiamano **variabile**.
 Questo nome ci ricorda che il contenuto di una scatola può cambiare da un momento all’altro.
@@ -20,23 +20,23 @@ Il contenuto di una scatola può essere un numero, oppure un carattere o un mess
 L’istruzione di assegnazione contiene un ordine per il calcolatore e costituisce un nuovo esempio di “istruzione”, ovvero un’operazione che Python capisce ed e’ in grado di eseguire.
 L’istruzione di assegnazione e’ costituita dal nome della scatola seguito dal segno =. 
 
-   SCATOLA1 = 7
+   scatola1 = 7
  
-   SCATOLA2 = 3.14
+   scatola2 = 3.14
 
 In una scatola posso mettere numeri oppure messaggi compresi tra “….”
 
-SCATOLA3 = "come va?"
+scatola3 = "come va?"
 
 
 Osserva ancora: il simbolo :boltred:`=` non ha il significato matematico che conosci.
 
 Infatti, nell'istruzione di assegnazione :   
-SCATOLA1 = 7
+scatola1 = 7
 
 
 il simbolo :boltred:`=` significa:     
-**nella scatola di nome SCATOLA1 metti il numero 7**.   
+**nella scatola di nome scatola1 metti il numero 7**.   
 
 -----------
 
@@ -56,9 +56,9 @@ Uso di print
    :align: center
    :width: 100pt
 
-Se scriviamo **print(SCATOLA1)** il calcolatore:
+Se scriviamo **print(scatola1)** il calcolatore:
 
-• cerca la scatola indicata (in questo caso SCATOLA1)
+• cerca la scatola indicata (in questo caso scatola1)
 
 • la apre e ne legge il contenuto
 
@@ -82,17 +82,21 @@ Le parentesi che delimitano il nome della scatola sono obbligatorie.
 :blue:`Qualche esercizio per memorizzare:`
      
 - scrivi in Python questa istruzione per il calcolatore:
-  dammi la scatola GAIA3 e mettici dentro il numero 10
+  dammi la scatola gaia3 e mettici dentro il numero 10
 
 - Visualizza sul calcolatore il risultato di:
-  SCATOLA2 = 10-3
-  print (SCATOLA2)
 
-- SCATOLA3 = 7*4
-  print (SCATOLA3)
+  scatola2 = 10-3
 
-- SCATOLA4 = 20/2*5
-  print(SCATOLA4)
+  print (scatola2)
+
+- scatola3 = 7*4
+
+  print (scatola3)
+
+- scatola4 = 20/2*5
+
+  print (scatola4)
 
 ------------------------------------
 

@@ -22,26 +22,26 @@ Ovviamente dovremo scegliere dei nomi significativi per le nostre scatole per ri
 
 Ad esempio:
 
-- SCATOLA1
-- SCAT1
-- SAL1
-- SALAME
-- PIPPO
-- PIPPO4C
-- SCARPONIASI.
+- scatola1
+- scat1
+- sal1
+- salame
+- pippo
+- pippo4c
+- scarponiasi
 
 Sono validi anche nomi molto corti come:
 
-- A
-- B
-- C
-- A1
-- B3
+- a
+- b
+- c
+- a1
+- b3
 
 o lunghi come:
 
 |
-|	:red:`ILNOMEPIULUNGOCHEMIVIENEINMENTEPERILMIOCANE`
+|	:red:`ilnomepiulungochemivieneinmenteperilmiocane`
 |
 
 
@@ -124,9 +124,9 @@ Vediamo se hai capito:
    Puoi dare a una scatola il nome 10ART?
 
 .. mchoice:: question2
-   :answer_a: Cane_M_4
-   :answer_b: CaneM4
-   :answer_c: 4Cane_M
+   :answer_a: cane_m_4
+   :answer_b: canem4
+   :answer_c: 4cane_m
    :correct: c
    :feedback_c: Risposa corretta!
    :feedback_a: Risposta errata.
@@ -134,13 +134,15 @@ Vediamo se hai capito:
 
    Quale di questi nomi è sbagliato?
 
-.. shortanswer:: uniqueid
-   :optional:
 
-   Scrivi di seguito altri esempi inventati da te e controlla se il programma ti da’ errore o no:
+.. activecode:: esempi_scatole 
+   :coach:
+   :caption: Inventa degli esercizi 
 
-.. Esercizio da definire
-   
+   Scrivi altri esempi inventati da te e controlla se il programma da’ errore o no: 
+
+
+
 **Le nostre scatole sono state create per avere dei contenuti.**
 Dobbiamo fare attenzione a non confondere il nome della scatola con quello che mettiamo dentro alla scatola, il suo contenuto.
 

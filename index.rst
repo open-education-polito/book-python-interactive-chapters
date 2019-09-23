@@ -5,6 +5,7 @@ Impariamo a programmare in Python
 .. toctree::
   :maxdepth: 2
 
+  capitoli/Premessa.rst
   capitoli/Primo_Passo_Calcolatrice.rst
   capitoli/Secondo_Passo_Scatole.rst
   capitoli/Terzo_Passo_Variabili.rst

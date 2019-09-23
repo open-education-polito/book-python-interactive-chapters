@@ -94,8 +94,8 @@ Ad esempio:
 
 ::
 
-	SCATOLA1 = "scuola elementare"
-	print (SCATOLA1)
+	scatola1 = "scuola elementare"
+	print (scatola1)
 
 Il risultato sarà: :boltred:`scuola elementare`
 
@@ -103,8 +103,8 @@ Il risultato sarà: :boltred:`scuola elementare`
    :nocanvas:
    :language: python
    
-   SCATOLA1= "scuola elementare"
-   print (SCATOLA1)
+   scatola1= "scuola elementare"
+   print (scatola1)
 
 Prova ad eseguire i seguenti comandi facendo copia e incolla:
 
@@ -136,7 +136,7 @@ In questo caso ci sono le virgolette e il calcolatore riceve l’istruzione di v
    :nocanvas:
    :language: python
    
-   print ("MATEMATICA")
+   print ("8+4")
 
 Scrivendo invece:
 
@@ -328,9 +328,9 @@ Ad esempio:
 
 ::
 
-	SCATOLA1 = "casa "
-	SCATOLA2= "dolce casa"
-	print (SCATOLA1 + SCATOLA2)
+	scatola1 = "casa "
+	scatola2= "dolce casa"
+	print (scatola1 + scatola2)
 
 :blue:`*casa dolce casa*`
 
@@ -338,9 +338,9 @@ Ad esempio:
    :nocanvas:
    :language: python
    
-   SCATOLA1 = "casa "
-   SCATOLA2= "dolce casa"
-   print (SCATOLA1 + SCATOLA2)
+   scatola1 = "casa "
+   scatola2= "dolce casa"
+   print (scatola1 + scatola2)
 
 Le operazioni possono anche essere combinate tra loro nella stessa istruzione.
 
@@ -359,11 +359,14 @@ ad esempio:
 ------------
 
 :blue:`Esercitiamoci un po’`
+::::::::::::::::::::::::::::
 
 1. Scrivi le istruzioni necessarie per far comparire sul video la scritta:
 
-	Cinque per tre e' uguale a 15.
-	(Puoi ottenere questo risultato con o senza scatole, ossia le variabili. Trova le varie soluzioni).
+ Cinque per tre e' uguale a 15.
+ (Puoi ottenere questo risultato con o senza scatole, ossia le variabili. Trova le varie soluzioni).
+
+|
 
 2. Scrivi tutte le sequenze di istruzioni possibili per visualizzare il messaggio “Buon Compleanno” cinque volte.
        
@@ -435,4 +438,4 @@ e poi scrivine uno tu, inventando un nuovo disegno.
 
 .. activecode:: esercizi2
    :nocanvas:
-   :language: python
+   :language: python    
