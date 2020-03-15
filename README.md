@@ -8,6 +8,9 @@ OEP Python interactive book.
 This repo contains the RST sources of the book. Such sources will have to be
 compiled inside a proper runestone instance. 
 
+## Website
+The book is published [here](https://openeducation.polito.it/libro/).
+
 # Flow
 This repo, as cited before, is just a part of the whole infrastructure.
 In order to be up and running, it is necessary to follow the following flow:
