@@ -5,12 +5,12 @@ Terzo passo: Le Variabili
 .. role:: boltred
 
 .. role:: blue
-                             
-Il modo più semplice per farsi consegnare una scatola dal calcolatore, darle un nome e riempirla con un numero                       
-e’ quello di scrivere una frase come la seguente, che è chiamata :boltred:`“ISTRUZIONE DI ASSEGNAZIONE”`: 
+
+Il modo più semplice per farsi consegnare una scatola dal calcolatore, darle un nome e riempirla con un numero
+e’ quello di scrivere una frase come la seguente, che è chiamata :boltred:`“ISTRUZIONE DI ASSEGNAZIONE”`:
 
 :boltred:`scatola1=7`
-Se la scatola di nome scatola1 non è mai stata usata, Python crea una scatola nuova, la chiama scatola1 e pone il numero 7 in quella scatola. 
+Se la scatola di nome scatola1 non è mai stata usata, Python crea una scatola nuova, la chiama scatola1 e pone il numero 7 in quella scatola.
 Se  invece la scatola di nome scatola1 è già stata usata, Python toglie il suo vecchio contenuto e mette il numero 7 come suo nuovo contenuto.
 
 La scatola rappresenta quella che i matematici chiamano **variabile**.
@@ -18,10 +18,10 @@ Questo nome ci ricorda che il contenuto di una scatola può cambiare da un momen
 Ad essa e’ possibile assegnare un valore con l’istruzione di assegnazione.
 Il contenuto di una scatola può essere un numero, oppure un carattere o un messaggio (ossia una sequenza di caratteri).
 L’istruzione di assegnazione contiene un ordine per il calcolatore e costituisce un nuovo esempio di “istruzione”, ovvero un’operazione che Python capisce ed e’ in grado di eseguire.
-L’istruzione di assegnazione e’ costituita dal nome della scatola seguito dal segno =. 
+L’istruzione di assegnazione e’ costituita dal nome della scatola seguito dal segno =.
 
    scatola1 = 7
- 
+
    scatola2 = 3.14
 
 In una scatola posso mettere numeri oppure messaggi compresi tra “….”
@@ -31,26 +31,26 @@ scatola3 = "come va?"
 
 Osserva ancora: il simbolo :boltred:`=` non ha il significato matematico che conosci.
 
-Infatti, nell'istruzione di assegnazione :   
+Infatti, nell'istruzione di assegnazione :
 scatola1 = 7
 
 
-il simbolo :boltred:`=` significa:     
-**nella scatola di nome scatola1 metti il numero 7**.   
+il simbolo :boltred:`=` significa:
+**nella scatola di nome scatola1 metti il numero 7**.
 
 -----------
 
 **DOMANDA**
 
 *Come fa il calcolatore a riempire una scatola con un numero e a farci vedere il suo contenuto?*
-*RISPOSTA* 
- 
+*RISPOSTA*
+
 
 Uso di print
 :::::::::::::
 
-**Con l’ istruzione di stampa** :boltred:`print` **possiamo ordinare al calcolatore** **di comunicare** **il contenuto di una** 
-**scatola**.                                                                                                                                                                                 
+**Con l’ istruzione di stampa** :boltred:`print` **possiamo ordinare al calcolatore** **di comunicare** **il contenuto di una**
+**scatola**.
 
 .. image:: images/vignetta.png
    :align: center
@@ -69,18 +69,18 @@ Facciamo un esempio:
 .. activecode:: Print
    :coach:
    :caption: Usare print
-    
+
    scatola1 = 8+4
    print (scatola1)
 
 Dopo l’ordine di esecuzione, sul video comparirà il risultato dell'addizione: 12
 
-Il nome dell’istruzione “print” deve essere sempre scritto 
+Il nome dell’istruzione “print” deve essere sempre scritto
 minuscolo.
 Le parentesi che delimitano il nome della scatola sono obbligatorie.
 
 :blue:`Qualche esercizio per memorizzare:`
-     
+
 - scrivi in Python questa istruzione per il calcolatore:
   dammi la scatola gaia3 e mettici dentro il numero 10
 
@@ -101,17 +101,17 @@ Le parentesi che delimitano il nome della scatola sono obbligatorie.
 ------------------------------------
 
 **FACCIAMO UNA BREVE INTERRUZIONE.**
- 
+
 VOGLIAMO RACCONTARTI LA STORIA DI PYTHON.
 
 Il suo inventore è un geniale signore olandese: :boltred:`Guido Van Rossum`.
 
 Nel Natale del 1989 Guido decise di passare le vacanze scrivendo un linguaggio di programmazione per il calcolatore che correggesse i difetti che, secondo lui, erano presenti in altri linguaggi. E così fece, creando uno tra i linguaggi di programmazione più moderni e diffusi nel mondo.
-Dopo di lui moltissimi altri sviluppatori hanno proseguito ed ampliato il suo lavoro. 
+Dopo di lui moltissimi altri sviluppatori hanno proseguito ed ampliato il suo lavoro.
 
 A Guido piaceva tantissimo un gruppo di comici inglesi famosi negli anni sessanta del secolo ‘900: i Monty Python. A loro e alla loro comicità un po’ demenziale ha dedicato il suo lavoro. Niente a che vedere, quindi, con il nostro simpatico pitone verde.
 
-Evidentemente i Monty Python dovevano piacere anche a molti altri nell’ambiente, perché non è l’unica volta che questi comici hanno dato il nome a qualcosa di informatico. 
+Evidentemente i Monty Python dovevano piacere anche a molti altri nell’ambiente, perché non è l’unica volta che questi comici hanno dato il nome a qualcosa di informatico.
 Ad esempio, il termine “spam”, che viene utilizzato per indicare la posta elettronica indesiderata, deriva da un loro sketch, in cui compariva un ristorante nel cui menù erano inseriti tutti piatti ricoperti di spam, un tipo di carne macinata in scatola, particolarmente disgustosa.
 
 Guido, dopo tanta fatica, ha deciso di donare a tutti il suo lavoro, così oggi noi possiamo disporre liberamente e gratuitamente di questo linguaggio. Un regalo di Natale molto speciale.
@@ -141,4 +141,3 @@ In base a quanto hai imparato sin qui, crea semplici programmi secondo le istruz
 .. activecode:: esercizi_es2
    :nocanvas:
    :language: python
-

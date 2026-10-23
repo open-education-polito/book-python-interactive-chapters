@@ -23,10 +23,10 @@ Ad esempio:
 
 ::
 
-	num = 3 	
-	print (num) 	
-	num = 9
-	print (num)
+    num = 3
+    print (num)
+    num = 9
+    print (num)
 
 Il risultato di questo programma è  3  9, perché la prima volta che num è stampato il suo valore è 3, la seconda 9.
 
@@ -40,12 +40,12 @@ Prova a eseguire il seguente programma e analizza cosa succede.
 .. activecode:: esempio_ciclo1
    :nocanvas:
 
-   a = 1 
+   a = 1
    while a < 4 :
-   	print (a)
-   	a = a + 1
+       print (a)
+       a = a + 1
 
-Prova a leggere il programma con l'istruzione while come fosse scritto in un linguaggio naturale (while significa: finchè, fino a quando, fintantoche`). Otterrai:
+Prova a leggere il programma con l'istruzione while come fosse scritto in un linguaggio naturale (while significa: finché, fino a quando, fintantoché`). Otterrai:
 "Finché (while) a è minore di 4 stampa il valore di a e poi aumentalo di 1. Quando arrivi a 4 esci perché  a deve essere minore di 4”.
 
 Se non ci riesci prosegui a leggere: troverai i due programmi analizzati in dettaglio più avanti.
@@ -63,20 +63,20 @@ Tralasciamo per un attimo il ciclo for, che studieremo nel prossimo step, per im
 
 ::
 
-	while <relazione> :
+    while <relazione> :
 
-Riprendiamo ora il semplice programmino di prima:	
+Riprendiamo ora il semplice programmino di prima:
 
 ::
 
-	a = 1 
-	while a < 4 :
-		print (a)
-		a = a + 1	
+    a = 1
+    while a < 4 :
+        print (a)
+        a = a + 1
 
-Avete visto che il programma visualizza: 
+Avete visto che il programma visualizza:
 
-| 1     
+| 1
 | 2
 | 3
 
@@ -96,10 +96,10 @@ Nel nostro caso il programma esegue le istruzioni:
 
 ::
 
-	print (a)
-	a = a + 1
+    print (a)
+    a = a + 1
 
-tre volte, cioè finchè a è minore di 4.
+tre volte, cioè finché a è minore di 4.
 
 --------
 
@@ -109,12 +109,12 @@ Ecco in dettaglio quello che succede in quelle tre volte:
 
 ::
 
-	a vale 1
-	La relazione a < 4 è soddisfatta
-	Il programma esegue prima print a
-	e visualizza 1
-	poi esegue a = a + 1
-	e pone il valore 2 nella scatola a
+    a vale 1
+    La relazione a < 4 è soddisfatta
+    Il programma esegue prima print a
+    e visualizza 1
+    poi esegue a = a + 1
+    e pone il valore 2 nella scatola a
 
 .. image:: ../images/scatolone.png
    :width: 100px
@@ -124,11 +124,11 @@ Ecco in dettaglio quello che succede in quelle tre volte:
 
 ::
 
-	a vale 2
-	a < 4 è ancora soddisfatta
-	Il programma esegue print a e visualizza il valore di a,
-	cioè 2 e
-	pone il valore 2 + 1 = 3 nella scatola a
+    a vale 2
+    a < 4 è ancora soddisfatta
+    Il programma esegue print a e visualizza il valore di a,
+    cioè 2 e
+    pone il valore 2 + 1 = 3 nella scatola a
 
 .. image:: ../images/scatolone1.png
    :width: 100px
@@ -138,10 +138,10 @@ Ecco in dettaglio quello che succede in quelle tre volte:
 
 ::
 
-	a vale 3
-	a < 4 è soddisfatta
-	Il programma visualizza il valore di a, cioè 3,
-	ed esegue a = a + 1 ponendo 4 nella scatola a.
+    a vale 3
+    a < 4 è soddisfatta
+    Il programma visualizza il valore di a, cioè 3,
+    ed esegue a = a + 1 ponendo 4 nella scatola a.
 
 .. image:: ../images/scatolone2.png
    :width: 100px
@@ -151,14 +151,14 @@ Ecco in dettaglio quello che succede in quelle tre volte:
 
 ::
 
-	a vale 4
-	Il programma esce dal ciclo.
+    a vale 4
+    Il programma esce dal ciclo.
 
 **Nota bene: Tutte le istruzioni che seguono la**
 
 ::
 
-	while <relazione>
+    while <relazione>
 
 **devono essere indentate se fanno parte delle cose da fare quando <relazione> è soddisfatta.**
 
@@ -175,17 +175,17 @@ Esercitiamoci un po’
 
 ::
 
-	a = 1
-	while a < 5 :
-		a = a + 1
+    a = 1
+    while a < 5 :
+        a = a + 1
 
 **Programma 2**
 
 ::
 
-	a = 1
-	while a < 10 :
-		a = a + 1
+    a = 1
+    while a < 10 :
+        a = a + 1
 
 .. activecode:: esercizio_ciclo
    :nocanvas:
@@ -207,8 +207,8 @@ Esercitiamoci un po’
 
 ::
 
-	while a < 100:
-		a = a + 1
+    while a < 100:
+        a = a + 1
 
 *in un decimo di milionesimo di secondo.*
 
@@ -218,10 +218,10 @@ Visualizza tutti i numeri compresi fra 3 e 9.
 
 ::
 
-	i = 3
-	while i <= 9 :
-		print (i)
-		i = i + 1
+    i = 3
+    while i <= 9 :
+        print (i)
+        i = i + 1
 
 --------
 
@@ -229,10 +229,10 @@ Visualizza tutti i numeri compresi fra 0 e 20.
 
 ::
 
-	i = 0
-	while i <= 20 :
-		print (i)
-		i = i + 1
+    i = 0
+    while i <= 20 :
+        print (i)
+        i = i + 1
 
 --------
 
@@ -240,10 +240,10 @@ Visualizza in ordine decrescente i numeri da 20 a 10.
 
 ::
 
-	i = 20
-	while i >= 10 :
-		print (i)
-		i = i - 1
+    i = 20
+    while i >= 10 :
+        print (i)
+        i = i - 1
 
 --------
 
@@ -251,25 +251,25 @@ Scrivi il programma "Conto alla rovescia" che: finché (while) n è più grande 
 
 ::
 
-	n = 10
-	while n > 0 :
-		print (n)
-		n = n - 1
-	print ("Pronti ...VIA!")
+    n = 10
+    while n > 0 :
+        print (n)
+        n = n - 1
+    print ("Pronti ...VIA!")
 
 --------
 
 *Eseguendo il programma precedente, scopri che la visualizzazione dei numeri è troppo veloce. Come fai per rallentarla? (la soluzione l’hai già trovata in questo STEP!)*
 
-| Scrivi un programma che attende finchè non viene inserita la password corretta. 
-| (La password la decidi tu, ad es. “chicchiricchi”).  
+| Scrivi un programma che attende finché non viene inserita la password corretta.
+| (La password la decidi tu, ad es. “chicchiricchi”).
 
 ::
 
-	password = "python"
-	while password != "chicchiricchi":
-		password = input ("Password:")
-	print ("Entra pure")
+    password = "python"
+    while password != "chicchiricchi":
+        password = input ("Password:")
+    print ("Entra pure")
 
 .. image:: ../images/vignetta.png
    :width: 150px
@@ -281,10 +281,10 @@ Visualizza tutti i numeri dispari compresi fra 1 e 100.
 
 ::
 
-	i = 1
-	while i < 100 :
-		print (i)
-		i = i + 2
+    i = 1
+    while i < 100 :
+        print (i)
+        i = i + 2
 
 .. activecode:: esercizio_ciclo1
    :nocanvas:
@@ -296,26 +296,26 @@ Visualizza tutti i numeri dispari compresi fra 1 e 100.
 
 ::
 
-	i = 1
-	n = int(input ("qual è il numero di cui vuoi trovare i divisori? "))
-	print (n, " è divisibile per ") 
-	while i < n :
-		if n % i == 0 :
-			print (i)
-		i = i + 1
+    i = 1
+    n = int(input ("qual è il numero di cui vuoi trovare i divisori? "))
+    print (n, " è divisibile per ")
+    while i < n :
+        if n % i == 0 :
+            print (i)
+        i = i + 1
 
 ``***`` Scrivi un programma che chieda il risultato dell'operazione 15 x 17 tante volte sino a quando non viene indicata la soluzione corretta. (Se non riesci, la soluzione è illustrata nelle pagine seguenti)
 
 ::
 
-	corretto = "no"
-	while corretto == "no":
-		risposta = float(input ("quanto vale 15 x 17? "))
-		if risposta == 15 * 17:
-	        	corretto = "si"
-        		print ("Bravo!")
-    		else:
-			corretto = "no"
+    corretto = "no"
+    while corretto == "no":
+        risposta = float(input ("quanto vale 15 x 17? "))
+        if risposta == 15 * 17:
+                corretto = "si"
+                        print ("Bravo!")
+                else:
+            corretto = "no"
 
 Seconda parte: i cicli annidati
 :::::::::::::::::::::::::::::::
@@ -329,22 +329,22 @@ Per rallentarlo introduciamo il programma che abbiamo già scritto e che serviva
 
 ::
 
-	a = 1
-	while a < 100 :
-		a = a+1
+    a = 1
+    while a < 100 :
+        a = a+1
 
 e nella relazione da verificare decidiamo quanto aspettare. La soluzione che conta lentamente non è altro che la fusione dei due programmi.
 
 ::
 
-	n = 10
-	while n > 0 :
-		print (n)
-		a = 1
-		while a < 1000000 :
-			a = a + 1
-		n = n - 1
-	print ("Pronti ...VIA!")
+    n = 10
+    while n > 0 :
+        print (n)
+        a = 1
+        while a < 1000000 :
+            a = a + 1
+        n = n - 1
+    print ("Pronti ...VIA!")
 
 .. activecode:: esercizio_tempo
    :nocanvas:
@@ -352,11 +352,11 @@ e nella relazione da verificare decidiamo quanto aspettare. La soluzione che con
 
    n = 10
    while n > 0 :
-   	print (n)
-   	a = 1
-	while a < 1000 :
-		a = a + 1
-	n = n - 1
+       print (n)
+       a = 1
+       while a < 1000 :
+           a = a + 1
+       n = n - 1
    print ("Pronti ...VIA!")
 
 Nota bene: Quest'ultimo programma contiene due cicli while, di cui il secondo, quello introdotto per "perdere tempo", è :boltred:`ANNIDATO` entro il primo.
@@ -374,26 +374,26 @@ Nota bene: Quest'ultimo programma contiene due cicli while, di cui il secondo, q
 
 ::
 
-	i = 1
-	n = int(input ("qual è il numero di cui vuoi trovare i divisori? "))
-	print (n, " è divisibile per ") 
-	while i < n :
-		if n % i == 0 :
-			print (i)
-		i = i + 1
+    i = 1
+    n = int(input ("qual è il numero di cui vuoi trovare i divisori? "))
+    print (n, " è divisibile per ")
+    while i < n :
+        if n % i == 0 :
+            print (i)
+        i = i + 1
 
 Nel secondo la if annidata è più complessa:
 
 ::
 
-	corretto = "no"
-	while corretto == "no":
-		risposta = float(input ("quanto vale 15 x 17? "))
-		if risposta == 15*17:
-	        	corretto = "si"
-        		print ("Bravo!")
-    		else:
-			corretto = "no"
+    corretto = "no"
+    while corretto == "no":
+        risposta = float(input ("quanto vale 15 x 17? "))
+        if risposta == 15*17:
+                corretto = "si"
+                        print ("Bravo!")
+                else:
+            corretto = "no"
 
 Fai attenzione  all'indentazione con cui sono scritte le istruzioni perché è fondamentale per avere un'esecuzione corretta del programma!
 
@@ -404,13 +404,13 @@ Scrivi un programma per stampare il quadrato e il cubo dei numeri da 1 a 10.
 
 ::
 
-	i = 1
-	while i <= 10 :
-		e = 2
-		while e <= 3 :
-			print (i ** e)
-			e = e + 1
-		i = i + 1
+    i = 1
+    while i <= 10 :
+        e = 2
+        while e <= 3 :
+            print (i ** e)
+            e = e + 1
+        i = i + 1
 
 --------
 
@@ -418,15 +418,15 @@ Scrivi un programma che chiede una sequenza di numeri da aggiungere ad una somma
 
 ::
 
-	a = 1
-	somma = 0
-	print ('Inserisci i numeri da aggiungere alla somma ')
-	print ('Quando hai finito inserisci 0')
-	while a != 0 :
-	        print ('La somma è:', somma)
-	        a = float(input('Numero? '))
-	        somma = somma + a
-	print ('Totale =',somma)
+    a = 1
+    somma = 0
+    print ('Inserisci i numeri da aggiungere alla somma ')
+    print ('Quando hai finito inserisci 0')
+    while a != 0 :
+            print ('La somma è:', somma)
+            a = float(input('Numero? '))
+            somma = somma + a
+    print ('Totale =',somma)
 
 --------
 
@@ -437,14 +437,14 @@ Scrivi un programma per stampare la Tavola Pitagorica.
 
 ::
 
-	print (" TAVOLA PITAGORICA")
-	riga = 1
-	while riga <= 10 :
-		colonna = 1
-    		while colonna <= 10 :
-        		print ('\t', riga * colonna) 
-       			colonna = colonna + 1
-    		riga = riga + 1
+    print (" TAVOLA PITAGORICA")
+    riga = 1
+    while riga <= 10 :
+        colonna = 1
+                while colonna <= 10 :
+                        print ('\t', riga * colonna)
+                        colonna = colonna + 1
+                riga = riga + 1
 
 --------
 
@@ -452,15 +452,15 @@ Indovina un numero! Scrivi un programma per indovinare un  numero
 
 ::
 
-	numero = 27
-	indovina = 0
-	while indovina != numero : 
-		indovina = float(input ("Indovina un numero: "))
-		if indovina > numero:
-		        print ("Troppo grande")
-		if indovina < numero :
-           		print ("Troppo piccolo")
-	print ("BRAVO!!")
+    numero = 27
+    indovina = 0
+    while indovina != numero :
+        indovina = float(input ("Indovina un numero: "))
+        if indovina > numero:
+                print ("Troppo grande")
+        if indovina < numero :
+                        print ("Troppo piccolo")
+    print ("BRAVO!!")
 
 --------
 
@@ -470,25 +470,25 @@ Indovina un numero! Scrivi un programma per indovinare un  numero
 
 --------
 
-Se non sei riuscito a stampare in maniera ordinata le colonne? 
+Se non sei riuscito a stampare in maniera ordinata le colonne?
 
-Nessun problema. 
+Nessun problema.
 
 Adesso ti spiego un “trucco” per formattare le stampe.
 
-Il carattere di backslash '\' (barra inlinata rovesciata) indica l'inizio di quella che viene chiamata una **sequenza di escape**.
+Il carattere di backslash '\' (barra inclinata rovesciata) indica l'inizio di quella che viene chiamata una **sequenza di escape**.
 Le sequenze di escape sono usate per rappresentare caratteri *speciali* e invisibili  come la tabulazione ('\t') e il ritorno a capo ('\n') e possono comparire in qualsiasi punto di una stringa.
 Prova ad esempio a stampare una stringa unica che produca questo risultato:
 
 ::
 
-	vengo
-		subito
-			a casa
+    vengo
+        subito
+            a casa
 
 ::
 
-	print ("vengo \n \t subito \n \t \t a casa")
+    print ("vengo \n \t subito \n \t \t a casa")
 
 
 ...ancora sulle stringhe
@@ -507,7 +507,7 @@ invece
 
 Che cosa hanno di diverso le stringhe dagli altri tipi di dati (interi, floating point)?
 
-Le stringhe sono qualitativamente diverse dagli altri tipi di dati perchè sono composte di unità più piccole: i caratteri. Per questo le stringhe sono dati "composti" in alternativa ai dati "semplici" che sono gli interi e i floating point.
+Le stringhe sono qualitativamente diverse dagli altri tipi di dati perché sono composte di unità più piccole: i caratteri. Per questo le stringhe sono dati "composti" in alternativa ai dati "semplici" che sono gli interi e i floating point.
 
 Questo ci consente di trattare una stringa come fosse una singola entità oppure di agire sulle sue singole parti (i caratteri) a seconda di ciò che stiamo facendo. Come si fa ad agire sui singoli caratteri?
 
@@ -515,10 +515,10 @@ Secondo te quale sarà il risultato di questo programma?
 
 ::
 
-	squadra = "Juventus"
-	messaggio = squadra[0] + squadra [1] + squadra [2] + squadra [3] + squadra [4] + squadra [5] + squadra [6] + squadra [7]
-	print (squadra)
-	print (messaggio)
+    squadra = "Juventus"
+    messaggio = squadra[0] + squadra [1] + squadra [2] + squadra [3] + squadra [4] + squadra [5] + squadra [6] + squadra [7]
+    print (squadra)
+    print (messaggio)
 
 | Come si individuano i singoli caratteri.
 | Nella variabile squadra abbiamo messo la stringa tutta intera mentre nella variabile messaggio l'abbiamo inserita un carattere per volta. squadra[i] e` una stringa fatta di un solo carattere e non e` altro che il carattere di Juventus che occupa la posizione i + 1.
@@ -527,7 +527,7 @@ L'espressione tra parentesi quadrate seleziona i caratteri della stringa.  Quind
 
 Ricordati che i calcolatori iniziano sempre a contare da 0.
 
-L'espressione tra parentesi quadrate è chiamata indice. 
+L'espressione tra parentesi quadrate è chiamata indice.
 
 Un indice individua un particolare elemento di una stringa e può essere una qualsiasi espressione intera.
 
@@ -547,4 +547,3 @@ Cosa otterrai eseguendo il seguente programma?
    messaggio = "VIVA" + " " + squadra[0] + squadra[1] + squadra[2] + squadra[3]
    print (squadra)
    print (messaggio)
-

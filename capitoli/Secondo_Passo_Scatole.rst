@@ -14,8 +14,8 @@ Le scatole vengono usate per contenere numeri, caratteri, parole o frasi.
 .. image:: images/scatole.png
    :align: center
 
-Le nostre scatole sono del tutto simili a quelle che vediamo nella figura. 
-Ogni scatola  che noi creiamo deve avere un nome. 
+Le nostre scatole sono del tutto simili a quelle che vediamo nella figura.
+Ogni scatola  che noi creiamo deve avere un nome.
 Il nome che assegniamo alla scatola  è l'equivalente dell'etichetta sulla scatola.
 
 Ovviamente dovremo scegliere dei nomi significativi per le nostre scatole per ricordarci a cosa servono.
@@ -41,7 +41,7 @@ Sono validi anche nomi molto corti come:
 o lunghi come:
 
 |
-|	:red:`ilnomepiulungochemivieneinmenteperilmiocane`
+|       :red:`ilnomepiulungochemivieneinmenteperilmiocane`
 |
 
 
@@ -88,7 +88,7 @@ Non e' possibile invece “battezzare” la  nostra scatola  con nomi come 1A, 3
 | :boltred:`SyntaxError: invalid syntax`
 |
 
-*Come mai?* 
+*Come mai?*
 *Il nome 76strumenti e' illegale perché non inizia con una lettera, milione$ e' illegale perché contiene un carattere proibito, il $, lambda e' illegale perché è una delle parole riservate di Python.*
 
 :boltred:`Tutti i linguaggi di programmazione hanno alcune parole riservate` *che non possono essere usate come nomi delle scatole.*
@@ -96,19 +96,19 @@ Non e' possibile invece “battezzare” la  nostra scatola  con nomi come 1A, 3
 **Le parole riservate di Phython sono 28 e sono le seguenti:**
 
 +------------+------------+------------+------------+
-|And	     |continue	  |else	       |for	    |
+|And         |continue    |else        |for         |
 +------------+------------+------------+------------+
-|import      |not	  |raise       |assert      |
+|import      |not         |raise       |assert      |
 +------------+------------+------------+------------+
-|Def	     |except	  |from	       |in          |
+|Def         |except      |from        |in          |
 +------------+------------+------------+------------+
-|Or          |return	  |break       |del         |
+|Or          |return      |break       |del         |
 +------------+------------+------------+------------+
-|Exec        |global	  |is          |pass        |
+|Exec        |global      |is          |pass        |
 +------------+------------+------------+------------+
-|Try         |class	  |elif        |finally     |
+|Try         |class       |elif        |finally     |
 +------------+------------+------------+------------+
-|If          |lambda	  |print       |while       |
+|If          |lambda      |print       |while       |
 +------------+------------+------------+------------+
 
 Vediamo se hai capito:
@@ -128,18 +128,18 @@ Vediamo se hai capito:
    :answer_b: canem4
    :answer_c: 4cane_m
    :correct: c
-   :feedback_c: Risposa corretta!
+   :feedback_c: Risposta corretta!
    :feedback_a: Risposta errata.
    :feedback_b: Risposta errata.
 
    Quale di questi nomi è sbagliato?
 
 
-.. activecode:: esempi_scatole 
+.. activecode:: esempi_scatole
    :coach:
-   :caption: Inventa degli esercizi 
+   :caption: Inventa degli esercizi
 
-   Scrivi altri esempi inventati da te e controlla se il programma da’ errore o no: 
+   Scrivi altri esempi inventati da te e controlla se il programma da’ errore o no:
 
 
 
@@ -157,7 +157,7 @@ ad esempio
 
 ::
 
-	print (scatola1)
+    print (scatola1)
 
 
 Per ricordare meglio la **differenza fra nome e contenuto di una scatola**, immaginiamo di aver scritto il nome della scatola con un pennarello indelebile sulla scatola stessa e che il contenuto sia stato scritto su un foglietto che in qualunque momento può essere tolto dalla scatola e sostituito con un altro foglietto.

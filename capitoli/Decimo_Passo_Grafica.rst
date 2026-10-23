@@ -95,4 +95,3 @@ In conclusione, potresti produrre un disegno sul video scrivendo un programma fa
 Fortunatamente altri programmatori prima di te hanno scritto delle funzioni che ti consentono di disegnare parti di un disegno con uno sforzo molto piccolo.
 
 Queste funzioni sono state raccolte in un "modulo", che è appunto un insieme di funzioni che il programma principale potrà richiamare quando ne ha bisogno.
-
