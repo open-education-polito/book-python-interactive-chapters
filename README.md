@@ -1,4 +1,4 @@
-![CircleCI](https://img.shields.io/circleci/build/github/open-education-polito/python-interactive-book-chapters.svg)
+![Build](https://github.com/open-education-polito/python-interactive-book-chapters/actions/workflows/build-deploy.yml/badge.svg)
 ![GitHub](https://img.shields.io/github/license/open-education-polito/python-interactive-book-chapters.svg)
 ![GitHub
 issues](https://img.shields.io/github/issues/open-education-polito/python-interactive-book-chapters.svg)
@@ -17,6 +17,12 @@ they have to be built with the
 [template repo](https://github.com/open-education-polito/python-interactive-book-template),
 which holds the Runestone configuration (`conf.py`, `pavement.py`) and the
 list of Python dependencies (`requirements.txt`).
+
+# Deploy
+The workflow `.github/workflows/build-deploy.yml` builds the book on every
+push and pull request. On every push to `master` it also publishes the result
+with rsync. It needs these repository secrets: `SSH_PRIVATE_KEY`, `SSH_HOST`,
+`SSH_PORT` and `SSH_USER`.
 
 # How to test locally
 You need Python 3.9 or newer.
