@@ -1,23 +1,15 @@
 Ottavo passo: i Cicli
 =====================
 
-.. role:: red
-
-.. role:: boltred
-
-.. role:: blue
-
-.. role:: boltblue
-
 Impariamo insieme a:
 
  • ad usare i cicli "loop"
  • a creare cicli annidati
- • quando è opportuno utilizzare l'istruzione while
- • oppure usare l'istruzione for
+ • quando è opportuno utilizzare l’istruzione while
+ • oppure usare l’istruzione for
  • a conoscere e utilizzare meglio le stringhe
 
-Come già sai è possibile assegnare più valori ad una stessa variabile, con la variabile che assume sempre l'ultimo valore assegnato.
+Come già sai è possibile assegnare più valori ad una stessa variabile, con la variabile che assume sempre l’ultimo valore assegnato.
 
 Ad esempio:
 
@@ -45,7 +37,7 @@ Prova a eseguire il seguente programma e analizza cosa succede.
        print (a)
        a = a + 1
 
-Prova a leggere il programma con l'istruzione while come fosse scritto in un linguaggio naturale (while significa: finché, fino a quando, fintantoché`). Otterrai:
+Prova a leggere il programma con l’istruzione while come fosse scritto in un linguaggio naturale (while significa: finché, fino a quando, fintantoché`). Otterrai:
 "Finché (while) a è minore di 4 stampa il valore di a e poi aumentalo di 1. Quando arrivi a 4 esci perché  a deve essere minore di 4”.
 
 Se non ci riesci prosegui a leggere: troverai i due programmi analizzati in dettaglio più avanti.
@@ -54,10 +46,10 @@ Se non ci riesci prosegui a leggere: troverai i due programmi analizzati in dett
 
 Come hai capito questo comando viene usato per eseguire le azioni ripetitive e i computer sono bravissimi a ripetere le azioni tante volte. Per risolvere questo tipo di problema si usano i “cicli” o “loop”.
 
-:boltblue:`Ci sono due tipi di "cicli"` e tra i due c'è una differenza molto importante.
-Il primo, chiamato :boltblue:`while`, viene usato quando non si sa prima quante volte deve ripetere l'azione.
+:boltblue:`Ci sono due tipi di "cicli"` e tra i due c’è una differenza molto importante.
+Il primo, chiamato :boltblue:`while`, viene usato quando non si sa prima quante volte deve ripetere l’azione.
 
-Il secondo, chiamato :boltblue:`for`, è usato quando si sa in anticipo quante volte dovrà ripetere l'azione.
+Il secondo, chiamato :boltblue:`for`, è usato quando si sa in anticipo quante volte dovrà ripetere l’azione.
 
 Tralasciamo per un attimo il ciclo for, che studieremo nel prossimo step, per imparare bene ad utilizzare:
 
@@ -86,10 +78,10 @@ L’istruzione  :boltred:`while`:  significa: **"fai tutto quello che segue fint
 
 **I due punti sono obbligatori.**
 
-:boltblue:`In modo più formale ecco il flusso di esecuzione di un'istruzione while:`
+:boltblue:`In modo più formale ecco il flusso di esecuzione di un’istruzione while:`
 
  1. :blue:`Valuta la condizione controllando se essa è vera o falsa.`
- 2. :blue:`Se la condizione è falsa esci dal ciclo while e continua l'esecuzione dalla  prima istruzione che lo segue.`
+ 2. :blue:`Se la condizione è falsa esci dal ciclo while e continua l’esecuzione dalla  prima istruzione che lo segue.`
  3. :blue:`Se la condizione è vera esegui tutte le istruzioni nel corpo del while e torna al passo 1.`
 
 Nel nostro caso il programma esegue le istruzioni:
@@ -116,7 +108,8 @@ Ecco in dettaglio quello che succede in quelle tre volte:
     poi esegue a = a + 1
     e pone il valore 2 nella scatola a
 
-.. image:: ../images/scatolone.png
+.. image:: images/scatolone.png
+   :alt: Scatolone con dentro il numero 2
    :width: 100px
    :align: center
 
@@ -130,7 +123,8 @@ Ecco in dettaglio quello che succede in quelle tre volte:
     cioè 2 e
     pone il valore 2 + 1 = 3 nella scatola a
 
-.. image:: ../images/scatolone1.png
+.. image:: images/scatolone1.png
+   :alt: Scatolone con dentro il numero 3
    :width: 100px
    :align: center
 
@@ -143,7 +137,8 @@ Ecco in dettaglio quello che succede in quelle tre volte:
     Il programma visualizza il valore di a, cioè 3,
     ed esegue a = a + 1 ponendo 4 nella scatola a.
 
-.. image:: ../images/scatolone2.png
+.. image:: images/scatolone2.png
+   :alt: Scatolone con dentro il numero 4
    :width: 100px
    :align: center
 
@@ -164,7 +159,7 @@ Ecco in dettaglio quello che succede in quelle tre volte:
 
 Se la condizione è falsa al primo controllo, le istruzioni del corpo non saranno mai eseguite.
 
-Il corpo del ciclo dovrebbe cambiare il valore di una o più variabili così che la condizione possa prima o poi diventare falsa e far così terminare il ciclo. In caso contrario il ciclo si ripeterebbe all'infinito e il calcolatore non si fermerebbe mai.
+Il corpo del ciclo dovrebbe cambiare il valore di una o più variabili così che la condizione possa prima o poi diventare falsa e far così terminare il ciclo. In caso contrario il ciclo si ripeterebbe all’infinito e il calcolatore non si fermerebbe mai.
 
 Esercitiamoci un po’
 ::::::::::::::::::::
@@ -271,7 +266,8 @@ Scrivi il programma "Conto alla rovescia" che: finché (while) n è più grande 
         password = input ("Password:")
     print ("Entra pure")
 
-.. image:: ../images/vignetta.png
+.. image:: images/vignetta_diverso_da.png
+   :alt: Fumetto: il punto esclamativo sta per «diverso da»
    :width: 150px
    :align: center
 
@@ -304,7 +300,7 @@ Visualizza tutti i numeri dispari compresi fra 1 e 100.
             print (i)
         i = i + 1
 
-``***`` Scrivi un programma che chieda il risultato dell'operazione 15 x 17 tante volte sino a quando non viene indicata la soluzione corretta. (Se non riesci, la soluzione è illustrata nelle pagine seguenti)
+``***`` Scrivi un programma che chieda il risultato dell’operazione 15 x 17 tante volte sino a quando non viene indicata la soluzione corretta. (Se non riesci, la soluzione è illustrata nelle pagine seguenti)
 
 ::
 
@@ -359,18 +355,18 @@ e nella relazione da verificare decidiamo quanto aspettare. La soluzione che con
        n = n - 1
    print ("Pronti ...VIA!")
 
-Nota bene: Quest'ultimo programma contiene due cicli while, di cui il secondo, quello introdotto per "perdere tempo", è :boltred:`ANNIDATO` entro il primo.
+Nota bene: Quest’ultimo programma contiene due cicli while, di cui il secondo, quello introdotto per "perdere tempo", è :boltred:`ANNIDATO` entro il primo.
 
 | Notate bene anche come è stato scritto il programma:
-| l'istruzione while a < 1000000 è indentata rispetto a while n > 0
-| mentre l'istruzione a = a + 1 è indentata rispetto a while
+| l’istruzione while a < 1000000 è indentata rispetto a while n > 0
+| mentre l’istruzione a = a + 1 è indentata rispetto a while
 | a < 1000000
 
-| Quante volte viene eseguita l'istruzione a = 1?
-| Quante volte viene eseguita l'istruzione a = a + 1?
+| Quante volte viene eseguita l’istruzione a = 1?
+| Quante volte viene eseguita l’istruzione a = a + 1?
 
 | Riprendiamo adesso due esercizi fatti in precedenza (quelli con ``***`` ).
-| La soluzione del primo e' un esempio di annidamento dove l'istruzione annidata è una if. La soluzione è la seguente:
+| La soluzione del primo è un esempio di annidamento dove l’istruzione annidata è una if. La soluzione è la seguente:
 
 ::
 
@@ -395,7 +391,7 @@ Nel secondo la if annidata è più complessa:
                 else:
             corretto = "no"
 
-Fai attenzione  all'indentazione con cui sono scritte le istruzioni perché è fondamentale per avere un'esecuzione corretta del programma!
+Fai attenzione  all’indentazione con cui sono scritte le istruzioni perché è fondamentale per avere un’esecuzione corretta del programma!
 
 Esercitiamoci ancora
 ::::::::::::::::::::
@@ -476,7 +472,7 @@ Nessun problema.
 
 Adesso ti spiego un “trucco” per formattare le stampe.
 
-Il carattere di backslash '\' (barra inclinata rovesciata) indica l'inizio di quella che viene chiamata una **sequenza di escape**.
+Il carattere di backslash '\' (barra inclinata rovesciata) indica l’inizio di quella che viene chiamata una **sequenza di escape**.
 Le sequenze di escape sono usate per rappresentare caratteri *speciali* e invisibili  come la tabulazione ('\t') e il ritorno a capo ('\n') e possono comparire in qualsiasi punto di una stringa.
 Prova ad esempio a stampare una stringa unica che produca questo risultato:
 
@@ -521,13 +517,13 @@ Secondo te quale sarà il risultato di questo programma?
     print (messaggio)
 
 | Come si individuano i singoli caratteri.
-| Nella variabile squadra abbiamo messo la stringa tutta intera mentre nella variabile messaggio l'abbiamo inserita un carattere per volta. squadra[i] e` una stringa fatta di un solo carattere e non e` altro che il carattere di Juventus che occupa la posizione i + 1.
+| Nella variabile squadra abbiamo messo la stringa tutta intera mentre nella variabile messaggio l’abbiamo inserita un carattere per volta. squadra[i] e` una stringa fatta di un solo carattere e non e` altro che il carattere di Juventus che occupa la posizione i + 1.
 
-L'espressione tra parentesi quadrate seleziona i caratteri della stringa.  Quindi squadra[0] seleziona il primo carattere,  [1] il secondo e cosi via.
+L’espressione tra parentesi quadrate seleziona i caratteri della stringa.  Quindi squadra[0] seleziona il primo carattere,  [1] il secondo e cosi via.
 
 Ricordati che i calcolatori iniziano sempre a contare da 0.
 
-L'espressione tra parentesi quadrate è chiamata indice.
+L’espressione tra parentesi quadrate è chiamata indice.
 
 Un indice individua un particolare elemento di una stringa e può essere una qualsiasi espressione intera.
 

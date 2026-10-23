@@ -2,10 +2,6 @@
 Primo passo:   usare Python come calcolatrice
 =============================================
 
-.. role:: red
-
-.. role:: boltblue
-
 Supponiamo che sul video compaia questo simbolo:  >>>.
 E’ un messaggio di Python che vuol dire: :red:`“Cosa vuoi sapere?”`
 Se vuoi sapere quanto fa 2+3, devi scrivere 2+3 al fianco di
@@ -78,6 +74,7 @@ ossia 2*2*2*2,quattro volte
 
 
 .. image:: images/nuvola2.png
+   :alt: Fumetto: su fare.polito.it/Python ricordati di scrivere print minuscolo e di mettere le parentesi, per esempio print(10**2)
    :align: right
    :width: 240
 
@@ -196,7 +193,7 @@ procede da sinistra verso destra*
 
 
 
-Esercitiamoci un po'
+Esercitiamoci un po’
 ::::::::::::::::::::
 
 **- Esegui il calcolo dell’ espressione:**

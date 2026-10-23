@@ -2,14 +2,6 @@
 Settimo passo: le Funzioni
 ==========================
 
-.. role:: boltred
-
-.. role:: red
-
-.. role:: boltblue
-
-.. role:: blue
-
 Impariamo insieme:
 
 - cos’è una funzione
@@ -22,21 +14,21 @@ Vediamo un esempio:
 
 ::
 
-    risposta1 = input ("Chi e' l'autore dei Promessi Sposi? ")
+    risposta1 = input ("Chi è l'autore dei Promessi Sposi? ")
     if risposta1 == "Manzoni":
-        print ("La risposta e' esatta")
+        print ("La risposta è esatta")
         print ("Bravo!!")
     else:
         print ("Risposta errata!")
-        print ("La risposta esatta e': Manzoni")
-        print ("Studia di piu'")
-    risposta2 = input ("Chi e' l'autore della Divina Commedia? ")
+        print ("La risposta esatta è: Manzoni")
+        print ("Studia di più")
+    risposta2 = input ("Chi è l'autore della Divina Commedia? ")
     if risposta2 == "Dante":
-        print ("La risposta e' esatta")
+        print ("La risposta è esatta")
         print ("Bravo!!")
     else:
         print ("Risposta errata!")
-        print ("La risposta esatta e': Dante")
+        print ("La risposta esatta è: Dante")
         print ("Ripassa la lezione")
 
 Hai osservato come il programmatore nel trattare la seconda risposta ripete molte cose che aveva già scritto per la prima? Questo non è né comodo né veloce.
@@ -81,7 +73,7 @@ Definizione di funzione
 
 :boltred:`def INTERROGAZIONE (domanda, risposta_esatta):`
 
-Questa linea indica all'interprete che vogliamo definire un blocco di istruzioni che potrà essere eseguito a richiesta in un qualunque altro punto del programma semplicemente scrivendo il suo nome (interrogazione), dopo aver indicato la domanda e la risposta corretta.
+Questa linea indica all’interprete che vogliamo definire un blocco di istruzioni che potrà essere eseguito a richiesta in un qualunque altro punto del programma semplicemente scrivendo il suo nome (interrogazione), dopo aver indicato la domanda e la risposta corretta.
 
 Quindi la prima linea della funzione dovrà contenere:
 
@@ -104,12 +96,12 @@ Dopo la definizione, occorre scrivere la funzione, cioè il programma che lavore
     def interrogazione(domanda, rispostaEsatta):
     rispostaAllievo = input (domanda)
     if rispostaEsatta == rispostaAllievo:
-        print ("La risposta e' esatta")
+        print ("La risposta è esatta")
         print ("Bravissimo")
     else:
         print ("Risposta errata")
-        print ("La risposta esatta e' ", rispostaEsatta)
-        print ("studia di piu'!")
+        print ("La risposta esatta è ", rispostaEsatta)
+        print ("studia di più!")
 
 Confrontiamolo ora con il pezzo di programma da cui siamo partiti e che non volevamo ripetere tante volte.
 
@@ -156,51 +148,53 @@ Ora dobbiamo imparare a chiamare la funzione, ossia ordinare alla funzione stess
 **In generale, la chiamata di una funzione viene effettuata scrivendo il nome della funzione, seguita dai nomi delle scatole su cui lavorare separati da virgole e racchiuse da parentesi. Nel caso del programma che avevamo scritto avremo:**
 
 .. image:: images/vignetta_prima_chiamata.png
+   :alt: Fumetto: prima chiamata
    :align: center
    :width: 300pt
 
-| **domanda1 = "chi e' l'autore dei Promessi Sposi? "**
+| **domanda1 = "chi è l’autore dei Promessi Sposi? "**
 | **rispostaEsatta1 = "Manzoni"**
 | **interrogazione (domanda1, rispostaEsatta1)**
 
 .. image:: images/vignetta_seconda_chiamata.png
+   :alt: Fumetto: seconda chiamata
    :align: center
    :width: 300pt
 
-| **domanda2 = "chi e' l'autore della Divina Commedia? "**
+| **domanda2 = "chi è l’autore della Divina Commedia? "**
 | **rispostaEsatta2 = "Dante"**
 | **interrogazione (domanda2, rispostaEsatta2)**
 
 Fermiamoci a riflettere e a riassumere ciò che abbiamo detto finora a proposito di programmi e del flusso di esecuzione deiprogrammi.
 
-**L'esecuzione di una funzione inizia sempre alla prima riga del programma** e le istruzioni sono eseguite una alla volta dall'alto verso il basso.
+**L’esecuzione di una funzione inizia sempre alla prima riga del programma** e le istruzioni sono eseguite una alla volta dall’alto verso il basso.
 **Una funzione deve essere definita prima del suo uso** perché
 Python deve sapere che la funzione esiste e cosa fa.
-**La definizione di funzione non altera il flusso di esecuzione del programma e le istruzioni all'interno della funzione non sono eseguite finché questa non viene chiamata** (questo vuol dire che, se definisco la funzione all'inizio del programma, Python legge la definizione ma non fa nulla e prosegue nell'esecuzione del programma finché non trova la chiamata della funzione).
-**La chiamata della funzione è una deviazione nel flusso di esecuzione:** invece di proseguire con l'istruzione successiva, l'esecuzione salta alla prima riga della funzione chiamata ed esegue tutte le sue istruzioni; alla fine della funzione il flusso riprende dal punto dov'era stato deviato dalla chiamata di funzione. Fortunatamente Python è sufficientemente intelligente da ricordare dove il flusso di esecuzione viene via via interrotto e sa dove riprendere quando una funzione è conclusa
-**Quando il flusso del programma giunge all'ultima istruzione, dopo la sua esecuzione il programma è terminato.** Ricorda che la definizione della funzione termina con l’ultima istruzione indentata.
-Vediamo ora il nostro programma scritto con e senza l'uso della funzione
+**La definizione di funzione non altera il flusso di esecuzione del programma e le istruzioni all’interno della funzione non sono eseguite finché questa non viene chiamata** (questo vuol dire che, se definisco la funzione all’inizio del programma, Python legge la definizione ma non fa nulla e prosegue nell’esecuzione del programma finché non trova la chiamata della funzione).
+**La chiamata della funzione è una deviazione nel flusso di esecuzione:** invece di proseguire con l’istruzione successiva, l’esecuzione salta alla prima riga della funzione chiamata ed esegue tutte le sue istruzioni; alla fine della funzione il flusso riprende dal punto dov’era stato deviato dalla chiamata di funzione. Fortunatamente Python è sufficientemente intelligente da ricordare dove il flusso di esecuzione viene via via interrotto e sa dove riprendere quando una funzione è conclusa
+**Quando il flusso del programma giunge all’ultima istruzione, dopo la sua esecuzione il programma è terminato.** Ricorda che la definizione della funzione termina con l’ultima istruzione indentata.
+Vediamo ora il nostro programma scritto con e senza l’uso della funzione
 “interrogazione”:
 
 **senza**
 ::
 
-    risposta1 = input ("chi e' l'autore dei Promessi Sposi? ")
+    risposta1 = input ("chi è l'autore dei Promessi Sposi? ")
     if risposta1 == "Manzoni":
-        print ("la risposta e' esatta")
+        print ("la risposta è esatta")
         print ("bravo!!")
     else:
         print ("risposta errata!")
-        print ("la risposta esatta e': Manzoni")
-        print ("Studia di piu'")
-    risposta2 = input ("chi e' l'autore della Divina Commedia? ")
+        print ("la risposta esatta è: Manzoni")
+        print ("Studia di più")
+    risposta2 = input ("chi è l'autore della Divina Commedia? ")
     if risposta2 == "Dante":
-        print ("la risposta e' esatta")
+        print ("la risposta è esatta")
         print ("bravo!!")
     else:
         print ("risposta errata!")
-        print ("la risposta esatta e': Dante")
-        print ("Studia di piu'")
+        print ("la risposta esatta è: Dante")
+        print ("Studia di più")
 
 ----
 
@@ -210,20 +204,20 @@ Vediamo ora il nostro programma scritto con e senza l'uso della funzione
     def interrogazione (domanda,rispostaEsatta):
         rispostaAllievo = input (domanda)
         if rispostaEsatta == rispostaAllievo:
-            print ("La risposta e' esatta")
+            print ("La risposta è esatta")
             print ("Bravissimo")
         else:
             print ("Risposta errata")
-            print ("La risposta esatta e' ", rispostaEsatta)
-            print ("Studia di piu'!")
-    domanda1 = "chi e' l'autore dei Promessi Sposi? "
+            print ("La risposta esatta è ", rispostaEsatta)
+            print ("Studia di più!")
+    domanda1 = "chi è l'autore dei Promessi Sposi? "
     rispostaEsatta1 = "Manzoni"
     interrogazione (domanda1, rispostaEsatta1)
-    domanda2 = "chi e' l'autore della Divina Commedia? "
+    domanda2 = "chi è l'autore della Divina Commedia? "
     rispostaEsatta2 = "Dante"
     interrogazione (domanda2, rispostaEsatta2)
 
-Nota bene: i nomi delle scatole usati nell'istruzione di chiamata della funzione sono diversi dai nomi delle scatole usati nella definizione.
+Nota bene: i nomi delle scatole usati nell’istruzione di chiamata della funzione sono diversi dai nomi delle scatole usati nella definizione.
 
 **DEFINIZIONE**
 ::
@@ -237,12 +231,12 @@ Nota bene: i nomi delle scatole usati nell'istruzione di chiamata della funzione
 
     interrogazione (domanda1, rispostaEsatta1)
 
-La prima cosa che fa la funzione quando viene chiamata è prendere le scatole usate nella istruzione con cui è stata chiamata, scoperchiarle e mettere il loro contenuto nelle corrispondenti scatole usate all'interno della funzione.
+La prima cosa che fa la funzione quando viene chiamata è prendere le scatole usate nella istruzione con cui è stata chiamata, scoperchiarle e mettere il loro contenuto nelle corrispondenti scatole usate all’interno della funzione.
 
 **Il contenuto di domanda1 viene scritto in domanda e il contenuto di risposta_esatta1 viene scritto in risposta_esatta.**
 
 Perché è necessaria questa operazione?
-Le scatole all'interno della funzione sono “invisibili” all'esterno e sono utilizzate solo dentro il corpo della funzione.
+Le scatole all’interno della funzione sono “invisibili” all’esterno e sono utilizzate solo dentro il corpo della funzione.
 In questo modo la semplice funzione che abbiamo scritto potrà essere utilizzata da voi per altri programmi o da qualche vostro amico per costruire programmi più complicati. E questo è il secondo motivo, forse il più importante, per cui si scrivono le funzioni.
 
 I programmi attuali sono diventati cosi complicati che nessun programmatore, per quanto bravo, riuscirebbe a scriverli da solo. Qualunque programma è sempre composto per una piccola parte da nuove istruzioni e per la maggior parte da funzioni già scritte in precedenza.
@@ -346,9 +340,10 @@ ad esempio, se a n attribuiamo il valore **7**:
 
 ----
 
-**In questo esempio calcoliamo l'area della figura.**
+**In questo esempio calcoliamo l’area della figura.**
 
 .. image:: images/treno.png
+   :alt: Disegno schematico di un trenino fatto di rettangoli e due ruote
    :align: center
    :width: 300pt
 
@@ -367,7 +362,7 @@ Scriviamo una funzione che calcoli l’area di un cerchio di raggio r:
 
 Utilizziamo ora le due funzioni che abbiamo scritto per calcolare l’area della figura azzurra:
 
-programma che calcola l'area della figura azzurra
+programma che calcola l’area della figura azzurra
 ::
 
     def areaRettangolo (base, altezza):
@@ -390,7 +385,7 @@ programma che calcola l'area della figura azzurra
     print (potenza(numero, esponente))
 
 --------------------
-Esercitiamoci un po'
+Esercitiamoci un po’
 --------------------
 
 1. Scrivi un programma utilizzando la funzione che chieda due numeri e poi li sommi tra loro.
@@ -414,7 +409,7 @@ Esercitiamoci un po'
 4.
 
 .. clickablearea:: click1
-    :question: Trova l'errore.
+    :question: Trova l’errore.
     :iscode:
     :feedback: Ripassa la chiamata di funzione.
 
@@ -465,7 +460,7 @@ legati tra loro.
 
 Prima di spiegarti cosa sono ritengo doveroso citare due
 importanti personaggi del mondo informatico: **Richard Stallman** e **Linus Torvalds**.
-Stallman, statunitense, (New York, 16 marzo 1953) è un programmatore e hacker statunitense. Nel settembre del 1983 lanciò il progetto GNU per creare un sistema operativo libero. Con il lancio del Progetto GNU, il movimento del software libero prese vita; nell'Ottobre del 1985 venne fondata la Free Software Foundation (FSF).
+Stallman, statunitense, (New York, 16 marzo 1953) è un programmatore e hacker statunitense. Nel settembre del 1983 lanciò il progetto GNU per creare un sistema operativo libero. Con il lancio del Progetto GNU, il movimento del software libero prese vita; nell’Ottobre del 1985 venne fondata la Free Software Foundation (FSF).
 
 Secondo Richard Stallman un software per poter essere definito libero deve garantire quattro **"libertà fondamentali"**:
 

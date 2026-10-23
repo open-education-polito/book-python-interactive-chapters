@@ -2,21 +2,18 @@
 Secondo passo: le Scatole
 ===========================
 
-.. role:: red
-
-.. role:: boltred
-
 Istruire un calcolatore significa essenzialmente creare e usare degli oggetti.
 Tra questi oggetti quelli di uso più comune sono quelli che chiameremo :red:`scatole`.
 
 Le scatole vengono usate per contenere numeri, caratteri, parole o frasi.
 
 .. image:: images/scatole.png
+   :alt: Tre scatole di nome Sal1, Mio_Pc e B3
    :align: center
 
 Le nostre scatole sono del tutto simili a quelle che vediamo nella figura.
 Ogni scatola  che noi creiamo deve avere un nome.
-Il nome che assegniamo alla scatola  è l'equivalente dell'etichetta sulla scatola.
+Il nome che assegniamo alla scatola  è l’equivalente dell’etichetta sulla scatola.
 
 Ovviamente dovremo scegliere dei nomi significativi per le nostre scatole per ricordarci a cosa servono.
 
@@ -58,6 +55,7 @@ Quindi le scatole che si chiamano:
 **sono per il calcolatore tre scatole diverse.**
 
 .. image:: images/scatole2.png
+   :alt: Tre scatole di nome Luisa, luisa e LUISA
    :align: center
    :width: 275pt
 
@@ -67,13 +65,13 @@ Il carattere di sottolineatura (_) può far parte di un nome ed è spesso usato 
 | **il_mio_nome**         | **il_prezzo_del_pane**  |
 +-------------------------+-------------------------+
 
-In alternativa i nomi possono essere composti  usando l'iniziale maiuscola per ciascuna delle parole componenti il nome della variabile, con il resto dei caratteri lasciati in minuscolo come in :
+In alternativa i nomi possono essere composti  usando l’iniziale maiuscola per ciascuna delle parole componenti il nome della variabile, con il resto dei caratteri lasciati in minuscolo come in :
 
 +-------------------------+-------------------------+
 | **IlMioNome**           | **IlPrezzodelPane**     |
 +-------------------------+-------------------------+
 
-Non e' possibile invece “battezzare” la  nostra scatola  con nomi come 1A, 3P, 4SAL **perché il suo nome non può iniziare con un numero**. Assegnando un nome di questo tipo ad una scatola otterremo un messaggio di errore. Il  calcolatore ci dirà che il nome che abbiamo usato e' illegale ma non dirà perché è illegale, e quindi dovremo scoprirlo noi.
+Non è possibile invece “battezzare” la  nostra scatola  con nomi come 1A, 3P, 4SAL **perché il suo nome non può iniziare con un numero**. Assegnando un nome di questo tipo ad una scatola otterremo un messaggio di errore. Il  calcolatore ci dirà che il nome che abbiamo usato è illegale ma non dirà perché è illegale, e quindi dovremo scoprirlo noi.
 
 *Vediamo cosa ci dice il calcolatore quando sbagliamo il nome di una scatola:*
 
@@ -89,7 +87,7 @@ Non e' possibile invece “battezzare” la  nostra scatola  con nomi come 1A, 3
 |
 
 *Come mai?*
-*Il nome 76strumenti e' illegale perché non inizia con una lettera, milione$ e' illegale perché contiene un carattere proibito, il $, lambda e' illegale perché è una delle parole riservate di Python.*
+*Il nome 76strumenti è illegale perché non inizia con una lettera, milione$ è illegale perché contiene un carattere proibito, il $, lambda è illegale perché è una delle parole riservate di Python.*
 
 :boltred:`Tutti i linguaggi di programmazione hanno alcune parole riservate` *che non possono essere usate come nomi delle scatole.*
 
@@ -163,5 +161,6 @@ ad esempio
 Per ricordare meglio la **differenza fra nome e contenuto di una scatola**, immaginiamo di aver scritto il nome della scatola con un pennarello indelebile sulla scatola stessa e che il contenuto sia stato scritto su un foglietto che in qualunque momento può essere tolto dalla scatola e sostituito con un altro foglietto.
 
 .. image:: images/scatola.png
+   :alt: Scatola di nome Scatola1 con dentro il numero 2.5, con frecce che indicano il nome e il contenuto della scatola
    :align: center
    :width: 275pt

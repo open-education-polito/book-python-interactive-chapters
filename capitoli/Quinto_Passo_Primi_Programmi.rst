@@ -2,22 +2,12 @@
 Quinto passo: primi programmi
 =============================
 
-.. role:: boltred
-
-.. role:: blue
-
-.. role:: red
-
-.. role:: boltblue
-
-.. role:: green
-
 **Vediamo come fare a passare da una scatola all’altra.**
 
 Istruzione di copia
 ===================
 
-Cosa succede quando diamo al computer un'istruzione come:
+Cosa succede quando diamo al computer un’istruzione come:
 pippo = pluto
 Il computer fa le seguenti operazioni:
 
@@ -33,6 +23,7 @@ Al termine di queste operazioni le due scatole pippo e pluto contengono lo stess
 :blue:`Ecco come si presentano le scatole prima e dopo dell’esecuzione dell’istruzione:`
 
 .. image:: images/pipponuovo.png
+   :alt: Quattro scatole: PIPPO vuota e PLUTO con il numero 15, poi PIPPO e PLUTO entrambe con il numero 15
    :align: center
    :width: 250pt
 
@@ -91,27 +82,28 @@ Prova a immaginare cosa fa il computer per eseguire la seguente istruzione:
 
 **pippo = pluto + 3**
 
-Il computer farà così:
+Il computer farà così:
 
     - Metterà a disposizione una scatola di nome pippo
     - Cercherà pluto e ne leggerà il contenuto.
     - Aggiungerà 3 al contenuto di pluto e metterà in pippo il risultato dell’operazione a destra dell’uguale.
 
-A questo punto, che cosa conterrà pippo e che cosa conterrà pluto?
-**pippo conterrà il numero 18 e pluto conterrà sempre il numero 15.**
+A questo punto, che cosa conterrà pippo e che cosa conterrà pluto?
+**pippo conterrà il numero 18 e pluto conterrà sempre il numero 15.**
 In pratica il computer inizia a lavorare sull’operazione a destra dell’uguale e il risultato viene messo nella scatola a sinistra.
 Osserva ancora che il nome della scatola a destra dell’uguale indica il suo contenuto, mentre il nome della scatola a sinistra precisa la scatola
-che conterrà il risultato.
+che conterrà il risultato.
 
 .. image:: images/pippot.png
+   :alt: Scatola PIPPO con il numero 18, segno di uguale, scatola PLUTO con il numero 15
    :align: center
    :width: 200pt
 
 Lo scambio
 ==========
 
-Un po’ più complicata è l’operazione di scambio del contenuto di due scatole.
-Ad esempio se minnie = 10 e mickey = 12 come posso scambiare il contenuto di minnie e mickey, cioè inserire 12 in minnie e 10 in mickey?
+Un po’ più complicata è l’operazione di scambio del contenuto di due scatole.
+Ad esempio se minnie = 10 e mickey = 12 come posso scambiare il contenuto di minnie e mickey, cioè inserire 12 in minnie e 10 in mickey?
 E’come scambiare il contenuto di due bicchieri uno pieno di Coca Cola e l’altro pieno di aranciata. In quel caso occorre un terzo bicchiere.
 Nel nostro caso serve una **terza scatola!**
 Esatto. Una scatola che possiamo chiamare, ad esempio, park,
@@ -145,7 +137,7 @@ nella quale riponiamo il contenuto di una delle due scatole. Cosa fa il computer
 | **Esercizio n. 1**
 |
 |       Se click1 = 24 e slam1 = 32 come faccio per copiare il contenuto di click1 in slam1? E quando l’ho copiato come faccio per rimettere elle due scatole il contenuto originale?
-|       Prova a illustrare i vari passaggi attraverso i quali il calcolatore copia il contenuto di una scatola in un'altra.
+|       Prova a illustrare i vari passaggi attraverso i quali il calcolatore copia il contenuto di una scatola in un’altra.
 |
 
 |
@@ -173,7 +165,7 @@ nella quale riponiamo il contenuto di una delle due scatole. Cosa fa il computer
 Input
 =====
 
-Finora abbiamo visto come inserire un numero o una stringa in una scatola, cioè un dato in una variabile utilizzando le istruzioni di assegnazione
+Finora abbiamo visto come inserire un numero o una stringa in una scatola, cioè un dato in una variabile utilizzando le istruzioni di assegnazione
 del tipo:
 scatola1 = 37.5 oppure scatola1 = "Viva la Juve"
 Oltre a questo, esiste un altro modo, molto importante, per introdurre un numero o una stringa in una scatola, rappresentato dall’istruzione input.
@@ -184,24 +176,24 @@ Oltre a questo, esiste un altro modo, molto importante, per introdurre un numero
 
 Dove:
 
-:blue:`scatola` è il nome della scatola nella quale inserirò un nuovo dato;
+:blue:`scatola` è il nome della scatola nella quale inserirò un nuovo dato;
 
-:green:`Input` è il comando che diamo al computer e che serve a inserire un dato qualunque  nella scatola. Quel dato è indicato dall’utilizzatore del programma attraverso la tastiera;
+:green:`Input` è il comando che diamo al computer e che serve a inserire un dato qualunque  nella scatola. Quel dato è indicato dall’utilizzatore del programma attraverso la tastiera;
 
-:red:`Prompt` è un messaggio che diamo all'utilizzatore perché sappia quale dato deve inserire da tastiera
+:red:`Prompt` è un messaggio che diamo all’utilizzatore perché sappia quale dato deve inserire da tastiera
 
 Ad esempio con:
 
 **pluto = input ("Quanti anni hai?")**
-Chiediamo all'utilizzatore di indicare i propri anni, il computer leggerà il numero e lo inserirà nella
-scatola di nome pippo. Quando il computer legge la parola input, si ferma e attende che l'operatore inserisca un numero dalla tastiera.
-Per far capire al computer quando il numero e’ finito, l’operatore preme il tasto Invio (o Enter). A questo punto il programma riprende e input interpreta ciò che l'operatore ha inserito come una stringa di caratteri e lo mette nella scatola indicata.
+Chiediamo all’utilizzatore di indicare i propri anni, il computer leggerà il numero e lo inserirà nella
+scatola di nome pippo. Quando il computer legge la parola input, si ferma e attende che l’operatore inserisca un numero dalla tastiera.
+Per far capire al computer quando il numero è finito, l’operatore preme il tasto Invio (o Enter). A questo punto il programma riprende e input interpreta ciò che l’operatore ha inserito come una stringa di caratteri e lo mette nella scatola indicata.
 Il programma prosegue poi con le istruzioni successive.
 La funzione INPUT è molto utile nella costruzione dei programmi, perché ci permette di trasmettere dei dati al calcolatore durante L’esecuzione
 del programma.
 
-Finora abbiamo sempre inserito tutti i dati prima dell'esecuzione di un programma e poi abbiamo eseguito il programma stesso; con input, invece,
-i dati possono essere inseriti durante l'esecuzione. Vediamo in dettaglio cosa succede nel programma seguente quando usiamo la “funzione” input:
+Finora abbiamo sempre inserito tutti i dati prima dell’esecuzione di un programma e poi abbiamo eseguito il programma stesso; con input, invece,
+i dati possono essere inseriti durante l’esecuzione. Vediamo in dettaglio cosa succede nel programma seguente quando usiamo la “funzione” input:
 
 **anni = int (input ("Quanti anni hai? "))**
 
@@ -214,7 +206,7 @@ i dati possono essere inseriti durante l'esecuzione. Vediamo in dettaglio cosa s
 |                                         | oppure una scatola nuova alla quale da |
 |                                         | il nome "anni"                         |
 |                                         |                                        |
-|                                         | 2) si ferma nell'attesa che venga      |
+|                                         | 2) si ferma nell’attesa che venga      |
 |                                         | inserito un dato dalla tastiera        |
 |                                         |                                        |
 |                                         | 3) inserisce i dato nella scatola      |
@@ -228,7 +220,7 @@ i dati possono essere inseriti durante l'esecuzione. Vediamo in dettaglio cosa s
 Utilizzando Python, prova ad eseguire il programma.
 
 Hai notato che prima del comando “input” abbiamo aggiunto “int”?
-E’ necessario dire all’interprete quando vogliamo inserire un numero e specificare bene il tipo di numero perché altrimenti l’interprete pensa che sia un qualunque carattere di una stringa.
+E’ necessario dire all’interprete quando vogliamo inserire un numero e specificare bene il tipo di numero perché altrimenti l’interprete pensa che sia un qualunque carattere di una stringa.
 Quando vogliamo :boltred:`inserire un numero intero` scriveremo:
 
 ::
@@ -241,16 +233,16 @@ Quando vogliamo :boltblue:`inserire un numero con la virgola` scriveremo:
 
     float (input())
 
-Quindi per lavorare con le variabili numeriche (cioè le variabili di tipo numero) davanti al comando input si deve sempre aggiungere int o float.
+Quindi per lavorare con le variabili numeriche (cioè le variabili di tipo numero) davanti al comando input si deve sempre aggiungere int o float.
 
 Prova a descrivere la sequenza di operazioni fatte dal calcolatore per eseguire il programma seguente :
 Programma 3  “Stampa il triplo di un numero”
 numero = int (input ("Introduci un numero "))
 numero = numero * 3
-print ("Il triplo del numero introdotto è : ", numero)
-Prova ora ad inserire dei caratteri che non rappresentino un numero e osserva quale sarà il nuovo risultato. Sfortunatamente se i caratteri inseriti dall'operatore non rappresentano un numero, il programma stampa un messaggio d'errore e si blocca perché int(input()) e float(input()) funzionano soltanto con i numeri.
+print ("Il triplo del numero introdotto è : ", numero)
+Prova ora ad inserire dei caratteri che non rappresentino un numero e osserva quale sarà il nuovo risultato. Sfortunatamente se i caratteri inseriti dall’operatore non rappresentano un numero, il programma stampa un messaggio d’errore e si blocca perché int(input()) e float(input()) funzionano soltanto con i numeri.
 
-**Come facciamo a far in modo che l’interprete accetti qualunque carattere immesso dall'utilizzatore?**
+**Come facciamo a far in modo che l’interprete accetti qualunque carattere immesso dall’utilizzatore?**
 **Usiamo semplicemente il comando “input” senza specificare nulla.**
 
 **Il programma seguente:**
@@ -280,7 +272,7 @@ Esercitati con gli esempi seguenti:
 Esercitiamoci un po’
 ====================
 
-Ci sono più soluzioni possibili per ognuno degli esercizi proposti; sta a te trovarle e, soprattutto, provarle.
+Ci sono più soluzioni possibili per ognuno degli esercizi proposti; sta a te trovarle e, soprattutto, provarle.
 
 1. Scrivi un programma che chiede un numero e ne calcola il quadrato e il cubo e li visualizza sullo schermo.
 
@@ -292,11 +284,11 @@ Ci sono più soluzioni possibili per ognuno degli esercizi proposti; sta a te t
 
 5. Scrivi il programma che chieda tre numeri e ne visualizzi sia la somma sia il prodotto.
 
-6. Scrivi il programma che calcola la metà e il doppio di qualunque numero inserito dall’utente, poi visualizza i risultati.
+6. Scrivi il programma che calcola la metà e il doppio di qualunque numero inserito dall’utente, poi visualizza i risultati.
 
 7. Scrivi il programma che chiede la misura del lato di un quadrato e ne calcola l’area, poi visualizza il risultato.
 
-8. Scrivi il programma che calcola il perimetro del cortile della scuola che è un rettangolo i cui lati misurano rispettivamente 45 m e 65 m
+8. Scrivi il programma che calcola il perimetro del cortile della scuola che è un rettangolo i cui lati misurano rispettivamente 45 m e 65 m
    visualizza il risultato. Quindi calcola il perimetro di ogni rettangolo per il quale l’operatore inserisca la misura della base e
    dell’altezza.
 
@@ -330,7 +322,7 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
          # stampa il nome del tuo cantante preferito.
 
          cantante = input ("Scrivi il nome del cantante preferito: ")
-         print ("Il mio cantante preferito e' ", cantant)
+         print ("Il mio cantante preferito è ", cantant)
 
 
 ------------------------------
@@ -353,7 +345,7 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
 
         # Es. 3: domanda di filosofia
 
-    printt (" Sai in quale anno e' nato Socrate")
+    printt (" Sai in quale anno è nato Socrate")
     sino = input ("si o no")
     print ("Ma certo, nell'anno 469 prima di Cristo")
 
@@ -367,7 +359,7 @@ Per ogni esercizio assegnati un punto se riesci a trovare l’errore e un altro 
     primo = float (input ("Inserisci il primo numero"))
     secondo = float (input ("Inserisci il secondo numero"))
     print (primo, "diviso", secondo,"si ottiene", primo/secondo)
-    print "il resto della divisione e' ", primo % secondo
+    print "il resto della divisione è ", primo % secondo
 
 .. activecode:: Esercizi_5_2
    :coach:

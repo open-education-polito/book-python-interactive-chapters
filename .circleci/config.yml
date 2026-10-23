@@ -6,21 +6,21 @@ jobs:
   # how to reach the production site.
   build:
     docker:
-      - image: circleci/python:3.6
+      - image: cimg/python:3.12
     steps:
       - add_ssh_keys
-      - run: sudo pip install runestone 
       - run: mkdir python_online
       - run: 
           name: Setup runestone
           command: |
             git clone https://github.com/open-education-polito/python-interactive-book-template.git python_online 
             git clone https://github.com/open-education-polito/python-interactive-book-chapters.git python_online/_sources
+            pip install -r python_online/requirements.txt
       - run: 
           name: Build runestone
           command: |
             cd python_online
-            runestone build
+            runestone build --all
       - run: mkdir -p ~/.ssh
       - run: ssh-keyscan -p $PORT $SERVER -H >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync

@@ -2,8 +2,6 @@
 Premessa
 =============================================
 
-.. role:: boltblue
-
 Abbiamo realizzato questa versione interattiva del nostro manuale sperando che possa costituire una facile, e accattivante base per imparare i fondamenti logici della programmazione.
 
 Abbiamo ideato una serie di schede che, passo dopo passo, consentiranno di avviare un percorso di conoscenza e di esperienza per acquisire le capacità necessarie a padroneggiare in maniera consapevole il mezzo informatico.
@@ -15,7 +13,7 @@ La scelta del linguaggio di programmazione Python risponde a molti requisiti da 
 * libero
 * didatticamente adeguato
 * attuale
-* possibile l'utilizzo e l'approfondimento nel tempo
+* possibile l’utilizzo e l’approfondimento nel tempo
 * diffuso nella pratica informatica
 * significativo per dimensione e importanza dei moduli associati
 

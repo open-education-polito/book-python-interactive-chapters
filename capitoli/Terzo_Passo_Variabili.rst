@@ -2,12 +2,8 @@
 Terzo passo: Le Variabili
 =========================
 
-.. role:: boltred
-
-.. role:: blue
-
 Il modo più semplice per farsi consegnare una scatola dal calcolatore, darle un nome e riempirla con un numero
-e’ quello di scrivere una frase come la seguente, che è chiamata :boltred:`“ISTRUZIONE DI ASSEGNAZIONE”`:
+è quello di scrivere una frase come la seguente, che è chiamata :boltred:`“ISTRUZIONE DI ASSEGNAZIONE”`:
 
 :boltred:`scatola1=7`
 Se la scatola di nome scatola1 non è mai stata usata, Python crea una scatola nuova, la chiama scatola1 e pone il numero 7 in quella scatola.
@@ -15,10 +11,10 @@ Se  invece la scatola di nome scatola1 è già stata usata, Python toglie il suo
 
 La scatola rappresenta quella che i matematici chiamano **variabile**.
 Questo nome ci ricorda che il contenuto di una scatola può cambiare da un momento all’altro.
-Ad essa e’ possibile assegnare un valore con l’istruzione di assegnazione.
+Ad essa è possibile assegnare un valore con l’istruzione di assegnazione.
 Il contenuto di una scatola può essere un numero, oppure un carattere o un messaggio (ossia una sequenza di caratteri).
-L’istruzione di assegnazione contiene un ordine per il calcolatore e costituisce un nuovo esempio di “istruzione”, ovvero un’operazione che Python capisce ed e’ in grado di eseguire.
-L’istruzione di assegnazione e’ costituita dal nome della scatola seguito dal segno =.
+L’istruzione di assegnazione contiene un ordine per il calcolatore e costituisce un nuovo esempio di “istruzione”, ovvero un’operazione che Python capisce ed è in grado di eseguire.
+L’istruzione di assegnazione è costituita dal nome della scatola seguito dal segno =.
 
    scatola1 = 7
 
@@ -31,7 +27,7 @@ scatola3 = "come va?"
 
 Osserva ancora: il simbolo :boltred:`=` non ha il significato matematico che conosci.
 
-Infatti, nell'istruzione di assegnazione :
+Infatti, nell’istruzione di assegnazione :
 scatola1 = 7
 
 
@@ -53,6 +49,7 @@ Uso di print
 **scatola**.
 
 .. image:: images/vignetta.png
+   :alt: Fumetto: print sempre minuscolo
    :align: center
    :width: 100pt
 
@@ -73,7 +70,7 @@ Facciamo un esempio:
    scatola1 = 8+4
    print (scatola1)
 
-Dopo l’ordine di esecuzione, sul video comparirà il risultato dell'addizione: 12
+Dopo l’ordine di esecuzione, sul video comparirà il risultato dell’addizione: 12
 
 Il nome dell’istruzione “print” deve essere sempre scritto
 minuscolo.

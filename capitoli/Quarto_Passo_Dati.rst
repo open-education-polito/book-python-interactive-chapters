@@ -2,16 +2,6 @@
 Quarto passo: dati e tipi di dati
 =================================
 
-.. role:: red
-
-.. role:: boltred
-
-.. role:: blue
-
-.. role:: boltblue
-
-.. role:: boltgreen
-
 | Fino ad ora abbiamo lavorato quasi sempre su **numeri**.
 
 Abbiamo visto, ad esempio, che una scatola può contenere numeri interi come 27, 251, 1100050, oppure numeri decimali, ossia numeri con virgola che Python vuole che siano scritti con il simbolo “**.**”, come :
@@ -88,7 +78,7 @@ I numeri 8 e 4 sembrano effettivamente dei numeri ma essendo chiusi tra virgolet
 
 Se poi scrivi l’istruzione: print (“8+4=13”) il calcolatore scriverà: 8+4=13 senza accorgersi dell’errore di calcolo, perché l’ordine che gli hai dato è solo quello di scrivere la stringa composta dai caratteri: 8+4=13
 
-*Ovviamente possiamo mettere la stringa in una scatola, come abbiamo fatto con i numeri, usando l'istruzione di assegnazione.*
+*Ovviamente possiamo mettere la stringa in una scatola, come abbiamo fatto con i numeri, usando l’istruzione di assegnazione.*
 
 Ad esempio:
 
@@ -248,7 +238,7 @@ Il risultato sarà: :boltred:`5*3= 15`
 Perché l’'istruzione print() dice a Python: "devi visualizzare le seguenti cose".
 Se vuoi fare visualizzare più oggetti sulla stessa riga devi separarli con una virgola.
 
-Nel tuo caso hai detto a Python: visualizzami la stringa "5*3= " così com'è e subito dopo hai aggiunto: visualizzami il risultato della moltiplicazione tra i numeri 5 e 3.
+Nel tuo caso hai detto a Python: visualizzami la stringa "5*3= " così com’è e subito dopo hai aggiunto: visualizzami il risultato della moltiplicazione tra i numeri 5 e 3.
 
 ------------
 
@@ -269,7 +259,7 @@ Nel tuo caso hai detto a Python: visualizzami la stringa "5*3= " così com'è e 
 
     print ("9 * 5 = ", 9 * 5)
 
-4. Quale risultato darà l'istruzione seguente?
+4. Quale risultato darà l’istruzione seguente?
 
 ::
 
@@ -282,13 +272,13 @@ Nel tuo caso hai detto a Python: visualizzami la stringa "5*3= " così com'è e 
 Numeri interi e decimali possono essere utilizzati per operazioni matematiche, le stringhe no, anche se il loro contenuto sembra un numero.
 
 | Scrivere: "ciao"/12  *oppure*   "18"+5
-| :red:`e' sbagliato e genera un SYNTAX ERROR`
+| :red:`è sbagliato e genera un SYNTAX ERROR`
 
-.. da e' a ERROR rosso
+.. da è a ERROR rosso
 
 Tuttavia gli operatori  +  e  * , e soltanto questi,  possono essere utilizzati anche con le stringhe ma in questo caso hanno un significato diverso da quello della somma e del prodotto aritmetico.
 
-*Se ad una stringa viene sommata un'altra stringa l'effetto che si ottiene e' il :boltred:`concatenamento`, cioè la seconda stringa si aggiunge al fondo della prima.*
+*Se ad una stringa viene sommata un’altra stringa l’effetto che si ottiene è il :boltred:`concatenamento`, cioè la seconda stringa si aggiunge al fondo della prima.*
 
 Ad esempio:
 
@@ -304,9 +294,9 @@ genera a video: :boltred:`casa dolce casa`
 
    print("casa"+" dolce "+"casa")
 
-Gli spazi prima e dopo la parola “dolce” fanno parte della stringa e sono necessari, altrimenti a video le stringhe concatenate sarebbero attaccate come un'unica parola, come succede scrivendo:  print(“casa”+”dolce”+”casa”).
+Gli spazi prima e dopo la parola “dolce” fanno parte della stringa e sono necessari, altrimenti a video le stringhe concatenate sarebbero attaccate come un’unica parola, come succede scrivendo:  print(“casa”+”dolce”+”casa”).
 
-*Se invece vogliamo ripetere tante volte la stessa stringa (questo effetto si chiama :boltblue:`ripetizione`) possiamo moltiplicarla per un numero intero usando l'operatore :boltblue:`*`.*
+*Se invece vogliamo ripetere tante volte la stessa stringa (questo effetto si chiama :boltblue:`ripetizione`) possiamo moltiplicarla per un numero intero usando l’operatore :boltblue:`*`.*
 
 | "ciao" * 3    *diventa*     ciaociaociao
 | "ciao " * 3   *diventa*     ciao ciao ciao
@@ -314,7 +304,7 @@ Gli spazi prima e dopo la parola “dolce” fanno parte della stringa e sono ne
 
 Nota bene: se non si mette lo spazio fra la scritta e le virgolette, il risultato verra tutto attaccato, come nel primo esempio: ciaociaociao.
 
-Prova a cambiare l'esempio sottostante.
+Prova a cambiare l’esempio sottostante.
 
 .. activecode:: esempio_print9
    :nocanvas:
@@ -363,7 +353,7 @@ ad esempio:
 
 1. Scrivi le istruzioni necessarie per far comparire sul video la scritta:
 
- Cinque per tre e' uguale a 15.
+ Cinque per tre è uguale a 15.
  (Puoi ottenere questo risultato con o senza scatole, ossia le variabili. Trova le varie soluzioni).
 
 |
@@ -376,11 +366,11 @@ ad esempio:
 
 |
 
-4. Scrivi la sequenza di istruzioni per ottenere il messaggio seguente utilizzando le variabili: l'area del rettangolo e' uguale a 50.
+4. Scrivi la sequenza di istruzioni per ottenere il messaggio seguente utilizzando le variabili: l’area del rettangolo è uguale a 50.
 
 |
 
-5. Scrivi la sequenza di istruzioni per ottenere il perimetro e l'area di un rettangolo che abbia i lati di cm 9 e cm 5.
+5. Scrivi la sequenza di istruzioni per ottenere il perimetro e l’area di un rettangolo che abbia i lati di cm 9 e cm 5.
 
 |
 
@@ -434,7 +424,7 @@ e poi scrivine uno tu, inventando un nuovo disegno.
 
 2. Scrivi le istruzioni per ottenere che nella scatola1 ci sia 30, nella scatola2 ci sia anni e che il computer stampi: ’ domani compirai 30 anni’ .
 
-3. Utilizzando le variabili, scrivi la sequenza di istruzioni per ottenere il messaggio seguente: l'area del rettangolo e' uguale a 20 cm e l’area del triangolo rettangolo è uguale a 20 cm.
+3. Utilizzando le variabili, scrivi la sequenza di istruzioni per ottenere il messaggio seguente: l’area del rettangolo è uguale a 20 cm e l’area del triangolo rettangolo è uguale a 20 cm.
 
 .. activecode:: esercizi2
    :nocanvas:
