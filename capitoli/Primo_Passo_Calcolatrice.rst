@@ -2,35 +2,31 @@
 Primo passo:   usare Python come calcolatrice
 =============================================
 
-.. role:: red
-
-.. role:: boltblue
-
-Supponiamo che sul video compaia questo simbolo:  >>>. 
+Supponiamo che sul video compaia questo simbolo:  >>>.
 E’ un messaggio di Python che vuol dire: :red:`“Cosa vuoi sapere?”`
-Se vuoi sapere quanto fa 2+3, devi scrivere 2+3 al fianco di 
+Se vuoi sapere quanto fa 2+3, devi scrivere 2+3 al fianco di
 >>>.
 Esempio:
 >>> 2+3
 
 ..  image:: images/nuvola.png
     :align: center
-    
 
 
-Subito dopo la pressione del tasto del calcolatore che usi 
+
+Subito dopo la pressione del tasto del calcolatore che usi
 per andare solitamente “a capo”, il calcolatore ti risponderà come vedi:
 
 
 
 .. activecode:: somma
    :coach:
-   :caption: 
+   :caption:
 
    print(2+3)
-  
 
-Vediamo altri esempi:     
+
+Vediamo altri esempi:
 
 >>> 15-11
 4
@@ -39,17 +35,17 @@ Vediamo altri esempi:
 6
 
 >>> 15/5
-3                                     
-                                     
+3
+
 
 
 Quindi il simbolo :red:`+` è il comando per eseguire una somma;
-il simbolo :red:`–` è l’ordine di eseguire una sottrazione; 
+il simbolo :red:`–` è l’ordine di eseguire una sottrazione;
 il simbolo :red:`*` indica una moltiplicazione;
 i simboli  :red:`/` e :red:`//` indicano la divisione.
-Ora impariamo anche l’uso del simbolo :red:`**` che viene 
+Ora impariamo anche l’uso del simbolo :red:`**` che viene
 chiamato :red:`"elevato a”`
-e che ha il significato mostrato 
+e che ha il significato mostrato
 nei seguenti esempi:
 
 :::::::::::::::::::
@@ -60,7 +56,7 @@ nei seguenti esempi:
 .. activecode:: primo esempio
    :coach:
    :caption: ossia 2*2*2,tre volte
-  
+
    print(2**3)
 
 :::::::::::::::::::
@@ -72,15 +68,16 @@ nei seguenti esempi:
 >>> 2**4
 16
 
-   
+
 ossia 2*2*2*2,quattro volte
 
 
 
 .. image:: images/nuvola2.png
+   :alt: Fumetto: su fare.polito.it/Python ricordati di scrivere print minuscolo e di mettere le parentesi, per esempio print(10**2)
    :align: right
    :width: 240
-   
+
 
 Adesso prova tu ad esercitarti usando Python. Prova a scrivere:
 
@@ -92,8 +89,8 @@ Adesso prova tu ad esercitarti usando Python. Prova a scrivere:
 
 >>> 3**3
 
-Come anticipato, possiamo usare due simboli diversi per la divisione. 
-Ai due simboli diversi corrispondono operazioni un po’ diverse, come mostrato 
+Come anticipato, possiamo usare due simboli diversi per la divisione.
+Ai due simboli diversi corrispondono operazioni un po’ diverse, come mostrato
 nei seguenti esempi:
 
 >>> 5/2   (e poi dai invio) otterrai:
@@ -105,49 +102,49 @@ Verifica ancora:
 3.75
 
 
-Se invece scriviamo: 
+Se invece scriviamo:
 
 .. activecode:: esempio3
    :coach:
    :caption: divisione con //
-   
+
    print(5//2)
-   
+
    print(5.0//2.0)
 
 otteniamo la parte intera della divisione.
 
-In sintesi, Python  possiede due divisioni che si 
-ottengono con i due simboli / e //. La prima divisione 
-genera numeri con virgola, la seconda divisione 
+In sintesi, Python  possiede due divisioni che si
+ottengono con i due simboli / e //. La prima divisione
+genera numeri con virgola, la seconda divisione
 produce la parte intera del risultato.
 
-Se in una divisione ti interessa solo sapere il resto usa il simbolo %: 
+Se in una divisione ti interessa solo sapere il resto usa il simbolo %:
 
 .. activecode:: esempio
    :coach:
    :caption: divisione con %
-   
+
    print(15%12)
 
-**Fai attenzione**. Gli americani, quando usano i numeri decimali, usano il punto 
+**Fai attenzione**. Gli americani, quando usano i numeri decimali, usano il punto
 (.) e non la virgola. Anche Python segue questo sistema.
 
-Si possono scrivere tante operazioni una dopo l’altra che 
-verranno eseguite nell’ordine con cui sono scritte, con qualche 
-differenza. Infatti prima bisogna eseguire  gli :red:`**` e poi i :red:`*` o :red:`/` e 
+Si possono scrivere tante operazioni una dopo l’altra che
+verranno eseguite nell’ordine con cui sono scritte, con qualche
+differenza. Infatti prima bisogna eseguire  gli :red:`**` e poi i :red:`*` o :red:`/` e
 in ultimo i :red:`+` o i :red:`-`. **Di seguito alcuni esempi**.
 
 .. activecode:: operazioni1
    :coach:
    :caption: serie di operazioni
-   
+
    print(2*3+4)
 
 .. activecode:: operaioni2
    :coach:
    :caption: serie di operazioni
-   
+
    print(6/2-1)
 
 >>> 10+3*2
@@ -168,20 +165,20 @@ ha 2 cani e 3 gatti. Devo scrivere:
 .. activecode:: parentesi
    :coach:
    :caption: operazioni con parentesi tonde
-   
+
    print(2+3)*4
 
-Una coppia di parentesi può contenere delle operazioni 
-delimitate da altre parentesi, come quando devo fare un 
+Una coppia di parentesi può contenere delle operazioni
+delimitate da altre parentesi, come quando devo fare un
 calcolo più complicato. Esempio:
 
-.. activecode:: parentesi2                          
-   :coach:                                            
-   :caption: operazioni con più parentesi         
-       
-   print(20*(4+1)/(3+1))                             
+.. activecode:: parentesi2
+   :coach:
+   :caption: operazioni con più parentesi
 
-   print((20*(4+1))/(3+1))                                  
+   print(20*(4+1)/(3+1))
+
+   print((20*(4+1))/(3+1))
 
 
 *Riassumendo: Python segue le stesse regole
@@ -191,21 +188,21 @@ Prima le parentesi (partendo da quelle più
 interne), poi l’elevamento a potenza, poi
 moltiplicazione e divisione e infine somma e addizione.*
 
-*Quando due operatori hanno la stessa priorità si 
+*Quando due operatori hanno la stessa priorità si
 procede da sinistra verso destra*
 
 
 
-Esercitiamoci un po'
+Esercitiamoci un po’
 ::::::::::::::::::::
 
-**- Esegui il calcolo dell’ espressione:** 
- 
+**- Esegui il calcolo dell’ espressione:**
 
-  4+4.5-(6*4/2)  
-                                         
 
-**- Scrivi l’espressione per calcolare “quanti mesi hai”.** 
+  4+4.5-(6*4/2)
+
+
+**- Scrivi l’espressione per calcolare “quanti mesi hai”.**
 
 **- Inventa un’espressione che dia come risultato 48**
 **ed una che dia come risultato 11.**
@@ -226,5 +223,3 @@ Esercitiamoci un po'
 .. activecode:: esercizi_es1
    :nocanvas:
    :language: python
-
-

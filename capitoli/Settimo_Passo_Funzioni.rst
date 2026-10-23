@@ -2,14 +2,6 @@
 Settimo passo: le Funzioni
 ==========================
 
-.. role:: boltred
-
-.. role:: red
-
-.. role:: boltblue
-
-.. role:: blue
-
 Impariamo insieme:
 
 - cos’è una funzione
@@ -22,22 +14,22 @@ Vediamo un esempio:
 
 ::
 
-	risposta1 = input ("Chi e' l'autore dei Promessi Sposi? ")
-	if risposta1 == "Manzoni":
-		print ("La risposta e' esatta")
-		print ("Bravo!!")
-	else:
-		print ("Risposta errata!")
-		print ("La risposta esatta e': Manzoni")
-		print ("Studia di piu'")
-	risposta2 = input ("Chi e' l'autore della Divina Commedia? ")
-	if risposta2 == "Dante":
-		print ("La risposta e' esatta")
-		print ("Bravo!!")
-	else:
-		print ("Risposta errata!")
-		print ("La risposta esatta e': Dante")
-		print ("Ripassa la lezione")
+    risposta1 = input ("Chi è l'autore dei Promessi Sposi? ")
+    if risposta1 == "Manzoni":
+        print ("La risposta è esatta")
+        print ("Bravo!!")
+    else:
+        print ("Risposta errata!")
+        print ("La risposta esatta è: Manzoni")
+        print ("Studia di più")
+    risposta2 = input ("Chi è l'autore della Divina Commedia? ")
+    if risposta2 == "Dante":
+        print ("La risposta è esatta")
+        print ("Bravo!!")
+    else:
+        print ("Risposta errata!")
+        print ("La risposta esatta è: Dante")
+        print ("Ripassa la lezione")
 
 Hai osservato come il programmatore nel trattare la seconda risposta ripete molte cose che aveva già scritto per la prima? Questo non è né comodo né veloce.
 Fortunatamente esiste in Python, come in molti altri linguaggi di programmazione, un meccanismo semplice per specificare una sola volta le operazioni ricorrenti e per richiamare quelle operazioni ogni volta che ci servono.
@@ -81,18 +73,18 @@ Definizione di funzione
 
 :boltred:`def INTERROGAZIONE (domanda, risposta_esatta):`
 
-Questa linea indica all'interprete che vogliamo definire un blocco di istruzioni che potrà essere eseguito a richiesta in un qualunque altro punto del programma semplicemente scrivendo il suo nome (interrogazione), dopo aver indicato la domanda e la risposta corretta.
+Questa linea indica all’interprete che vogliamo definire un blocco di istruzioni che potrà essere eseguito a richiesta in un qualunque altro punto del programma semplicemente scrivendo il suo nome (interrogazione), dopo aver indicato la domanda e la risposta corretta.
 
 Quindi la prima linea della funzione dovrà contenere:
 
 +-----------------------------------------------------------+--------------------------+
-|la parolina def			      		    |:boltred:`DEF`	       |
-|(abbreviazione di define, definisci)	    		    |			       |
+|la parolina def                                            |:boltred:`DEF`            |
+|(abbreviazione di define, definisci)                       |                          |
 +-----------------------------------------------------------+--------------------------+
-|il nome che ho deciso di dare alla funzione    	    |:boltred:`INTERROGAZIONE` |
+|il nome che ho deciso di dare alla funzione                |:boltred:`INTERROGAZIONE` |
 +-----------------------------------------------------------+--------------------------+
-|i nomi delle scatole su cui lavorerà la funzione, separati |:boltred:`DOMANDA`	       |
-|da virgole e racchiusi da parentesi			    |:boltred:`RISPOSTA_ESATTA`|
+|i nomi delle scatole su cui lavorerà la funzione, separati |:boltred:`DOMANDA`        |
+|da virgole e racchiusi da parentesi                        |:boltred:`RISPOSTA_ESATTA`|
 +-----------------------------------------------------------+--------------------------+
 
 Ricordati di mettere sempre i due punti dopo le parentesi e di indentare nel modo corretto, come puoi vedere negli esempi seguenti. La prima linea del programma non più indentata segnala a Python la fine della funzione.
@@ -101,47 +93,47 @@ Dopo la definizione, occorre scrivere la funzione, cioè il programma che lavore
 
 ::
 
-	def interrogazione(domanda, rispostaEsatta):
-	rispostaAllievo = input (domanda)
-	if rispostaEsatta == rispostaAllievo:
-		print ("La risposta e' esatta")
-		print ("Bravissimo")
-	else:
-		print ("Risposta errata")
-		print ("La risposta esatta e' ", rispostaEsatta)
-		print ("studia di piu'!")
+    def interrogazione(domanda, rispostaEsatta):
+    rispostaAllievo = input (domanda)
+    if rispostaEsatta == rispostaAllievo:
+        print ("La risposta è esatta")
+        print ("Bravissimo")
+    else:
+        print ("Risposta errata")
+        print ("La risposta esatta è ", rispostaEsatta)
+        print ("studia di più!")
 
 Confrontiamolo ora con il pezzo di programma da cui siamo partiti e che non volevamo ripetere tante volte.
 
-Notiamo subito che il codice è diventato molto più generale perchè tutte le risposte sono scritte dentro le variabili che potranno assumere valori diversi in situazioni diverse.
+Notiamo subito che il codice è diventato molto più generale perché tutte le risposte sono scritte dentro le variabili che potranno assumere valori diversi in situazioni diverse.
 Mentre il programma valeva solo per domande sugli scrittori, la funzione può essere usata in un programma che pone domande di storia, di geografia, di calcio ecc.
 La seguente tabella mostra come è nata la funzione a partire dal programma base.
 
 **Programma**
 ::
 
-	if risposta == "Manzoni":
-		print ("la risposta è esatta")
-		print ("bravo!!")
-	else:
-		print ("risposta errata!")
-		print ("la risposta esatta è: Manzoni")
-		print ("Studia di più")
+    if risposta == "Manzoni":
+        print ("la risposta è esatta")
+        print ("bravo!!")
+    else:
+        print ("risposta errata!")
+        print ("la risposta esatta è: Manzoni")
+        print ("Studia di più")
 
 ----
 
 **Funzione**
 ::
 
-	def interrogazione (domanda,rispostaEsatta):
-		rispostaAllievo = input (domanda)
-		if rispostaEsatta == rispostaAllievo:
-			print ("La risposta è esatta")
-			print ("Bravissimo")
-		else:
-			print ("Risposta errata")
-			print (" La risposta esatta è ",rispostaEsatta)
-			print ("studia di più!")
+    def interrogazione (domanda,rispostaEsatta):
+        rispostaAllievo = input (domanda)
+        if rispostaEsatta == rispostaAllievo:
+            print ("La risposta è esatta")
+            print ("Bravissimo")
+        else:
+            print ("Risposta errata")
+            print (" La risposta esatta è ",rispostaEsatta)
+            print ("studia di più!")
 
 Nota bene: puoi usare qualsiasi nome per una funzione, tranne le parole riservate di Python. Le definizioni di funzione sono delle istruzioni come le altre. Tuttavia saranno eseguite soltanto quando saranno chiamate.
 
@@ -156,93 +148,95 @@ Ora dobbiamo imparare a chiamare la funzione, ossia ordinare alla funzione stess
 **In generale, la chiamata di una funzione viene effettuata scrivendo il nome della funzione, seguita dai nomi delle scatole su cui lavorare separati da virgole e racchiuse da parentesi. Nel caso del programma che avevamo scritto avremo:**
 
 .. image:: images/vignetta_prima_chiamata.png
+   :alt: Fumetto: prima chiamata
    :align: center
    :width: 300pt
 
-| **domanda1 = "chi e' l'autore dei Promessi Sposi? "**
+| **domanda1 = "chi è l’autore dei Promessi Sposi? "**
 | **rispostaEsatta1 = "Manzoni"**
 | **interrogazione (domanda1, rispostaEsatta1)**
 
 .. image:: images/vignetta_seconda_chiamata.png
+   :alt: Fumetto: seconda chiamata
    :align: center
    :width: 300pt
 
-| **domanda2 = "chi e' l'autore della Divina Commedia? "**
+| **domanda2 = "chi è l’autore della Divina Commedia? "**
 | **rispostaEsatta2 = "Dante"**
 | **interrogazione (domanda2, rispostaEsatta2)**
 
 Fermiamoci a riflettere e a riassumere ciò che abbiamo detto finora a proposito di programmi e del flusso di esecuzione deiprogrammi.
 
-**L'esecuzione di una funzione inizia sempre alla prima riga del programma** e le istruzioni sono eseguite una alla volta dall'alto verso il basso.
+**L’esecuzione di una funzione inizia sempre alla prima riga del programma** e le istruzioni sono eseguite una alla volta dall’alto verso il basso.
 **Una funzione deve essere definita prima del suo uso** perché
 Python deve sapere che la funzione esiste e cosa fa.
-**La definizione di funzione non altera il flusso di esecuzione del programma e le istruzioni all'interno della funzione non sono eseguite finché questa non viene chiamata** (questo vuol dire che, se definisco la funzione all'inizio del programma, Python legge la definizione ma non fa nulla e prosegue nell'esecuzione del programma finché non trova la chiamata della funzione).
-**La chiamata della funzione è una deviazione nel flusso di esecuzione:** invece di proseguire con l'istruzione successiva, l'esecuzione salta alla prima riga della funzione chiamata ed esegue tutte le sue istruzioni; alla fine della funzione il flusso riprende dal punto dov'era stato deviato dalla chiamata di funzione. Fortunatamente Python è sufficientemente intelligente da ricordare dove il flusso di esecuzione viene via via interrotto e sa dove riprendere quando una funzione è conclusa
-**Quando il flusso del programma giunge all'ultima istruzione, dopo la sua esecuzione il programma è terminato.** Ricorda che la definizione della funzione termina con l’ultima istruzione indentata.
-Vediamo ora il nostro programma scritto con e senza l'uso della funzione
+**La definizione di funzione non altera il flusso di esecuzione del programma e le istruzioni all’interno della funzione non sono eseguite finché questa non viene chiamata** (questo vuol dire che, se definisco la funzione all’inizio del programma, Python legge la definizione ma non fa nulla e prosegue nell’esecuzione del programma finché non trova la chiamata della funzione).
+**La chiamata della funzione è una deviazione nel flusso di esecuzione:** invece di proseguire con l’istruzione successiva, l’esecuzione salta alla prima riga della funzione chiamata ed esegue tutte le sue istruzioni; alla fine della funzione il flusso riprende dal punto dov’era stato deviato dalla chiamata di funzione. Fortunatamente Python è sufficientemente intelligente da ricordare dove il flusso di esecuzione viene via via interrotto e sa dove riprendere quando una funzione è conclusa
+**Quando il flusso del programma giunge all’ultima istruzione, dopo la sua esecuzione il programma è terminato.** Ricorda che la definizione della funzione termina con l’ultima istruzione indentata.
+Vediamo ora il nostro programma scritto con e senza l’uso della funzione
 “interrogazione”:
 
 **senza**
 ::
 
-	risposta1 = input ("chi e' l'autore dei Promessi Sposi? ")
-	if risposta1 == "Manzoni":
-		print ("la risposta e' esatta")
-		print ("bravo!!")
-	else:
-		print ("risposta errata!")
-		print ("la risposta esatta e': Manzoni")
-		print ("Studia di piu'")
-	risposta2 = input ("chi e' l'autore della Divina Commedia? ")
-	if risposta2 == "Dante":
-		print ("la risposta e' esatta")
-		print ("bravo!!")
-	else:
-		print ("risposta errata!")
-		print ("la risposta esatta e': Dante")
-		print ("Studia di piu'")
+    risposta1 = input ("chi è l'autore dei Promessi Sposi? ")
+    if risposta1 == "Manzoni":
+        print ("la risposta è esatta")
+        print ("bravo!!")
+    else:
+        print ("risposta errata!")
+        print ("la risposta esatta è: Manzoni")
+        print ("Studia di più")
+    risposta2 = input ("chi è l'autore della Divina Commedia? ")
+    if risposta2 == "Dante":
+        print ("la risposta è esatta")
+        print ("bravo!!")
+    else:
+        print ("risposta errata!")
+        print ("la risposta esatta è: Dante")
+        print ("Studia di più")
 
 ----
 
 **con**
 ::
 
-	def interrogazione (domanda,rispostaEsatta):
-		rispostaAllievo = input (domanda)
-		if rispostaEsatta == rispostaAllievo:
-			print ("La risposta e' esatta")
-			print ("Bravissimo")
-		else:
-			print ("Risposta errata")
-			print ("La risposta esatta e' ", rispostaEsatta)
-			print ("Studia di piu'!")
-	domanda1 = "chi e' l'autore dei Promessi Sposi? "
-	rispostaEsatta1 = "Manzoni"
-	interrogazione (domanda1, rispostaEsatta1)
-	domanda2 = "chi e' l'autore della Divina Commedia? "
-	rispostaEsatta2 = "Dante"
-	interrogazione (domanda2, rispostaEsatta2)
+    def interrogazione (domanda,rispostaEsatta):
+        rispostaAllievo = input (domanda)
+        if rispostaEsatta == rispostaAllievo:
+            print ("La risposta è esatta")
+            print ("Bravissimo")
+        else:
+            print ("Risposta errata")
+            print ("La risposta esatta è ", rispostaEsatta)
+            print ("Studia di più!")
+    domanda1 = "chi è l'autore dei Promessi Sposi? "
+    rispostaEsatta1 = "Manzoni"
+    interrogazione (domanda1, rispostaEsatta1)
+    domanda2 = "chi è l'autore della Divina Commedia? "
+    rispostaEsatta2 = "Dante"
+    interrogazione (domanda2, rispostaEsatta2)
 
-Nota bene: i nomi delle scatole usati nell'istruzione di chiamata della funzione sono diversi dai nomi delle scatole usati nella definizione.
+Nota bene: i nomi delle scatole usati nell’istruzione di chiamata della funzione sono diversi dai nomi delle scatole usati nella definizione.
 
 **DEFINIZIONE**
 ::
 
-	def interrogazione (domanda, rispostaEsatta):
+    def interrogazione (domanda, rispostaEsatta):
 
 ----
 
 **CHIAMATA**
 ::
 
-	interrogazione (domanda1, rispostaEsatta1)
+    interrogazione (domanda1, rispostaEsatta1)
 
-La prima cosa che fa la funzione quando viene chiamata è prendere le scatole usate nella istruzione con cui è stata chiamata, scoperchiarle e mettere il loro contenuto nelle corrispondenti scatole usate all'interno della funzione.
+La prima cosa che fa la funzione quando viene chiamata è prendere le scatole usate nella istruzione con cui è stata chiamata, scoperchiarle e mettere il loro contenuto nelle corrispondenti scatole usate all’interno della funzione.
 
 **Il contenuto di domanda1 viene scritto in domanda e il contenuto di risposta_esatta1 viene scritto in risposta_esatta.**
 
 Perché è necessaria questa operazione?
-Le scatole all'interno della funzione sono “invisibili” all'esterno e sono utilizzate solo dentro il corpo della funzione.
+Le scatole all’interno della funzione sono “invisibili” all’esterno e sono utilizzate solo dentro il corpo della funzione.
 In questo modo la semplice funzione che abbiamo scritto potrà essere utilizzata da voi per altri programmi o da qualche vostro amico per costruire programmi più complicati. E questo è il secondo motivo, forse il più importante, per cui si scrivono le funzioni.
 
 I programmi attuali sono diventati cosi complicati che nessun programmatore, per quanto bravo, riuscirebbe a scriverli da solo. Qualunque programma è sempre composto per una piccola parte da nuove istruzioni e per la maggior parte da funzioni già scritte in precedenza.
@@ -254,11 +248,11 @@ Prima di poter usare le funzioni fornite da math, devi dire a Python di caricare
 Questa operazione, che si chiama "importazione", può essere ottenuta scrivendo:
 ::
 
-	import math
+    import math
 
 |
 | :boltred:`TI PROPONGO UN ESERCIZIO BASATO SULL’UTILIZZO DELLE FUNZIONI:`
-| 	**inserisci un numero e stampa la sua radice quadrata**
+|       **inserisci un numero e stampa la sua radice quadrata**
 
 .. activecode:: code1
    :coach:
@@ -275,9 +269,9 @@ In tutti gli esempi precedenti, la funzione chiamata eseguiva completamente una 
 Vediamo un esempio:
 ::
 
-	def doppio(numero):
-		numeroPerDue = numero * 2
-		return numeroPerDue
+    def doppio(numero):
+        numeroPerDue = numero * 2
+        return numeroPerDue
 
 L’istruzione :blue:`return numeroPerDue` ordina alla funzione doppio di trasmettere al programma chiamante il valore di :blue:`numeroPerDue`.
 
@@ -287,19 +281,19 @@ scriverà un’istruzione del tipo: pippo = 7 + doppio(5)
 :boltblue:`definizione di funzione`
 ::
 
-	def doppio(numero):
-		numeroPerDue = numero * 2
-		return numeroPerDue
+    def doppio(numero):
+        numeroPerDue = numero * 2
+        return numeroPerDue
 
 ----
 
 :boltblue:`programma principale`
 ::
 
-	numero = float(input("Inserisci un numero "))
-	pippo = 7 + doppio(numero)
-	print ("Se al numero 7 aggiungo il doppio di ", numero)
-	print ("Il risultato sarà: ", pippo)
+    numero = float(input("Inserisci un numero "))
+    pippo = 7 + doppio(numero)
+    print ("Se al numero 7 aggiungo il doppio di ", numero)
+    print ("Il risultato sarà: ", pippo)
 
 In sostanza tutto avviene come se il contenuto della scatola della funzione
 :blue:`numeroPerDue` fosse trasferito nella scatola del programma principale :blue:`doppio`.
@@ -312,23 +306,23 @@ Nel corpo di una funzione si può anche scrivere una o più istruzioni che chiam
 Supponiamo di voler calcolare il fattoriale (prodotto dei successivi numeri interi da 1 fino a un numero dato) del numero 7, ossia
 ::
 
-	fatt = 7*6*5*4*3*2
+    fatt = 7*6*5*4*3*2
 
 La funzione che calcola il fattoriale di un numero n dovrà essere scritta come n moltiplicato per il fattoriale di **(n-1)**;
 
 ad esempio, se a n attribuiamo il valore **7**:
 ::
 
-	fatt(7) = 7 * fatt(6)
+    fatt(7) = 7 * fatt(6)
 
 **La funzione sarà**
 ::
 
-	def fatt(n):
-		if n == 1:
-			return 1
-		else:
-			return n * fatt(n-1)
+    def fatt(n):
+        if n == 1:
+            return 1
+        else:
+            return n * fatt(n-1)
 
 ----
 
@@ -336,61 +330,62 @@ ad esempio, se a n attribuiamo il valore **7**:
 
 ::
 
-	def fatt(n):
-		if n == 1:
-			return 1
-		else:
-			return n * fatt(n - 1)
-	n = int(input ("Scrivi un numero "))
-	print ("Il fattoriale di ", n, " è ", fatt(n))
+    def fatt(n):
+        if n == 1:
+            return 1
+        else:
+            return n * fatt(n - 1)
+    n = int(input ("Scrivi un numero "))
+    print ("Il fattoriale di ", n, " è ", fatt(n))
 
 ----
 
-**In questo esempio calcoliamo l'area della figura.**
+**In questo esempio calcoliamo l’area della figura.**
 
 .. image:: images/treno.png
+   :alt: Disegno schematico di un trenino fatto di rettangoli e due ruote
    :align: center
    :width: 300pt
 
 Scriviamo una funzione che consenta di calcolare l’area di un rettangolo:
 ::
 
-	def areaRettangolo (base, altezza):
-		return base * altezza
+    def areaRettangolo (base, altezza):
+        return base * altezza
 
 Scriviamo una funzione che calcoli l’area di un cerchio di raggio r:
 
 ::
 
-	def areaCerchio (raggio):
-		return 3.14 * raggio**2
+    def areaCerchio (raggio):
+        return 3.14 * raggio**2
 
 Utilizziamo ora le due funzioni che abbiamo scritto per calcolare l’area della figura azzurra:
 
-programma che calcola l'area della figura azzurra
+programma che calcola l’area della figura azzurra
 ::
 
-	def areaRettangolo (base, altezza):
-		return base * altezza
-	def areaCerchio (raggio):
-		return 3.14 * raggio**2
-	areaFigura = areaRettangolo (3,2) + areaRettangolo(5,3) + 2 * areaCerchio(1)/2
-	print ("L'area della figura azzurra è ", areaFigura)
+    def areaRettangolo (base, altezza):
+        return base * altezza
+    def areaCerchio (raggio):
+        return 3.14 * raggio**2
+    areaFigura = areaRettangolo (3,2) + areaRettangolo(5,3) + 2 * areaCerchio(1)/2
+    print ("L'area della figura azzurra è ", areaFigura)
 
 **Quest’ultimo esempio mostra come calcolare la potenza di un numero elevato a un numero intero, usando una funzione definita da noi.**
 ::
 
-	def potenza(numero, esponente):
-		if esponente == 1:
-			return numero
-		else:
-			return potenza(numero, esponente-1) * numero
-	numero = float(input("Inserisci un numero "))
-	esponente = int(input("Inserisci l'esponente "))
-	print (potenza(numero, esponente))
+    def potenza(numero, esponente):
+        if esponente == 1:
+            return numero
+        else:
+            return potenza(numero, esponente-1) * numero
+    numero = float(input("Inserisci un numero "))
+    esponente = int(input("Inserisci l'esponente "))
+    print (potenza(numero, esponente))
 
 --------------------
-Esercitiamoci un po'
+Esercitiamoci un po’
 --------------------
 
 1. Scrivi un programma utilizzando la funzione che chieda due numeri e poi li sommi tra loro.
@@ -414,7 +409,7 @@ Esercitiamoci un po'
 4.
 
 .. clickablearea:: click1
-    :question: Trova l'errore.
+    :question: Trova l’errore.
     :iscode:
     :feedback: Ripassa la chiamata di funzione.
 
@@ -465,7 +460,7 @@ legati tra loro.
 
 Prima di spiegarti cosa sono ritengo doveroso citare due
 importanti personaggi del mondo informatico: **Richard Stallman** e **Linus Torvalds**.
-Stallman, statunitense, (New York, 16 marzo 1953) è un programmatore e hacker statunitense. Nel settembre del 1983 lanciò il progetto GNU per creare un sistema operativo libero. Con il lancio del Progetto GNU, il movimento del software libero prese vita; nell'Ottobre del 1985 venne fondata la Free Software Foundation (FSF).
+Stallman, statunitense, (New York, 16 marzo 1953) è un programmatore e hacker statunitense. Nel settembre del 1983 lanciò il progetto GNU per creare un sistema operativo libero. Con il lancio del Progetto GNU, il movimento del software libero prese vita; nell’Ottobre del 1985 venne fondata la Free Software Foundation (FSF).
 
 Secondo Richard Stallman un software per poter essere definito libero deve garantire quattro **"libertà fondamentali"**:
 

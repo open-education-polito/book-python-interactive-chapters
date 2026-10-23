@@ -2,21 +2,18 @@
 Secondo passo: le Scatole
 ===========================
 
-.. role:: red
-
-.. role:: boltred
-
 Istruire un calcolatore significa essenzialmente creare e usare degli oggetti.
 Tra questi oggetti quelli di uso più comune sono quelli che chiameremo :red:`scatole`.
 
 Le scatole vengono usate per contenere numeri, caratteri, parole o frasi.
 
 .. image:: images/scatole.png
+   :alt: Tre scatole di nome Sal1, Mio_Pc e B3
    :align: center
 
-Le nostre scatole sono del tutto simili a quelle che vediamo nella figura. 
-Ogni scatola  che noi creiamo deve avere un nome. 
-Il nome che assegniamo alla scatola  è l'equivalente dell'etichetta sulla scatola.
+Le nostre scatole sono del tutto simili a quelle che vediamo nella figura.
+Ogni scatola  che noi creiamo deve avere un nome.
+Il nome che assegniamo alla scatola  è l’equivalente dell’etichetta sulla scatola.
 
 Ovviamente dovremo scegliere dei nomi significativi per le nostre scatole per ricordarci a cosa servono.
 
@@ -41,7 +38,7 @@ Sono validi anche nomi molto corti come:
 o lunghi come:
 
 |
-|	:red:`ilnomepiulungochemivieneinmenteperilmiocane`
+|       :red:`ilnomepiulungochemivieneinmenteperilmiocane`
 |
 
 
@@ -58,6 +55,7 @@ Quindi le scatole che si chiamano:
 **sono per il calcolatore tre scatole diverse.**
 
 .. image:: images/scatole2.png
+   :alt: Tre scatole di nome Luisa, luisa e LUISA
    :align: center
    :width: 275pt
 
@@ -67,13 +65,13 @@ Il carattere di sottolineatura (_) può far parte di un nome ed è spesso usato 
 | **il_mio_nome**         | **il_prezzo_del_pane**  |
 +-------------------------+-------------------------+
 
-In alternativa i nomi possono essere composti  usando l'iniziale maiuscola per ciascuna delle parole componenti il nome della variabile, con il resto dei caratteri lasciati in minuscolo come in :
+In alternativa i nomi possono essere composti  usando l’iniziale maiuscola per ciascuna delle parole componenti il nome della variabile, con il resto dei caratteri lasciati in minuscolo come in :
 
 +-------------------------+-------------------------+
 | **IlMioNome**           | **IlPrezzodelPane**     |
 +-------------------------+-------------------------+
 
-Non e' possibile invece “battezzare” la  nostra scatola  con nomi come 1A, 3P, 4SAL **perché il suo nome non può iniziare con un numero**. Assegnando un nome di questo tipo ad una scatola otterremo un messaggio di errore. Il  calcolatore ci dirà che il nome che abbiamo usato e' illegale ma non dirà perché è illegale, e quindi dovremo scoprirlo noi.
+Non è possibile invece “battezzare” la  nostra scatola  con nomi come 1A, 3P, 4SAL **perché il suo nome non può iniziare con un numero**. Assegnando un nome di questo tipo ad una scatola otterremo un messaggio di errore. Il  calcolatore ci dirà che il nome che abbiamo usato è illegale ma non dirà perché è illegale, e quindi dovremo scoprirlo noi.
 
 *Vediamo cosa ci dice il calcolatore quando sbagliamo il nome di una scatola:*
 
@@ -88,27 +86,27 @@ Non e' possibile invece “battezzare” la  nostra scatola  con nomi come 1A, 3
 | :boltred:`SyntaxError: invalid syntax`
 |
 
-*Come mai?* 
-*Il nome 76strumenti e' illegale perché non inizia con una lettera, milione$ e' illegale perché contiene un carattere proibito, il $, lambda e' illegale perché è una delle parole riservate di Python.*
+*Come mai?*
+*Il nome 76strumenti è illegale perché non inizia con una lettera, milione$ è illegale perché contiene un carattere proibito, il $, lambda è illegale perché è una delle parole riservate di Python.*
 
 :boltred:`Tutti i linguaggi di programmazione hanno alcune parole riservate` *che non possono essere usate come nomi delle scatole.*
 
 **Le parole riservate di Phython sono 28 e sono le seguenti:**
 
 +------------+------------+------------+------------+
-|And	     |continue	  |else	       |for	    |
+|And         |continue    |else        |for         |
 +------------+------------+------------+------------+
-|import      |not	  |raise       |assert      |
+|import      |not         |raise       |assert      |
 +------------+------------+------------+------------+
-|Def	     |except	  |from	       |in          |
+|Def         |except      |from        |in          |
 +------------+------------+------------+------------+
-|Or          |return	  |break       |del         |
+|Or          |return      |break       |del         |
 +------------+------------+------------+------------+
-|Exec        |global	  |is          |pass        |
+|Exec        |global      |is          |pass        |
 +------------+------------+------------+------------+
-|Try         |class	  |elif        |finally     |
+|Try         |class       |elif        |finally     |
 +------------+------------+------------+------------+
-|If          |lambda	  |print       |while       |
+|If          |lambda      |print       |while       |
 +------------+------------+------------+------------+
 
 Vediamo se hai capito:
@@ -128,18 +126,18 @@ Vediamo se hai capito:
    :answer_b: canem4
    :answer_c: 4cane_m
    :correct: c
-   :feedback_c: Risposa corretta!
+   :feedback_c: Risposta corretta!
    :feedback_a: Risposta errata.
    :feedback_b: Risposta errata.
 
    Quale di questi nomi è sbagliato?
 
 
-.. activecode:: esempi_scatole 
+.. activecode:: esempi_scatole
    :coach:
-   :caption: Inventa degli esercizi 
+   :caption: Inventa degli esercizi
 
-   Scrivi altri esempi inventati da te e controlla se il programma da’ errore o no: 
+   Scrivi altri esempi inventati da te e controlla se il programma da’ errore o no:
 
 
 
@@ -157,11 +155,12 @@ ad esempio
 
 ::
 
-	print (scatola1)
+    print (scatola1)
 
 
 Per ricordare meglio la **differenza fra nome e contenuto di una scatola**, immaginiamo di aver scritto il nome della scatola con un pennarello indelebile sulla scatola stessa e che il contenuto sia stato scritto su un foglietto che in qualunque momento può essere tolto dalla scatola e sostituito con un altro foglietto.
 
 .. image:: images/scatola.png
+   :alt: Scatola di nome Scatola1 con dentro il numero 2.5, con frecce che indicano il nome e il contenuto della scatola
    :align: center
    :width: 275pt
